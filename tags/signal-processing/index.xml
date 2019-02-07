@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>signal processing on Ge[o]rges Dib</title>
+    <link>https://dibgerge.github.io/tags/signal-processing/</link>
+    <description>Recent content in signal processing on Ge[o]rges Dib</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://dibgerge.github.io/tags/signal-processing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Validation of Ultrasound NDE Simulation Models</title>
+      <link>https://dibgerge.github.io/project/ut-modeling/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/project/ut-modeling/</guid>
+      <description>Non-destructive evaluation and testing (NDE) is essential for ensuring the safety of operational nuclear power plants around the world. Ultrasonic testing is an NDE technique which is largely utilized for inspecting pipelines in the nuclear industry due to its ability to detect flaws hidden within the inner diameter of pipelines.
+Computer modeling and simulation is becoming an essential tool for transducer design and insight into ultrasonic nondestructive evaluation. For computational models to be of use in practical situations, it is important to develop techniques for inferring the reliability of inspections using simulated results.</description>
+    </item>
+    
+    <item>
+      <title>Machine Learning and Statistical Signal Processing for Guided Wave Structural Health Monitoring</title>
+      <link>https://dibgerge.github.io/project/gwshm/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://dibgerge.github.io/project/gwshm/</guid>
+      <description>Sparse ultrasonic guided waves sensor networks would increase safety and reduce maintenance costs of current civil and industrial structures by providing continuous information about structural health. Common damage modalities that are of concern include fatigue cracks and corrosion in metals, and delaminations and impact damage in composite materials. Ultrasonic guided wave testing is used in various industries due to its superior ability to rapidly inspect large areas in thin structures. Guided waves travel long distances and interrogate the entire thickness of a structure.</description>
+    </item>
+    
+    <item>
+      <title>Design and performance of optimal detectors for guided wave structural health monitoring</title>
+      <link>https://dibgerge.github.io/publication/2016-shm/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 -0500</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2016-shm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Guided Wave Structural Health Monitoring for Impact Damage Detection and Characterization</title>
+      <link>https://dibgerge.github.io/publication/2015-asc/</link>
+      <pubDate>Thu, 01 Oct 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2015-asc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Feasibility of PZT ceramics for impact damage detection in composite structures</title>
+      <link>https://dibgerge.github.io/publication/2014d-qnde/</link>
+      <pubDate>Sun, 20 Jul 2014 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2014d-qnde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multitechnique monitoring of fatigue damage in adhesively bonded composite lap-joints</title>
+      <link>https://dibgerge.github.io/publication/2014b-qnde/</link>
+      <pubDate>Sun, 20 Jul 2014 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2014b-qnde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Giant Magnetoresistance Sensors for Aircraft Inspection</title>
+      <link>https://dibgerge.github.io/project/gmr/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/project/gmr/</guid>
+      <description>Nondestructive inspection of multi-layered airframe geometries is a significant challenge largely due to complexity of test geometry and deep lying defects. Structural geometry of interest includes different configurations of aircraft skins, stringers, doublers, wing-splice with fasteners and deep lying cracks and corrosion. Inspection of these complex geometries requires dealing with a large number of variables which affect damage detection performance (material, size, thickness, edges, air gaps, etc.), experimental sensor system (frequency, waveform shape, harmonics, sampling intervals, circuit design etc.</description>
+    </item>
+    
+    <item>
+      <title>Advanced Signal Processing Algorithms in Structural Integrity Monitoring</title>
+      <link>https://dibgerge.github.io/publication/2014-icons/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 -0500</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2014-icons/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Novel Mode Decomposition Algorithms for Lamb Wave Signal Analysis in Online Monitoring of Structures</title>
+      <link>https://dibgerge.github.io/publication/2013-ejam/</link>
+      <pubDate>Thu, 14 Mar 2013 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2013-ejam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eddy Current Inspection Autoanalysis of Steam Generator Tubes in Nuclear Power Plants</title>
+      <link>https://dibgerge.github.io/project/autoanalysis/</link>
+      <pubDate>Fri, 01 Jun 2012 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/project/autoanalysis/</guid>
+      <description>Processing pipeline for autoanalysis software.
+   
+Steam generators (SG) are heat exchanger units used in nuclear power plants. Each SG unit typically contains 10000 - 20000 tubes which are exposed to harsh environmental conditions such as high temperatures, high pressures, high fluid flow rates and material interactions resulting in various types of tube degradations - mechanical wear, stress corrosion cracking (SCC), pitting, volumetric degradation, inter granular attack (IGA), loose parts and denting.</description>
+    </item>
+    
+  </channel>
+</rss>

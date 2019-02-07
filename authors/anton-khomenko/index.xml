@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anton Khomenko on Ge[o]rges Dib</title>
+    <link>https://dibgerge.github.io/authors/anton-khomenko/</link>
+    <description>Recent content in Anton Khomenko on Ge[o]rges Dib</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Nov 2017 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://dibgerge.github.io/authors/anton-khomenko/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ensembles of novelty detection classifiers for structural health monitoring using guided waves</title>
+      <link>https://dibgerge.github.io/publication/2017-sms/</link>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2017-sms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multitechnique monitoring of fatigue damage in adhesively bonded composite lap-joints</title>
+      <link>https://dibgerge.github.io/publication/2014b-qnde/</link>
+      <pubDate>Sun, 20 Jul 2014 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2014b-qnde/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

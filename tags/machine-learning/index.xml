@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine learning on Ge[o]rges Dib</title>
+    <link>https://dibgerge.github.io/tags/machine-learning/</link>
+    <description>Recent content in machine learning on Ge[o]rges Dib</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://dibgerge.github.io/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Neural Interactive Machine Learning</title>
+      <link>https://dibgerge.github.io/project/niml/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/project/niml/</guid>
+      <description>Machine intelligence advances have elevated the potential of computer-based video analytics but machines alone still fall short of human visual recognition capabilities. Humans, however, cannot address the high volumes of data in need of analysis. Despite exponential growth in machine analytics, opportunities for improvement remain (reducing training sets, improving cross-platform compatibility, adapting to changing environments, etc.). This project aims at achieving higher performance thresholds by integrating the strengths of human and machine reasoning.</description>
+    </item>
+    
+    <item>
+      <title>Ensembles of novelty detection classifiers for structural health monitoring using guided waves</title>
+      <link>https://dibgerge.github.io/publication/2017-sms/</link>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2017-sms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning and Statistical Signal Processing for Guided Wave Structural Health Monitoring</title>
+      <link>https://dibgerge.github.io/project/gwshm/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://dibgerge.github.io/project/gwshm/</guid>
+      <description>Sparse ultrasonic guided waves sensor networks would increase safety and reduce maintenance costs of current civil and industrial structures by providing continuous information about structural health. Common damage modalities that are of concern include fatigue cracks and corrosion in metals, and delaminations and impact damage in composite materials. Ultrasonic guided wave testing is used in various industries due to its superior ability to rapidly inspect large areas in thin structures. Guided waves travel long distances and interrogate the entire thickness of a structure.</description>
+    </item>
+    
+  </channel>
+</rss>
