@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shantanu Majumdar on Ge[o]rges Dib</title>
+    <link>https://dibgerge.github.io/authors/shantanu-majumdar/</link>
+    <description>Recent content in Shantanu Majumdar on Ge[o]rges Dib</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Sep 2012 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://dibgerge.github.io/authors/shantanu-majumdar/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pre-processing methods for eddy current data analysis using Hilbert-Huang Transform</title>
+      <link>https://dibgerge.github.io/publication/2011-isaem/</link>
+      <pubDate>Wed, 05 Sep 2012 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2011-isaem/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

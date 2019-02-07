@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NDE on Ge[o]rges Dib</title>
+    <link>https://dibgerge.github.io/tags/nde/</link>
+    <description>Recent content in NDE on Ge[o]rges Dib</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Jan 2019 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://dibgerge.github.io/tags/nde/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>In-situ fatigue monitoring procedure using nonlinear ultrasonic surface waves considering the nonlinear effects in the measurement system</title>
+      <link>https://dibgerge.github.io/publication/2019-net/</link>
+      <pubDate>Mon, 14 Jan 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2019-net/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ultrasound Modeling and Simulation: Status Update</title>
+      <link>https://dibgerge.github.io/publication/2018-pnnl/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2018-pnnl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Validation of Ultrasound NDE Simulation Models</title>
+      <link>https://dibgerge.github.io/project/ut-modeling/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/project/ut-modeling/</guid>
+      <description>Non-destructive evaluation and testing (NDE) is essential for ensuring the safety of operational nuclear power plants around the world. Ultrasonic testing is an NDE technique which is largely utilized for inspecting pipelines in the nuclear industry due to its ability to detect flaws hidden within the inner diameter of pipelines.
+Computer modeling and simulation is becoming an essential tool for transducer design and insight into ultrasonic nondestructive evaluation. For computational models to be of use in practical situations, it is important to develop techniques for inferring the reliability of inspections using simulated results.</description>
+    </item>
+    
+    <item>
+      <title>Challenges and Solutions in SHM for Nuclear Power Environments</title>
+      <link>https://dibgerge.github.io/publication/2017-iwshm/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2017-iwshm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the usage of ultrasound computational models for decision making under ambiguity</title>
+      <link>https://dibgerge.github.io/publication/2017-qnde/</link>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2017-qnde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Preliminary design of high temperature ultrasonic transducers for liquid sodium environments</title>
+      <link>https://dibgerge.github.io/publication/2017b-qnde/</link>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2017b-qnde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Validation of Ultrasonic Nondestructive Examination (NDE) Computational Models – Phase 1</title>
+      <link>https://dibgerge.github.io/publication/2017-pnnl/</link>
+      <pubDate>Fri, 05 May 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2017-pnnl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detecting Water in Dry Storage Canisters for Used Fuel</title>
+      <link>https://dibgerge.github.io/publication/2017-ihlrwm/</link>
+      <pubDate>Sun, 09 Apr 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2017-ihlrwm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning and Statistical Signal Processing for Guided Wave Structural Health Monitoring</title>
+      <link>https://dibgerge.github.io/project/gwshm/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://dibgerge.github.io/project/gwshm/</guid>
+      <description>Sparse ultrasonic guided waves sensor networks would increase safety and reduce maintenance costs of current civil and industrial structures by providing continuous information about structural health. Common damage modalities that are of concern include fatigue cracks and corrosion in metals, and delaminations and impact damage in composite materials. Ultrasonic guided wave testing is used in various industries due to its superior ability to rapidly inspect large areas in thin structures. Guided waves travel long distances and interrogate the entire thickness of a structure.</description>
+    </item>
+    
+    <item>
+      <title>Experimental Design for Evaluating Selected Nondestructive Measurement Technologies</title>
+      <link>https://dibgerge.github.io/publication/2016b-osti/</link>
+      <pubDate>Sat, 16 Jul 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2016b-osti/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ultrasound Sensors and Methods for Nuclear Power Plant Environments</title>
+      <link>https://dibgerge.github.io/project/ut-sensors/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/project/ut-sensors/</guid>
+      <description>Schematic of nuclear power plant components which require monitoring using NDE techniques.
+   
+This is a topic co project focuses on demonstration of ultrasound sensing technology and techniques for various applications related to nuclear power plant life cycle, next generation advanced reactors, and radiation monitoring at border portals. The focus of this research has been on:
+ Assessment of conventional ultrasound and non-linear ultrasound non-destructive evaluation techniques capable of detecting impending damage before crack formation.</description>
+    </item>
+    
+    <item>
+      <title>State of the Art Assessment of NDE Techniques for Aging Cable Management in Nuclear Power Plants FY2015</title>
+      <link>https://dibgerge.github.io/publication/2015-osti/</link>
+      <pubDate>Tue, 08 Sep 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2015-osti/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Assessment of NDE for key indicators of aging cables in nuclear power plants – Interim status</title>
+      <link>https://dibgerge.github.io/publication/2015b-qnde/</link>
+      <pubDate>Mon, 20 Jul 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2015b-qnde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experimental validation of ultrasonic NDE simulation software</title>
+      <link>https://dibgerge.github.io/publication/2015-qnde/</link>
+      <pubDate>Mon, 20 Jul 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2015-qnde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Progress towards prognostic health management of passive components in advanced reactors: Model selection and evaluation</title>
+      <link>https://dibgerge.github.io/publication/2015-phm/</link>
+      <pubDate>Mon, 22 Jun 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2015-phm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Component-Level Prognostics Health Management Framework for Passive Components</title>
+      <link>https://dibgerge.github.io/publication/2015b-osti/</link>
+      <pubDate>Fri, 19 Jun 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2015b-osti/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EC-GMR array with rotating current excitation for multilayered riveted structures inspection</title>
+      <link>https://dibgerge.github.io/publication/2014-qnde/</link>
+      <pubDate>Sun, 20 Jul 2014 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2014-qnde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Image processing algorithms for automated analysis of GMR data from inspection of multilayer structures</title>
+      <link>https://dibgerge.github.io/publication/2014c-qnde/</link>
+      <pubDate>Sun, 20 Jul 2014 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2014c-qnde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Giant Magnetoresistance Sensors for Aircraft Inspection</title>
+      <link>https://dibgerge.github.io/project/gmr/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/project/gmr/</guid>
+      <description>Nondestructive inspection of multi-layered airframe geometries is a significant challenge largely due to complexity of test geometry and deep lying defects. Structural geometry of interest includes different configurations of aircraft skins, stringers, doublers, wing-splice with fasteners and deep lying cracks and corrosion. Inspection of these complex geometries requires dealing with a large number of variables which affect damage detection performance (material, size, thickness, edges, air gaps, etc.), experimental sensor system (frequency, waveform shape, harmonics, sampling intervals, circuit design etc.</description>
+    </item>
+    
+    <item>
+      <title>A Wireless Sensor Node for Structural Health Monitoring using Guided Wave Testing</title>
+      <link>https://dibgerge.github.io/publication/2013-me/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2013-me/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sensor-tilt invariance analysis for eddy current signals</title>
+      <link>https://dibgerge.github.io/publication/2012-ndte/</link>
+      <pubDate>Thu, 01 Nov 2012 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2012-ndte/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pre-processing methods for eddy current data analysis using Hilbert-Huang Transform</title>
+      <link>https://dibgerge.github.io/publication/2011-isaem/</link>
+      <pubDate>Wed, 05 Sep 2012 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2011-isaem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eddy Current Inspection Autoanalysis of Steam Generator Tubes in Nuclear Power Plants</title>
+      <link>https://dibgerge.github.io/project/autoanalysis/</link>
+      <pubDate>Fri, 01 Jun 2012 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/project/autoanalysis/</guid>
+      <description>Processing pipeline for autoanalysis software.
+   
+Steam generators (SG) are heat exchanger units used in nuclear power plants. Each SG unit typically contains 10000 - 20000 tubes which are exposed to harsh environmental conditions such as high temperatures, high pressures, high fluid flow rates and material interactions resulting in various types of tube degradations - mechanical wear, stress corrosion cracking (SCC), pitting, volumetric degradation, inter granular attack (IGA), loose parts and denting.</description>
+    </item>
+    
+    <item>
+      <title>Nonlinear, non-stationary image processing technique for eddy current NDE</title>
+      <link>https://dibgerge.github.io/publication/2011b-qnde/</link>
+      <pubDate>Fri, 22 Jul 2011 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2011b-qnde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wireless Senor Networks for Structural Health Monitoring</title>
+      <link>https://dibgerge.github.io/project/wsn/</link>
+      <pubDate>Tue, 27 Apr 2010 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/project/wsn/</guid>
+      <description>Schematic of sensor network with centralized architecture.
+   
+The use of wireless sensor networks in structural health monitoring can significantly increase safety and reduce manufacturing and maintenance costs. In this project, we integrate guided wave sensors with wireless sensor modules for continuous monitoring of civil structures. The wireless sensors eliminate the need for cables, reducing overall structure weight (especially important in aerospace industry) and single points of failure.</description>
+    </item>
+    
+  </channel>
+</rss>

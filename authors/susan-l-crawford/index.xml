@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Susan L Crawford on Ge[o]rges Dib</title>
+    <link>https://dibgerge.github.io/authors/susan-l-crawford/</link>
+    <description>Recent content in Susan L Crawford on Ge[o]rges Dib</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 May 2017 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://dibgerge.github.io/authors/susan-l-crawford/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Validation of Ultrasonic Nondestructive Examination (NDE) Computational Models – Phase 1</title>
+      <link>https://dibgerge.github.io/publication/2017-pnnl/</link>
+      <pubDate>Fri, 05 May 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2017-pnnl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Experimental validation of ultrasonic NDE simulation software</title>
+      <link>https://dibgerge.github.io/publication/2015-qnde/</link>
+      <pubDate>Mon, 20 Jul 2015 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2015-qnde/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

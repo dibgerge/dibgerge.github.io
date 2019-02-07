@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Michael R Larche on Ge[o]rges Dib</title>
+    <link>https://dibgerge.github.io/authors/michael-r-larche/</link>
+    <description>Recent content in Michael R Larche on Ge[o]rges Dib</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Dec 2018 00:00:00 -0500</lastBuildDate>
+    
+	<atom:link href="https://dibgerge.github.io/authors/michael-r-larche/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ultrasound Modeling and Simulation: Status Update</title>
+      <link>https://dibgerge.github.io/publication/2018-pnnl/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2018-pnnl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Preliminary design of high temperature ultrasonic transducers for liquid sodium environments</title>
+      <link>https://dibgerge.github.io/publication/2017b-qnde/</link>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/publication/2017b-qnde/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

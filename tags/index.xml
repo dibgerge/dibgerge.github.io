@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Ge[o]rges Dib</title>
+    <link>https://dibgerge.github.io/tags/</link>
+    <description>Recent content in Tags on Ge[o]rges Dib</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
+    
+	<atom:link href="https://dibgerge.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Academic</title>
+      <link>https://dibgerge.github.io/tags/academic/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/tags/academic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NDE</title>
+      <link>https://dibgerge.github.io/tags/nde/</link>
+      <pubDate>Mon, 14 Jan 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://dibgerge.github.io/tags/nde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nuclear</title>
+      <link>https://dibgerge.github.io/tags/nuclear/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/tags/nuclear/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SHM</title>
+      <link>https://dibgerge.github.io/tags/shm/</link>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 -0500</pubDate>
+      
+      <guid>https://dibgerge.github.io/tags/shm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>deep learning</title>
+      <link>https://dibgerge.github.io/tags/deep-learning/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning</title>
+      <link>https://dibgerge.github.io/tags/machine-learning/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nuclear</title>
+      <link>https://dibgerge.github.io/tags/nuclear/</link>
+      <pubDate>Tue, 05 Feb 2019 19:34:55 -0500</pubDate>
+      
+      <guid>https://dibgerge.github.io/tags/nuclear/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>signal processing</title>
+      <link>https://dibgerge.github.io/tags/signal-processing/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 -0400</pubDate>
+      
+      <guid>https://dibgerge.github.io/tags/signal-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ultrasound</title>
+      <link>https://dibgerge.github.io/tags/ultrasound/</link>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      
+      <guid>https://dibgerge.github.io/tags/ultrasound/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
