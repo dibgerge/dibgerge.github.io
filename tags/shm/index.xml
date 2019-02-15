@@ -6,7 +6,7 @@
     <description>Recent content in SHM on Ge[o]rges Dib</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Nov 2017 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 17 Nov 2017 00:00:00 -0800</lastBuildDate>
     
 	<atom:link href="https://dibgerge.github.io/tags/shm/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Ensembles of novelty detection classifiers for structural health monitoring using guided waves</title>
       <link>https://dibgerge.github.io/publication/2017-sms/</link>
-      <pubDate>Fri, 17 Nov 2017 00:00:00 -0500</pubDate>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 -0800</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2017-sms/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>Machine Learning and Statistical Signal Processing for Guided Wave Structural Health Monitoring</title>
       <link>https://dibgerge.github.io/project/gwshm/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0800</pubDate>
       
       <guid>https://dibgerge.github.io/project/gwshm/</guid>
       <description>Sparse ultrasonic guided waves sensor networks would increase safety and reduce maintenance costs of current civil and industrial structures by providing continuous information about structural health. Common damage modalities that are of concern include fatigue cracks and corrosion in metals, and delaminations and impact damage in composite materials. Ultrasonic guided wave testing is used in various industries due to its superior ability to rapidly inspect large areas in thin structures. Guided waves travel long distances and interrogate the entire thickness of a structure.</description>
@@ -32,7 +32,7 @@
     <item>
       <title>Design and performance of optimal detectors for guided wave structural health monitoring</title>
       <link>https://dibgerge.github.io/publication/2016-shm/</link>
-      <pubDate>Fri, 01 Jan 2016 00:00:00 -0500</pubDate>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 -0800</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2016-shm/</guid>
       <description></description>
@@ -41,7 +41,7 @@
     <item>
       <title>Guided Wave Structural Health Monitoring for Impact Damage Detection and Characterization</title>
       <link>https://dibgerge.github.io/publication/2015-asc/</link>
-      <pubDate>Thu, 01 Oct 2015 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 01 Oct 2015 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2015-asc/</guid>
       <description></description>
@@ -50,7 +50,7 @@
     <item>
       <title>Feasibility of PZT ceramics for impact damage detection in composite structures</title>
       <link>https://dibgerge.github.io/publication/2014d-qnde/</link>
-      <pubDate>Sun, 20 Jul 2014 00:00:00 -0400</pubDate>
+      <pubDate>Sun, 20 Jul 2014 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2014d-qnde/</guid>
       <description></description>
@@ -59,7 +59,7 @@
     <item>
       <title>Multitechnique monitoring of fatigue damage in adhesively bonded composite lap-joints</title>
       <link>https://dibgerge.github.io/publication/2014b-qnde/</link>
-      <pubDate>Sun, 20 Jul 2014 00:00:00 -0400</pubDate>
+      <pubDate>Sun, 20 Jul 2014 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2014b-qnde/</guid>
       <description></description>
@@ -68,7 +68,7 @@
     <item>
       <title>Advanced Signal Processing Algorithms in Structural Integrity Monitoring</title>
       <link>https://dibgerge.github.io/publication/2014-icons/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 -0500</pubDate>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 -0800</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2014-icons/</guid>
       <description></description>
@@ -77,7 +77,7 @@
     <item>
       <title>Novel Mode Decomposition Algorithms for Lamb Wave Signal Analysis in Online Monitoring of Structures</title>
       <link>https://dibgerge.github.io/publication/2013-ejam/</link>
-      <pubDate>Thu, 14 Mar 2013 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 14 Mar 2013 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2013-ejam/</guid>
       <description></description>
@@ -86,7 +86,7 @@
     <item>
       <title>Wireless Senor Networks for Structural Health Monitoring</title>
       <link>https://dibgerge.github.io/project/wsn/</link>
-      <pubDate>Tue, 27 Apr 2010 00:00:00 -0400</pubDate>
+      <pubDate>Tue, 27 Apr 2010 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/project/wsn/</guid>
       <description>Schematic of sensor network with centralized architecture.

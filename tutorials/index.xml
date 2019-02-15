@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on Ge[o]rges Dib</title>
+    <link>https://dibgerge.github.io/tutorials/</link>
+    <description>Recent content in Tutorials on Ge[o]rges Dib</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Feb 2019 00:00:00 -0800</lastBuildDate>
+    
+	<atom:link href="https://dibgerge.github.io/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Example Page</title>
+      <link>https://dibgerge.github.io/tutorials/math102/example/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://dibgerge.github.io/tutorials/math102/example/</guid>
+      <description>In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:
+Tip 1 &amp;hellip;
+Tip 2 &amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

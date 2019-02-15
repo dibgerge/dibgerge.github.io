@@ -2,12 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
+    <url>
+    
+      <loc>https://dibgerge.github.io/tutorials/</loc>
+      <lastmod>2019-02-09T00:00:00-08:00</lastmod>
+    </url>
+    
   
     
     <url>
     
       <loc>https://dibgerge.github.io/publication/2019-nimpr/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-02-05T19:34:55-05:00</lastmod>
     </url>
     
   
@@ -15,7 +21,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2019-net/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-01-14T00:00:00-08:00</lastmod>
     </url>
     
   
@@ -23,15 +29,39 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2018-pnnl/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2018-12-01T00:00:00-08:00</lastmod>
     </url>
     
   
     
     <url>
     
-      <loc>https://dibgerge.github.io/blog/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <loc>https://dibgerge.github.io/tutorials/math101/unit1/</loc>
+      <lastmod>2018-09-09T00:00:00-07:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dibgerge.github.io/tutorials/math101/unit2/</loc>
+      <lastmod>2018-09-09T00:00:00-07:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dibgerge.github.io/tutorials/math102/example/</loc>
+      <lastmod>2018-09-09T00:00:00-07:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dibgerge.github.io/tutorials/math101/</loc>
+      <lastmod>2018-09-09T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -39,7 +69,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/project/niml/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2018-09-01T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -47,7 +77,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/project/ut-modeling/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2018-09-01T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -55,7 +85,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2017-sms/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-11-17T00:00:00-08:00</lastmod>
     </url>
     
   
@@ -63,7 +93,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2017-iwshm/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-09-01T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -71,7 +101,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2017-qnde/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-07-20T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -79,7 +109,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2017b-qnde/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-07-20T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -87,7 +117,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2017-npic/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-06-11T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -95,7 +125,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2017-pnnl/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-05-05T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -103,7 +133,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2017-ihlrwm/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-04-09T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -111,15 +141,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2017-osti/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://dibgerge.github.io/project/gwshm/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-04-01T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -127,7 +149,15 @@
     <url>
     
       <loc>https://dibgerge.github.io/post/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-01-01T00:00:00-08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dibgerge.github.io/project/gwshm/</loc>
+      <lastmod>2017-01-01T00:00:00-08:00</lastmod>
     </url>
     
   
@@ -135,15 +165,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://dibgerge.github.io/talk/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-01-01T00:00:00-08:00</lastmod>
     </url>
     
   
@@ -151,7 +173,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2016-osti/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2016-09-20T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -159,7 +181,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2016b-osti/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2016-07-16T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -167,15 +189,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/project/ut-sensors/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://dibgerge.github.io/post/getting-started/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2016-04-27T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -183,7 +197,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2016-icapp/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2016-04-17T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -191,7 +205,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2016-shm/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2016-01-01T00:00:00-08:00</lastmod>
     </url>
     
   
@@ -199,7 +213,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2015-asc/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-10-01T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -207,7 +221,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2015-osti/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-09-08T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -215,7 +229,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2015b-qnde/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-07-20T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -223,7 +237,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2015-qnde/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-07-20T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -231,7 +245,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2015-phm/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-06-22T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -239,7 +253,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2015b-osti/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-06-19T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -247,7 +261,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2015-ieee-sensors/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-01-01T00:00:00-08:00</lastmod>
     </url>
     
   
@@ -255,7 +269,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2014-qnde/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2014-07-20T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -263,7 +277,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2014d-qnde/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2014-07-20T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -271,7 +285,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2014c-qnde/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2014-07-20T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -279,7 +293,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2014b-qnde/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2014-07-20T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -287,7 +301,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/project/gmr/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2014-07-01T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -295,7 +309,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2014-icons/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2014-01-01T00:00:00-08:00</lastmod>
     </url>
     
   
@@ -303,7 +317,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2013-me/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2013-10-01T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -311,7 +325,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2013-ejam/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2013-03-14T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -319,7 +333,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2012-ndte/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2012-11-01T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -327,7 +341,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2011-isaem/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2012-09-05T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -335,7 +349,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/project/autoanalysis/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2012-06-01T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -343,7 +357,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2011-qnde/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2011-07-22T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -351,7 +365,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2011b-qnde/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2011-07-22T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -359,7 +373,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication/2010-qnde/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2010-07-22T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -367,7 +381,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/project/wsn/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2010-04-27T00:00:00-07:00</lastmod>
     </url>
     
   
@@ -375,7 +389,6 @@
     <url>
     
       <loc>https://dibgerge.github.io/author/admin/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
     </url>
     
   
@@ -383,7 +396,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication_types/1/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-09-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -392,7 +405,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication_types/2/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-02-05T19:34:55-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -401,7 +414,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication_types/4/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2018-12-01T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -410,7 +423,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/aaron-a-diaz/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2018-12-01T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -419,25 +432,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/aaron-diaz/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://dibgerge.github.io/tags/academic/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://dibgerge.github.io/authors/admin/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-07-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -446,7 +441,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/al-f-pardini/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-07-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -455,7 +450,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/allan-f-pardini/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-06-22T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -464,7 +459,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/anton-khomenko/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-11-17T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -473,7 +468,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/antonello-tamburrino/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-01-01T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -482,7 +477,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/arun-veeramany/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2016-09-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -491,7 +486,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/ash-thakker/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-04-09T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -508,7 +503,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2018-12-01T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -517,7 +512,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/brian-j-tucker/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-04-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -526,7 +521,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/brian-j.tucker/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-02-05T19:34:55-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -543,7 +538,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/chaofeng-ye/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2014-07-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -552,7 +547,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/chris-bonebrake/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-06-11T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -561,7 +556,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/christian-c.cowles/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-02-05T19:34:55-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -570,7 +565,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/christopher-bonebrake/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2016-09-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -579,7 +574,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/cody-m-walker/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2016-07-16T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -588,7 +583,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/ermias-koricho/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-11-17T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -597,7 +592,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/evelyn-h-hirt/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2016-09-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -606,7 +601,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/g-dib/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2016-04-17T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -615,7 +610,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-01-20T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -624,7 +619,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/gerges-dib/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-02-05T19:34:55-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -633,7 +628,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/guang-yang/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-01-01T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -642,7 +637,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/h-qiao/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-07-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -651,7 +646,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/herman-m.cho/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-02-05T19:34:55-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -660,7 +655,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/j-cuta/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-04-09T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -669,7 +664,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/j-w-hong/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2010-07-22T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -678,7 +673,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/jaejoon-kim/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2012-09-05T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -687,7 +682,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/janardhin-padiyar/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2011-07-22T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -696,7 +691,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/jangbom-chai/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-01-14T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -705,7 +700,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/john-e.smart/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-02-05T19:34:55-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -714,7 +709,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/john-r-tedeschi/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-07-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -723,7 +718,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/jonathan-d-suter/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-07-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -732,7 +727,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/jonathan-r-tedeschi/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-09-08T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -741,7 +736,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/joseph-tucker/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-06-19T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -750,7 +745,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/junjun-xin/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2012-09-05T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -759,7 +754,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/krishnan-balasubramaniam/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2011-07-22T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -768,7 +763,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/l-luzi/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2016-04-17T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -777,7 +772,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/lalita-udpa/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-11-17T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -786,7 +781,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/lassaad-mhamdi/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2010-07-22T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -795,7 +790,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/leo-s-fifield/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-07-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -804,7 +799,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/leonard-s-fifield/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-09-08T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -813,7 +808,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/lorenzo-luzi/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-06-22T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -822,7 +817,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/lu-zhang/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2012-09-05T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -831,7 +826,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/m-s-prowant/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2016-04-17T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -840,7 +835,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/mahmoodul-haq/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-11-17T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -849,7 +844,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/mark-a-jones/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-09-08T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -858,7 +853,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/matthew-prowant/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-09-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -867,7 +862,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/matthew-s-prowant/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2018-12-01T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -876,7 +871,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/michael-larche/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-07-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -885,7 +880,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/michael-r-larche/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2018-12-01T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -894,7 +889,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/michael-t-anderson/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-07-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -903,7 +898,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/morris-good/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-09-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -912,7 +907,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/morris-s-good/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-07-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -921,7 +916,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/tags/nde/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-01-14T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -930,7 +925,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/nicholas-r.-myllenbeck/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-02-05T19:34:55-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -939,7 +934,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/nizar-lajnef/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2010-07-22T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -948,7 +943,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/tags/nuclear/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-09-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -957,7 +952,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/oleksii-karpenko/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-11-17T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -966,7 +961,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/p-ramuhalli/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2016-04-17T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -975,7 +970,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/patrick-l.feng/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-02-05T19:34:55-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -984,7 +979,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/paul-e.-keller/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-02-05T19:34:55-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -993,7 +988,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/philip-j-smith/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-04-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1002,7 +997,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/philip-j.smith/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-02-05T19:34:55-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1011,7 +1006,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/pradeep-ramuhalli/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-01-14T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1020,7 +1015,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/project/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2018-09-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1029,7 +1024,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/publication_types/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-09-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1038,7 +1033,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/richard-e-jacob/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2018-12-01T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1047,7 +1042,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/richard-t-kouzes/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-04-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1056,7 +1051,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/richard-t.kouzes/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-02-05T19:34:55-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1065,7 +1060,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/ryan-lattrel/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2013-10-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1074,7 +1069,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/ryan-m-meyer/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-04-09T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1083,7 +1078,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/s-roy/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2016-04-17T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1092,7 +1087,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/tags/shm/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-11-17T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1101,7 +1096,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/samuel-s-sexton/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-07-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1110,7 +1105,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/samuel-sexton/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-07-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1119,7 +1114,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/samuel-w-glass/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-09-08T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1128,7 +1123,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/samuel-w-glass-iii/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-04-09T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1137,7 +1132,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/satish-s-udpa/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-10-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1146,7 +1141,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/satish-udpa/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2014-07-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1155,7 +1150,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/seyed-safdernejad/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2014-07-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1164,7 +1159,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/shantanu-majumdar/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2012-09-05T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1173,7 +1168,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/stan-g-pitman/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2016-07-16T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1182,7 +1177,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/stephen-payne/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-02-05T19:34:55-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1191,7 +1186,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/surajit-roy/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-01-14T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1200,7 +1195,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/susan-crawford/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-07-20T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1209,7 +1204,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/susan-l-crawford/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2017-05-05T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1218,7 +1213,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/tags/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-01-14T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1227,7 +1222,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/tariq-khan/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2012-09-05T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1236,7 +1231,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/trenton-s-hartman/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2015-09-08T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1245,7 +1240,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/xin-liu/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2012-11-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1254,7 +1249,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/yiming-deng/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2012-11-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1263,7 +1258,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/authors/zhiwei-zeng/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2012-11-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1272,7 +1267,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/tags/deep-learning/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2018-09-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1281,7 +1276,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/tags/machine-learning/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2018-09-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1290,7 +1285,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/tags/nuclear/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2019-02-05T19:34:55-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1299,7 +1294,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/tags/signal-processing/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2018-09-01T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1308,7 +1303,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/tags/ultrasound/</loc>
-      <lastmod>2019-02-07T10:55:08-05:00</lastmod>
+      <lastmod>2018-12-01T00:00:00-08:00</lastmod>
       <priority>0</priority>
     </url>
     

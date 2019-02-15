@@ -6,17 +6,8 @@
     <description>Recent content in Ge[o]rges Dib on Ge[o]rges Dib</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Jan 2019 00:00:00 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jan 2019 00:00:00 -0800</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Tutorials</title>
-      <link>https://dibgerge.github.io/blog/tutorials/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
-      
-      <guid>https://dibgerge.github.io/blog/tutorials/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Investigations of degradation and encapsulation of plastic scintillator</title>
@@ -30,7 +21,7 @@
     <item>
       <title>In-situ fatigue monitoring procedure using nonlinear ultrasonic surface waves considering the nonlinear effects in the measurement system</title>
       <link>https://dibgerge.github.io/publication/2019-net/</link>
-      <pubDate>Mon, 14 Jan 2019 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 14 Jan 2019 00:00:00 -0800</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2019-net/</guid>
       <description></description>
@@ -39,16 +30,114 @@
     <item>
       <title>Ultrasound Modeling and Simulation: Status Update</title>
       <link>https://dibgerge.github.io/publication/2018-pnnl/</link>
-      <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+      <pubDate>Sat, 01 Dec 2018 00:00:00 -0800</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2018-pnnl/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Differentiation</title>
+      <link>https://dibgerge.github.io/tutorials/math101/unit1/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://dibgerge.github.io/tutorials/math101/unit1/</guid>
+      <description>
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;Consider a function (f(x)) represented by the curve in Figure 1. The derivative of $f(x)$ at a point $x=x_0$, denoted by $f&amp;rsquo;(x_0)$, is the slope of the tangent line to the graph of $f(x)$ at the point $(x_0, f(x_0))$. A tangent line is the &lt;em&gt;limit&lt;/em&gt; of the secant lines joining points $P=(x_0, f(x_0))$ and $Q$ on the graph of $f(x)$ as $Q$ approaches $P​$.&lt;/p&gt;
+
+
+
+
+&lt;div class=&#34;gallery caption-position-center caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+	  
+  
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://dibgerge.github.io/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;div class=&#34;box&#34; style=&#34;max-width:300px&#34;&gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://dibgerge.github.io/Figures/session-001-differentiation.png&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;Figures/session-001-differentiation.png&#34; alt=&#34;A graph with secant and tangent lines (left).&#34;/&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;session-001-differentiation.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;A graph with secant and tangent lines (left).&lt;/p&gt;
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+  
+
+&lt;div class=&#34;box&#34; style=&#34;max-width:300px&#34;&gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://dibgerge.github.io/../Figures/session-001-secant.png&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;../Figures/session-001-secant.png&#34; alt=&#34;Geometric definition of the derivative&#34;/&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;session-001-secant.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Geometric definition of the derivative&lt;/p&gt;
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+
+
+&lt;p&gt;The slope of secant $PQ$ is rise divided by run, or the ratio $\frac{\Delta f}{\Delta x}$ as shown in Figure 2. As $Q$ gets closer to $P$, the distance $\Delta x$ goes to zero. Then, the derivate which is equivalent to the slope of tangent, can be expressed mathematically as:&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;$$\begin{align}
+m &amp;amp;= f&amp;rsquo;(x_0) \\&lt;br /&gt;
+&amp;amp;= \lim_{Q \rightarrow P} \frac{\Delta f}{\Delta x} \nonumber \\&lt;br /&gt;
+&amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{\Delta f}{\Delta x} \\&lt;br /&gt;
+&amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}
+\end{align}$$&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Page</title>
+      <link>https://dibgerge.github.io/tutorials/math101/unit2/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://dibgerge.github.io/tutorials/math101/unit2/</guid>
+      <description>&lt;p&gt;The applications of calculus&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Page</title>
+      <link>https://dibgerge.github.io/tutorials/math102/example/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://dibgerge.github.io/tutorials/math102/example/</guid>
+      <description>
+
+&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-1&#34;&gt;Tip 1&lt;/h2&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;tip-2&#34;&gt;Tip 2&lt;/h2&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Neural Interactive Machine Learning</title>
       <link>https://dibgerge.github.io/project/niml/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/project/niml/</guid>
       <description>&lt;p&gt;Machine intelligence advances have elevated the potential of computer-based video analytics but machines alone still fall short of human visual recognition capabilities. Humans, however, cannot address the high volumes of data in need of analysis. Despite exponential growth in machine analytics, opportunities for improvement remain (reducing training sets, improving cross-platform compatibility, adapting to changing environments, etc.). This project aims at achieving higher performance thresholds by integrating the strengths of human and machine reasoning.&lt;/p&gt;
@@ -62,7 +151,7 @@
     <item>
       <title>Validation of Ultrasound NDE Simulation Models</title>
       <link>https://dibgerge.github.io/project/ut-modeling/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/project/ut-modeling/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Nondestructive_testing&#34; target=&#34;_blank&#34;&gt;Non-destructive evaluation and testing (NDE)&lt;/a&gt; is essential for ensuring the safety of operational nuclear power plants around the world. Ultrasonic testing is an NDE technique which is largely utilized for inspecting pipelines in the nuclear industry due to its ability to detect flaws hidden within the inner diameter of pipelines.&lt;/p&gt;
@@ -76,7 +165,7 @@
     <item>
       <title>Ensembles of novelty detection classifiers for structural health monitoring using guided waves</title>
       <link>https://dibgerge.github.io/publication/2017-sms/</link>
-      <pubDate>Fri, 17 Nov 2017 00:00:00 -0500</pubDate>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 -0800</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2017-sms/</guid>
       <description></description>
@@ -85,7 +174,7 @@
     <item>
       <title>Challenges and Solutions in SHM for Nuclear Power Environments</title>
       <link>https://dibgerge.github.io/publication/2017-iwshm/</link>
-      <pubDate>Fri, 01 Sep 2017 00:00:00 -0400</pubDate>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2017-iwshm/</guid>
       <description></description>
@@ -94,7 +183,7 @@
     <item>
       <title>On the usage of ultrasound computational models for decision making under ambiguity</title>
       <link>https://dibgerge.github.io/publication/2017-qnde/</link>
-      <pubDate>Thu, 20 Jul 2017 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2017-qnde/</guid>
       <description></description>
@@ -103,7 +192,7 @@
     <item>
       <title>Preliminary design of high temperature ultrasonic transducers for liquid sodium environments</title>
       <link>https://dibgerge.github.io/publication/2017b-qnde/</link>
-      <pubDate>Thu, 20 Jul 2017 00:00:00 -0400</pubDate>
+      <pubDate>Thu, 20 Jul 2017 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2017b-qnde/</guid>
       <description></description>
@@ -112,7 +201,7 @@
     <item>
       <title>Integration and Assessment of Component Health Prognostics in Supervisory Control Systems</title>
       <link>https://dibgerge.github.io/publication/2017-npic/</link>
-      <pubDate>Sun, 11 Jun 2017 00:00:00 -0400</pubDate>
+      <pubDate>Sun, 11 Jun 2017 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2017-npic/</guid>
       <description></description>
@@ -121,7 +210,7 @@
     <item>
       <title>Validation of Ultrasonic Nondestructive Examination (NDE) Computational Models – Phase 1</title>
       <link>https://dibgerge.github.io/publication/2017-pnnl/</link>
-      <pubDate>Fri, 05 May 2017 00:00:00 -0400</pubDate>
+      <pubDate>Fri, 05 May 2017 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2017-pnnl/</guid>
       <description></description>
@@ -130,33 +219,10 @@
     <item>
       <title>Detecting Water in Dry Storage Canisters for Used Fuel</title>
       <link>https://dibgerge.github.io/publication/2017-ihlrwm/</link>
-      <pubDate>Sun, 09 Apr 2017 00:00:00 -0400</pubDate>
+      <pubDate>Sun, 09 Apr 2017 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2017-ihlrwm/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>PVT Degradation Studies: Acoustic Diagnostics</title>
-      <link>https://dibgerge.github.io/publication/2017-osti/</link>
-      <pubDate>Sat, 01 Apr 2017 00:00:00 -0400</pubDate>
-      
-      <guid>https://dibgerge.github.io/publication/2017-osti/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine Learning and Statistical Signal Processing for Guided Wave Structural Health Monitoring</title>
-      <link>https://dibgerge.github.io/project/gwshm/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
-      
-      <guid>https://dibgerge.github.io/project/gwshm/</guid>
-      <description>&lt;p&gt;Sparse ultrasonic guided waves sensor networks would increase safety and reduce maintenance costs of current civil and industrial structures by providing continuous information about structural health. Common damage modalities that are of concern include fatigue cracks and corrosion in metals, and delaminations and impact damage in composite materials. Ultrasonic guided wave testing is used in various industries due to its superior ability to rapidly inspect large areas in thin structures. Guided waves travel long distances and interrogate the entire thickness of a structure. These properties make guided waves of interest in structural health monitoring (SHM) since a small number of transducers is required to monitor a large structure.&lt;/p&gt;
-
-&lt;p&gt;Due to the complexity of guided wave signals, detection strategies in guided wave SHM often are based on detecting changes in the signals based on reference signals collected when the structure is in its pristine state. Damage detection is challenging because there are multitude of other factors that affect the signal such as sensor aging, temperature changes, humidity, and/or varying loading conditions.&lt;/p&gt;
-
-&lt;p&gt;In this project, we developed machine learning and statistical signal processing techniques for building reliable and efficient methods for damage classification in structures under varying environmental and operating conditions. In addition, we developed statistical methods for quantifying the probability of detection due to sensor aging and variations in environmental and operating condition.&lt;/p&gt;
-</description>
     </item>
     
   </channel>

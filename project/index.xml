@@ -6,7 +6,7 @@
     <description>Recent content in Projects on Ge[o]rges Dib</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://dibgerge.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Neural Interactive Machine Learning</title>
       <link>https://dibgerge.github.io/project/niml/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/project/niml/</guid>
       <description>Machine intelligence advances have elevated the potential of computer-based video analytics but machines alone still fall short of human visual recognition capabilities. Humans, however, cannot address the high volumes of data in need of analysis. Despite exponential growth in machine analytics, opportunities for improvement remain (reducing training sets, improving cross-platform compatibility, adapting to changing environments, etc.). This project aims at achieving higher performance thresholds by integrating the strengths of human and machine reasoning.</description>
@@ -23,7 +23,7 @@
     <item>
       <title>Validation of Ultrasound NDE Simulation Models</title>
       <link>https://dibgerge.github.io/project/ut-modeling/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 -0400</pubDate>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/project/ut-modeling/</guid>
       <description>Non-destructive evaluation and testing (NDE) is essential for ensuring the safety of operational nuclear power plants around the world. Ultrasonic testing is an NDE technique which is largely utilized for inspecting pipelines in the nuclear industry due to its ability to detect flaws hidden within the inner diameter of pipelines.
@@ -33,7 +33,7 @@ Computer modeling and simulation is becoming an essential tool for transducer de
     <item>
       <title>Machine Learning and Statistical Signal Processing for Guided Wave Structural Health Monitoring</title>
       <link>https://dibgerge.github.io/project/gwshm/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 -0500</pubDate>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 -0800</pubDate>
       
       <guid>https://dibgerge.github.io/project/gwshm/</guid>
       <description>Sparse ultrasonic guided waves sensor networks would increase safety and reduce maintenance costs of current civil and industrial structures by providing continuous information about structural health. Common damage modalities that are of concern include fatigue cracks and corrosion in metals, and delaminations and impact damage in composite materials. Ultrasonic guided wave testing is used in various industries due to its superior ability to rapidly inspect large areas in thin structures. Guided waves travel long distances and interrogate the entire thickness of a structure.</description>
@@ -42,7 +42,7 @@ Computer modeling and simulation is becoming an essential tool for transducer de
     <item>
       <title>Ultrasound Sensors and Methods for Nuclear Power Plant Environments</title>
       <link>https://dibgerge.github.io/project/ut-sensors/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/project/ut-sensors/</guid>
       <description>Schematic of nuclear power plant components which require monitoring using NDE techniques.
@@ -54,7 +54,7 @@ This is a topic co project focuses on demonstration of ultrasound sensing techno
     <item>
       <title>Giant Magnetoresistance Sensors for Aircraft Inspection</title>
       <link>https://dibgerge.github.io/project/gmr/</link>
-      <pubDate>Tue, 01 Jul 2014 00:00:00 -0400</pubDate>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/project/gmr/</guid>
       <description>Nondestructive inspection of multi-layered airframe geometries is a significant challenge largely due to complexity of test geometry and deep lying defects. Structural geometry of interest includes different configurations of aircraft skins, stringers, doublers, wing-splice with fasteners and deep lying cracks and corrosion. Inspection of these complex geometries requires dealing with a large number of variables which affect damage detection performance (material, size, thickness, edges, air gaps, etc.), experimental sensor system (frequency, waveform shape, harmonics, sampling intervals, circuit design etc.</description>
@@ -63,7 +63,7 @@ This is a topic co project focuses on demonstration of ultrasound sensing techno
     <item>
       <title>Eddy Current Inspection Autoanalysis of Steam Generator Tubes in Nuclear Power Plants</title>
       <link>https://dibgerge.github.io/project/autoanalysis/</link>
-      <pubDate>Fri, 01 Jun 2012 00:00:00 -0400</pubDate>
+      <pubDate>Fri, 01 Jun 2012 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/project/autoanalysis/</guid>
       <description>Processing pipeline for autoanalysis software.
@@ -74,7 +74,7 @@ Steam generators (SG) are heat exchanger units used in nuclear power plants. Eac
     <item>
       <title>Wireless Senor Networks for Structural Health Monitoring</title>
       <link>https://dibgerge.github.io/project/wsn/</link>
-      <pubDate>Tue, 27 Apr 2010 00:00:00 -0400</pubDate>
+      <pubDate>Tue, 27 Apr 2010 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/project/wsn/</guid>
       <description>Schematic of sensor network with centralized architecture.
