@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MIT 18.01: Single Variable Calculus on Ge[o]rges Dib</title>
+    <link>https://dibgerge.github.io/tutorials/mit1801/</link>
+    <description>Recent content in MIT 18.01: Single Variable Calculus on Ge[o]rges Dib</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Sep 2018 00:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="https://dibgerge.github.io/tutorials/mit1801/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Differentiation</title>
+      <link>https://dibgerge.github.io/tutorials/mit1801/unit1-1-definition/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://dibgerge.github.io/tutorials/mit1801/unit1-1-definition/</guid>
+      <description>Definition of a Derivative Consider a function $f(x)$ represented by the curve in Figure 1. The derivative of $f(x)$ at a point $x=x_0$, denoted by $f&amp;rsquo;(x_0)$, is the slope of the tangent line to the graph of $f(x)$ at the point $(x_0, f(x_0))$. A tangent line is the limit of the secant lines joining points $P=(x_0, f(x_0))$ and $Q$ on the graph of $f(x)$ as $Q$ approaches $P​$.
+    Figure 1: A graph with secant and tangent lines.</description>
+    </item>
+    
+    <item>
+      <title>Differentiation Rules</title>
+      <link>https://dibgerge.github.io/tutorials/mit1801/unit1-2-rules/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://dibgerge.github.io/tutorials/mit1801/unit1-2-rules/</guid>
+      <description>Derivative of a sum The derivative of the sum of two functions is the sum of the derivatives:  $$ (u + v)^\prime(x) = u^\prime(x) + v^\prime(x) $$
+  Where the function $(u+v)(x)$ is just a shorthand for $u(x) + v(x)$.
+Proof Applying the definition of the derivative to $(u + v)(x)$, we get:
+$$ \begin{align} (u+v)^\prime(x) &amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{(u+v)(x+\Delta x) - (u+v)(x)}{\Delta x} \\</description>
+    </item>
+    
+    <item>
+      <title>Example Page</title>
+      <link>https://dibgerge.github.io/tutorials/mit1801/unit2/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://dibgerge.github.io/tutorials/mit1801/unit2/</guid>
+      <description>The applications of calculus</description>
+    </item>
+    
+  </channel>
+</rss>

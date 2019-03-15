@@ -10,6 +10,625 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Tensorflow, PyTorch, and MxNet</title>
+      <link>https://dibgerge.github.io/post/tf-mxnet-pytorch/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 -0700</pubDate>
+      
+      <guid>https://dibgerge.github.io/post/tf-mxnet-pytorch/</guid>
+      <description>
+
+&lt;p&gt;In the past 2 years, I have been exclusively using Tensorflow with Keras for training and testing deep neural networks. I never really thought twice about it, because this is what everyone else seems to be using. I mean, just looking at the popularity of those frameworks in github compared with their closest competitors was enough to make the decision for me. Here are the approximate statistics as of March 2019 for the four most popular frameworks.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;a href=&#34;https://github.com/tensorflow/tensorflow&#34; target=&#34;_blank&#34;&gt;Tensorflow&lt;/a&gt;&lt;/th&gt;
+&lt;th&gt;&lt;a href=&#34;https://github.com/keras-team/keras&#34; target=&#34;_blank&#34;&gt;Keras&lt;/a&gt;&lt;/th&gt;
+&lt;th&gt;&lt;a href=&#34;https://github.com/pytorch/pytorch&#34; target=&#34;_blank&#34;&gt;Pytorch&lt;/a&gt;&lt;/th&gt;
+&lt;th&gt;&lt;a href=&#34;https://github.com/apache/incubator-mxnet&#34; target=&#34;_blank&#34;&gt;Mxnet&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Github &lt;i class=&#34;fas fa-star&#34;&gt;&lt;/i&gt;&lt;/td&gt;
+&lt;td&gt;122,500&lt;/td&gt;
+&lt;td&gt;39,000&lt;/td&gt;
+&lt;td&gt;25,500&lt;/td&gt;
+&lt;td&gt;16,500&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Recently, I have been going through the lectures of &lt;a href=&#34;fast.ai&#34; target=&#34;_blank&#34;&gt;Jeremy Howard&amp;rsquo;s Fast.ai&lt;/a&gt; excellent class, where they use Pytorch as the backend of the high-level library they built. This was one of the reasons I started questioning what was I missing by limiting myself to Tensorflow. Also, I have seen the extensive vision library of &lt;a href=&#34;https://gluon-cv.mxnet.io/index.html&#34; target=&#34;_blank&#34;&gt;MxNet&amp;rsquo;s GluonCV&lt;/a&gt;, and this really made me feel that I might be missing out.&lt;/p&gt;
+
+&lt;p&gt;In addition to all the fear of missing out stuff, I was coding my own implementation of &lt;a href=&#34;https://gluon-cv.mxnet.io/index.html&#34; target=&#34;_blank&#34;&gt;ResNet&lt;/a&gt;, and I scoured online the plethora of different implementations of ResNet, some with lots of &lt;i class=&#34;fas fa-star&#34;&gt;s&lt;/i&gt;. I realized that many had implementation details which differed from the original paper, and it was not clear if it is intentional or not. Thus I really though that a test in reproducibility is due and so I did.&lt;/p&gt;
+
+&lt;p&gt;I set out to compare the three frameworks: tensorflow, pytorch, and mxnet. I wanted to use some of the built-in convolutional neural networks with built-in pre-trained weights to directly classify Imagenet&amp;rsquo;s validation dataset images. Throughout this comparison, I was looking for three factors:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Ease of loading the dataset and reproducing the pre-processing steps required before feeding images to the neural network for classification.&lt;/li&gt;
+&lt;li&gt;Computed error rate vs framework&amp;rsquo;s reported error. It would be also nice to compare the results with the original publication, but most report validation error using 10-crops, and here we use only single crop.&lt;/li&gt;
+&lt;li&gt;Inference speed.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;dataset-and-convolutional-neural-network-architectures&#34;&gt;Dataset and Convolutional Neural Network Architectures&lt;/h2&gt;
+
+&lt;p&gt;The datatset I used was Imagenet&amp;rsquo;s validation dataset which constitutes of 50,000 images with different sizes. The easiest way to get your hands on the data is to download it from Kaggle &lt;a href=&#34;https://www.kaggle.com/c/imagenet-object-localization-challenge&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;For the frameworks, I used the following versions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Tensorflow 1.13&lt;/strong&gt; with Keras as the front-end interface (Note this is different from using Keras with Tensorflow backend since now Tensorflow comes packed with its own Keras version, which is not compatible with other frameworks).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PyTorch 1.0.1&lt;/strong&gt; with PyTorch vision for convolutional neural networks implementations&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MxNet 1.4&lt;/strong&gt; with GluonCV for convolutional neural networks implementaitons&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For the convolutional neural network, I considered four different architectures: &lt;a href=&#34;https://arxiv.org/abs/1512.03385&#34; target=&#34;_blank&#34;&gt;ResNet50&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/1512.03385&#34; target=&#34;_blank&#34;&gt;Resnet101&lt;/a&gt;, &lt;a href=&#34;https://arxiv.org/abs/1704.04861&#34; target=&#34;_blank&#34;&gt;Mobilenet&lt;/a&gt;, and &lt;a href=&#34;https://arxiv.org/abs/1608.06993&#34; target=&#34;_blank&#34;&gt;Densenet121&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The top 1 error published on each frameworks&amp;rsquo; website, based on a single center crop evaluation is as follows:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;&lt;a href=&#34;https://github.com/keras-team/keras-applications&#34; target=&#34;_blank&#34;&gt;Tensorflow (Keras)&lt;/a&gt;&lt;/th&gt;
+&lt;th&gt;&lt;a href=&#34;https://pytorch.org/docs/stable/torchvision/models.html&#34; target=&#34;_blank&#34;&gt;Pytorch&lt;/a&gt;&lt;/th&gt;
+&lt;th&gt;&lt;a href=&#34;https://gluon-cv.mxnet.io/model_zoo/classification.html&#34; target=&#34;_blank&#34;&gt;Mxnet (GluonCV)&lt;/a&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Resnet50&lt;/td&gt;
+&lt;td&gt;25.10&lt;/td&gt;
+&lt;td&gt;23.85&lt;/td&gt;
+&lt;td&gt;22.64&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Resnet101&lt;/td&gt;
+&lt;td&gt;23.60&lt;/td&gt;
+&lt;td&gt;22.63&lt;/td&gt;
+&lt;td&gt;21.66&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Mobilenet&lt;/td&gt;
+&lt;td&gt;29.60&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;26.72&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Densenet121&lt;/td&gt;
+&lt;td&gt;25.0&lt;/td&gt;
+&lt;td&gt;25.35&lt;/td&gt;
+&lt;td&gt;25.03&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;We note here that the error for Resnet101 is reported in Keras Applications, but Resnet101 is not packaged with Tensorflow 1.13, which is used in this experiment, and thus we won&amp;rsquo;t have any results for it. Also, Pytorch does not come packaged with an implementation of Mobilenet.&lt;/p&gt;
+
+&lt;p&gt;Also, it is interesting to see that especially for Resnet implementations, it is obvious that the accuracy of Mxnet &amp;gt; PyTorch &amp;gt; Tensorflow.&lt;/p&gt;
+
+&lt;h2 id=&#34;experiments&#34;&gt;Experiments&lt;/h2&gt;
+
+&lt;p&gt;All the code used here can be found on &lt;a href=&#34;https://github.com/dibgerge/blog-tf-mxnet-pytorch&#34; target=&#34;_blank&#34;&gt;github&lt;/a&gt;. The biggest challenge here really is loading and pre-processing the images the right way. The following briefly describes how I did it for each of the three frameworks.&lt;/p&gt;
+
+&lt;h3 id=&#34;tensorflow-pre-processing&#34;&gt;Tensorflow pre-processing&lt;/h3&gt;
+
+&lt;p&gt;Uses the &lt;code&gt;Sequence&lt;/code&gt; abstract class for loading the data using a a generator. The pre-processing pipeline is as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Resized the shorter side of the image to 256 pixels (implemented manually).&lt;/li&gt;
+&lt;li&gt;Center cropped the image to 224 x 224 pixels (implemented manually).&lt;/li&gt;
+&lt;li&gt;Apply the function &lt;code&gt;preprocess_input&lt;/code&gt; which applies the appropriate normalization based on how the network is trained. This function is provided with each different architecture built-in Tensorflow&amp;rsquo;s Keras frontend.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;pytorch-pre-processing&#34;&gt;Pytorch pre-processing&lt;/h3&gt;
+
+&lt;p&gt;Used the &lt;code&gt;Dataset&lt;/code&gt; and &lt;code&gt;Dataloader&lt;/code&gt; interfaces to feed the data to the neural network. The standard pipeline for pre-processing images for all architectures is documented and is a composition of four transforms using Pytorch&amp;rsquo;s &lt;code&gt;transforms&lt;/code&gt; API:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Resize image to 256 pixels (using &lt;code&gt;transforms.Resize&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Center image to 224 pixels (using &lt;code&gt;transforms.CenterCrop&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Convert images to pytorch tensor (using &lt;code&gt;transforms.ToTensor&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Normalize image by mean subtraction and standard deviation scaling (using &lt;code&gt;transforms.Normalize&lt;/code&gt;). The normalization values are given in the Pytorch&amp;rsquo;s documentation.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;mxnet-pre-processing&#34;&gt;Mxnet pre-processing&lt;/h3&gt;
+
+&lt;p&gt;Used the &lt;code&gt;Dataset&lt;/code&gt; and &lt;code&gt;Dataloader&lt;/code&gt; interfaces to feed the data to the neural network. Mxnet comes packaged with a preset function which applies the required pipeline for models pre-trained on imagenet, using the &lt;code&gt;gluoncv.data.transforms.presets.imagenet.transform_eval&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;h3 id=&#34;results&#34;&gt;Results&lt;/h3&gt;
+
+&lt;p&gt;The following table summarizes the achieved error percentages for each of the four architectures using the three different frameworks.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;(% error)&lt;/th&gt;
+&lt;th&gt;Tensorflow&lt;/th&gt;
+&lt;th&gt;Pytorch&lt;/th&gt;
+&lt;th&gt;Mxnet&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Resnet50&lt;/td&gt;
+&lt;td&gt;26.92&lt;/td&gt;
+&lt;td&gt;23.87&lt;/td&gt;
+&lt;td&gt;22.64&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Resnet101&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;22.63&lt;/td&gt;
+&lt;td&gt;21.60&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Mobilenet&lt;/td&gt;
+&lt;td&gt;29.91&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;26.73&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Densenet121&lt;/td&gt;
+&lt;td&gt;26.69&lt;/td&gt;
+&lt;td&gt;25.57&lt;/td&gt;
+&lt;td&gt;25.10&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Interestingly, although I had the most experience with Keras, I could not reproduce the published results for Resnet and Densenet. This is probably because I had to manually implement the image resizing and cropping, which might be different one used to generate the published results. On the other hand, Pytorch provides the required documentation to be able to reproduce the results very closely. MxNet takes it even a step further by providing a single function which applies all required pre-processing, and the results match very well with published ones.&lt;/p&gt;
+
+&lt;p&gt;As for running times, I measured the total running time for classifying 50,000 images.  All predictions were made on GPU (Nvidia GTX 1080 Ti), while the image pre-processing was made on CPU. The following tables summarizes the running time results in seconds. &lt;strong&gt;Please take those results with a huge grain of salt, since times vary a lot when loading and reloading large data from disk&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;(seconds)&lt;/th&gt;
+&lt;th&gt;Tensorflow&lt;/th&gt;
+&lt;th&gt;Pytorch&lt;/th&gt;
+&lt;th&gt;Mxnet&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Resnet50&lt;/td&gt;
+&lt;td&gt;137&lt;/td&gt;
+&lt;td&gt;119&lt;/td&gt;
+&lt;td&gt;140&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Resnet101&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;159&lt;/td&gt;
+&lt;td&gt;214&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Mobilenet&lt;/td&gt;
+&lt;td&gt;82&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;118&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Densenet121&lt;/td&gt;
+&lt;td&gt;173&lt;/td&gt;
+&lt;td&gt;120&lt;/td&gt;
+&lt;td&gt;195&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;First, those results are somehow unfair to tensorflow. This is because I used threading with 4 workers for pre-processing images in Tensorflow, while 4 workers with multiprocessing was used for MxNet and Pytorch. But, this is rather Tensorflow/keras fault due to a &lt;a href=&#34;https://github.com/keras-team/keras/issues/10855&#34; target=&#34;_blank&#34;&gt;bug&lt;/a&gt; not allowing me to use multiprocessing. Also, for Mxnet and Pytorch I measured the average time it took to classify 10 images (the batch size used). I did not do this in Tensorflow, because there is no easy way to measure per-batch times.&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;(milliseconds)&lt;/th&gt;
+&lt;th&gt;Tensorflow*&lt;/th&gt;
+&lt;th&gt;Pytorch&lt;/th&gt;
+&lt;th&gt;Mxnet&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Resnet50&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;6.7 $\pm$ 4.3&lt;/td&gt;
+&lt;td&gt;12.1 $\pm$ 1.9&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Resnet101&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;11.8 $\pm$ 1.2&lt;/td&gt;
+&lt;td&gt;21.0 $\pm$ 3.2&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Mobilenet&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;6.7 $\pm$ 1.5&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Densenet121&lt;/td&gt;
+&lt;td&gt;N/A&lt;/td&gt;
+&lt;td&gt;15.6 $\pm$ 1.7&lt;/td&gt;
+&lt;td&gt;26.7 $\pm$ 3.7&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Most of the time here is being spent loading the data from disk, and the GPU is not fully utilized. For example, based on average inference of 10 images in Resnet50, it takes about 33.5 seconds to classify all 50,000 images using PyTorch and about 60.5 seconds using Mxnet. We can reduce total inference by more than half if the GPU is kept busy.
+Thus, the importance of handling data appropriately if speed matters.&lt;/p&gt;
+
+&lt;h2 id=&#34;who-is-the-winner&#34;&gt;Who is the winner?&lt;/h2&gt;
+
+&lt;p&gt;I think this experiment allowed me to assess three things:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Availability of pre-trained networks&lt;/strong&gt;: trophy goes to &lt;em&gt;Mxnet&lt;/em&gt;. The extensive vision library of architectures/preset image processing is very impressive. Jury still out on other domains (RL, NLP). Tensorflow is a second, and Pytorch did not have much architecture packaged with it.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Reproducibility&lt;/strong&gt;: Again, trophy to &lt;em&gt;Mxnet&lt;/em&gt;, with PyTorch a close second. I could not reproduce Tensorflow&amp;rsquo;s results, and it is not clear how to do it using the documentation.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Data preparation&lt;/strong&gt;: a tie with &lt;em&gt;Mxnet and Pytorch&lt;/em&gt;. Both frameworks use very similar &lt;code&gt;Dataset&lt;/code&gt; and &lt;code&gt;Dataloader&lt;/code&gt; interfaces. I was able to get going using this interface very fast. Keras also has a very similar interface using &lt;code&gt;Sequence&lt;/code&gt; class, but the absence of something similar to &lt;code&gt;Dataloader&lt;/code&gt; results in having to return batches rather than simply one image at a time. Also Tensorflow has a &lt;code&gt;Dataset&lt;/code&gt; interface which I used before but somehow made me feel I am programming in C all over again.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Speed&lt;/strong&gt;: &lt;em&gt;Pytorch&lt;/em&gt;. It is very obvious that Pytorch won the speed race all over the board. Also, although there is no information for only inference time in Tensorflow, it looks like Tensorflow also has the edge on Mxnet.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;After this quick experiment, I am really excited about working with Mxnet and see how it goes. It looks like a great choice for working with computer vision, even though those experiments show it is the slowest. I am excited to see if it is really worth ditching Tensorflow for it, as I test it for different deep learning applications.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&#34;fab fa-github-square&#34; href=&#34;&#34;&gt;Get the code!&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Differentiation</title>
+      <link>https://dibgerge.github.io/tutorials/mit1801/unit1-1-definition/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://dibgerge.github.io/tutorials/mit1801/unit1-1-definition/</guid>
+      <description>
+
+&lt;h2 id=&#34;definition-of-a-derivative&#34;&gt;Definition of a Derivative&lt;/h2&gt;
+
+&lt;p&gt;Consider a function $f(x)$ represented by the curve in Figure 1. The derivative of $f(x)$ at a point $x=x_0$, denoted by $f&amp;rsquo;(x_0)$, is the slope of the tangent line to the graph of $f(x)$ at the point $(x_0, f(x_0))$. A tangent line is the &lt;em&gt;limit&lt;/em&gt; of the secant lines joining points $P=(x_0, f(x_0))$ and $Q$ on the graph of $f(x)$ as $Q$ approaches $P​$.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://dibgerge.github.io/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;../Figures/session-001-differentiation.png&#34; alt=&#34;Figure 1: A graph with secant and tangent lines.&#34;/&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;../Figures/session-001-differentiation.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Figure 1: A graph with secant and tangent lines.&lt;/p&gt;
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+
+
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;../Figures/session-001-secant.png&#34; alt=&#34;Figure 2: Geometric definition of the derivative.&#34;/&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;../Figures/session-001-secant.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Figure 2: Geometric definition of the derivative.&lt;/p&gt;
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;p&gt;The slope of secant $PQ$ is rise divided by run, or the ratio $\frac{\Delta f}{\Delta x}$ as shown in Figure 2. As $Q$ gets closer to $P$, the distance $\Delta x$ goes to zero. Then, the derivate which is equivalent to the slope of tangent, can be expressed mathematically as:&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;$$\begin{align}
+m &amp;amp;= f&amp;rsquo;(x_0) \\&lt;br /&gt;
+&amp;amp;= \lim_{Q \rightarrow P} \frac{\Delta f}{\Delta x} \nonumber \\&lt;br /&gt;
+&amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{\Delta f}{\Delta x} \\&lt;br /&gt;
+&amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}
+\end{align}$$&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;The last equation above is the algebraic definition of a derivative.&lt;/p&gt;
+
+&lt;canvas id=&#34;myCanvas&#34; width=&#34;200&#34; height=&#34;100&#34;
+style=&#34;border:1px solid #c3c3c3;&#34;&gt;
+Your browser does not support the canvas element.
+&lt;/canvas&gt;
+
+&lt;script&gt;
+var canvas = document.getElementById(&#34;myCanvas&#34;);
+var ctx = canvas.getContext(&#34;2d&#34;);
+ctx.fillStyle = &#34;#FF0000&#34;;
+ctx.fillRect(0,0,150,75);
+&lt;/script&gt;
+
+&lt;h3 id=&#34;common-derivative-properties&#34;&gt;Common derivative properties&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;When you take the derivative of an odd function, you always get an even function and vice versa.&lt;/li&gt;
+&lt;li&gt;Differentiable implies continuous: If $f$ is differentiable at $x_0$, then $f$ is continuous at $x_0$.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Proof&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A function is continuous if $\lim_{x \rightarrow x_0} f(x) - f(x_0) = 0$. We multiply and divide this by the same value:&lt;/p&gt;
+
+&lt;p&gt;$$
+\begin{align}
+\lim_{x \rightarrow x_0} f(x) - f(x_0) &amp;amp;= \lim_{x \rightarrow x_0} \frac{f(x)- f(x_0)}{x - x_0} \left(x - x_0\right) \\&lt;br /&gt;
+&amp;amp;= f&amp;rsquo;(x) \cdot 0 \\&lt;br /&gt;
+&amp;amp;= 0
+\end{align}
+$$&lt;/p&gt;
+
+&lt;h2 id=&#34;notations&#34;&gt;Notations&lt;/h2&gt;
+
+&lt;p&gt;In calculus, as in the English language, there are many ways to express the same thing. Here we mention two notations most commonly used in calculus: Leibniz&amp;rsquo; and Newton&amp;rsquo;s notations. Newton and Leibniz both invented calculus independently, and there has been anonymity between them, in addition to controversy about &lt;a href=&#34;https://en.wikipedia.org/wiki/Leibniz%E2%80%93Newton_calculus_controversy&#34; target=&#34;_blank&#34;&gt;who has first invented calculus&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We let $y = f(x)$, where $y$ is a variable representing the function $f$ at any given $x$. From the formula for the derivative, we represent &amp;ldquo;the change in $y$&amp;rdquo; as $\Delta y = \Delta f = f(x_0 + \Delta x) - f(x_0)$. On the other hand, the &amp;ldquo;change in $x$&amp;rdquo; is $\Delta x = x - x_0$.&lt;/p&gt;
+
+&lt;h3 id=&#34;leibniz-notation&#34;&gt;Leibniz&amp;rsquo; notation&lt;/h3&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;$$\lim_{\Delta x \rightarrow 0} \frac{\Delta y}{\Delta x} \equiv \frac{dy}{dx}$$&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Using Leibniz&amp;rsquo; notation, we might also represent the derivative as $\frac{df}{dx}$, $\frac{d}{dx}f$, $\frac{d}{dx}y$. Notice that Leibniz&amp;rsquo; notation does not specify where the derivative is being evaluated (e.g. at $x_0$). However, it expresses the derivative as a ratio, which is more convenient than Newton&amp;rsquo;s notation in certain situations.&lt;/p&gt;
+
+&lt;h3 id=&#34;newton-s-notation&#34;&gt;Newton&amp;rsquo;s notation&lt;/h3&gt;
+
+&lt;p&gt;The advantage of Newton&amp;rsquo;s nation is that is compact representation of the derivative:&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;$$\lim_{\Delta x \rightarrow 0} \frac{\Delta f}{\Delta x} \equiv f^\prime(x_0)$$&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>Differentiation Rules</title>
+      <link>https://dibgerge.github.io/tutorials/mit1801/unit1-2-rules/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 -0800</pubDate>
+      
+      <guid>https://dibgerge.github.io/tutorials/mit1801/unit1-2-rules/</guid>
+      <description>
+
+&lt;h2 id=&#34;derivative-of-a-sum&#34;&gt;Derivative of a sum&lt;/h2&gt;
+
+&lt;p&gt;The derivative of the sum of two functions is the sum of the derivatives:
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;$$ (u + v)^\prime(x) = u^\prime(x) + v^\prime(x) $$&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Where the function $(u+v)(x)$ is just a shorthand for $u(x) + v(x)$.&lt;/p&gt;
+
+&lt;h3 id=&#34;proof&#34;&gt;Proof&lt;/h3&gt;
+
+&lt;p&gt;Applying the definition of the derivative to $(u + v)(x)$, we get:&lt;/p&gt;
+
+&lt;p&gt;$$
+\begin{align}
+(u+v)^\prime(x) &amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{(u+v)(x+\Delta x) - (u+v)(x)}{\Delta x} \\&lt;br /&gt;
+&amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{u(x+\Delta x) + v(x + \Delta x) - u(x) - v(x)}{\Delta x} \\&lt;br /&gt;
+&amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{u(x + \Delta x) - u(x)}{\Delta x} + \lim_{\Delta x \rightarrow 0} \frac{v(x + \Delta x) - v(x)}{\Delta x} \\&lt;br /&gt;
+&amp;amp;= u^\prime(x) + v^\prime(x)
+\end{align}
+$$&lt;/p&gt;
+
+&lt;h2 id=&#34;derivative-of-sin-x&#34;&gt;Derivative of $\sin x$&lt;/h2&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;$$ \sin^\prime x = \cos x $$&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;proof-1&#34;&gt;Proof&lt;/h3&gt;
+
+&lt;p&gt;Begin with the definition of the derivative:&lt;/p&gt;
+
+&lt;p&gt;$$ \frac{d}{dx} \sin x = \lim_{\Delta x \rightarrow 0} \frac{\sin (x + \Delta x) - \sin x}{\Delta x} $$&lt;/p&gt;
+
+&lt;p&gt;Then, using the trigonometric identity:&lt;/p&gt;
+
+&lt;p&gt;$$\sin(a + b) = \sin a \cos b + \sin b \cos a$$&lt;/p&gt;
+
+&lt;p&gt;We untangle the $x$ from the $\Delta x$ as follows:&lt;/p&gt;
+
+&lt;p&gt;$$\begin{align}
+\frac{d}{dx} \sin x &amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{\sin x \cos \Delta x + \sin \Delta x \cos x - \sin x}{\Delta x}\\&lt;br /&gt;
+&amp;amp;= \lim_{\Delta x \rightarrow 0} \left[ \frac{\sin x \cos\Delta x - \sin x}{\Delta x} + \frac{\cos x \sin \Delta x}{\Delta x}\right] \\&lt;br /&gt;
+&amp;amp;= \lim_{\Delta x \rightarrow 0} \left[ \frac{\sin x \left( \cos \Delta x - 1\right)}{\Delta x} + \frac{\cos x \sin \Delta x}{\Delta x} \right] \\&lt;br /&gt;
+&amp;amp;= \lim_{\Delta x \rightarrow 0} \sin x \left( \frac{\cos \Delta x - 1}{\Delta x} \right) + \lim_{\Delta x \rightarrow 0} \cos x \left( \frac{\sin \Delta x}{\Delta x} \right)
+\end{align}
+$$&lt;/p&gt;
+
+&lt;p&gt;Now, we have the limits:&lt;/p&gt;
+
+&lt;p&gt;$$\begin{align}
+&amp;amp; \lim_{\Delta x \rightarrow 0} \frac{\cos \Delta x - 1}{\Delta x} &amp;amp;= 0 \\&lt;br /&gt;
+&amp;amp; \lim_{\Delta x \rightarrow 0} \frac{\sin\Delta x}{\Delta x} &amp;amp;= 1
+\end{align}$$&lt;/p&gt;
+
+&lt;p&gt;Where a geometric proof of the limits can be found &lt;a href=&#34;https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/1.-differentiation/part-a-definition-and-basic-rules/session-8-limits-of-sine-and-cosine/MIT18_01SCF10_Ses8a.pdf&#34; target=&#34;_blank&#34;&gt;here for $\frac{\sin x}{x}$&lt;/a&gt; and &lt;a href=&#34;https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/1.-differentiation/part-a-definition-and-basic-rules/session-8-limits-of-sine-and-cosine/MIT18_01SCF10_Ses8b.pdf&#34; target=&#34;_blank&#34;&gt;here for $\frac{1 - \cos x}{x}$&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;and thus the derivative becomes:&lt;/p&gt;
+
+&lt;p&gt;$$
+\frac{d}{dx}\sin x =  \sin x \cdot 0 + \cos x \cdot 1 = \cos x
+$$&lt;/p&gt;
+
+&lt;p&gt;The above proof is based on the algebraic formula for the derivative. Another way to proof the derivative on $\sin x$ is geometrically, using the unit circle. &lt;a href=&#34;https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/1.-differentiation/part-a-definition-and-basic-rules/session-8-limits-of-sine-and-cosine/MIT18_01SCF10_Ses8d.pdf&#34; target=&#34;_blank&#34;&gt;This document provides a geometric proof&lt;/a&gt; for the derivative of $\sin x$.&lt;/p&gt;
+
+&lt;h2 id=&#34;derivative-of-cos-x&#34;&gt;Derivative of $\cos x$&lt;/h2&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;$$ \cos^\prime x = -\sin x $$&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;proof-2&#34;&gt;Proof&lt;/h3&gt;
+
+&lt;p&gt;The proof is very similar to that of the derivative of $\sin x$. Starting from the definition of the derivative:&lt;/p&gt;
+
+&lt;p&gt;$$\frac{d}{dx} \cos x = \lim_{\Delta x \rightarrow 0} \frac{\cos(x + \Delta x) - \cos(x)}{\Delta x}$$&lt;/p&gt;
+
+&lt;p&gt;Using the trigonometric identity:&lt;/p&gt;
+
+&lt;p&gt;$$ \cos(a+b) = \cos a \cos b - \sin a \sin b$$&lt;/p&gt;
+
+&lt;p&gt;we simplify the derivative equation:&lt;/p&gt;
+
+&lt;p&gt;$$\begin{align}
+\frac{d}{dx} \cos x &amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{\cos x \cos \Delta x - \sin x \sin \Delta x - \cos x}{\Delta x} \\&lt;br /&gt;
+&amp;amp;= \lim_{\Delta x \rightarrow 0} \left[ \frac{\cos x \cos \Delta x - \cos x}{\Delta x} + \frac{-\sin x \sin\Delta x}{\Delta x}\right] \\&lt;br /&gt;
+&amp;amp;= \lim_{\Delta x \rightarrow 0} \left[ \cos x \left( \frac{\cos \Delta x - 1}{\Delta x} \right) - \sin x \frac{\sin \Delta x}{\Delta x} \right] \\&lt;br /&gt;
+&amp;amp;= \cos x \cdot 0 - \sin x \cdot 1 \\&lt;br /&gt;
+&amp;amp;= -\sin x
+\end{align}$$&lt;/p&gt;
+
+&lt;p&gt;where in fourth equation, we have used the limits properties mentioned in the proof for $\sin x $ derivative.&lt;/p&gt;
+
+&lt;h2 id=&#34;product-rule&#34;&gt;Product rule&lt;/h2&gt;
+
+&lt;p&gt;The product rule tells us how to compute the derivative of the product of two functions:&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;$$ (uv)^\prime = u^\prime v + uv^\prime $$&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;proof-3&#34;&gt;Proof&lt;/h3&gt;
+
+&lt;p&gt;Using the formula for the derivative:&lt;/p&gt;
+
+&lt;p&gt;$$\begin{align}
+(uv)^\prime &amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{(uv)(x + \Delta x) - (uv)(x)}{\Delta x} \\&lt;br /&gt;
+&amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{u(x + \Delta x)v(x + \Delta x) - u(x)v(x)}{\Delta x} \\&lt;br /&gt;
+\end{align}$$&lt;/p&gt;
+
+&lt;p&gt;Then, we add and subtract the term $u(x+\Delta x)v(x)$ to the derivative equation:
+&lt;font size=&#34;2&#34;&gt;
+$$\begin{align}
+(uv)^\prime &amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{u(x + \Delta x)v(x + \Delta x) - u(x)v(x) + u(x + \Delta x)v(x) - u(x + \Delta x)v(x)}{\Delta x} \\&lt;br /&gt;
+&amp;amp;= \lim_{\Delta x \rightarrow 0} \left[ \frac{u(x+\Delta x) - u(x)}{\Delta x} v(x) + u(x + \Delta x) \frac{v(x + \Delta x) - v(x)}{\Delta x} \right] \\&lt;br /&gt;
+&amp;amp;= u^\prime v + u v^\prime
+\end{align}$$
+&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;Note that we have used the fact that $\lim_{\Delta x \rightarrow 0} u(x + \Delta x) = u(x)$, since $u$ is differentiable and therefore continuous.&lt;/p&gt;
+
+&lt;h2 id=&#34;quotient-rule&#34;&gt;Quotient rule&lt;/h2&gt;
+
+&lt;p&gt;The formula for differentiating quotients (or fractions) is:&lt;/p&gt;
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;$$\left( \frac{u}{v} \right)^\prime = \frac{u^\prime v - uv^\prime}{v^2}$$&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;h3 id=&#34;proof-4&#34;&gt;Proof&lt;/h3&gt;
+
+&lt;p&gt;Again, starting from the main formula for a derivative, we have:&lt;/p&gt;
+
+&lt;p&gt;$$\begin{align}
+\left( \frac{u}{v} \right)^\prime &amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{\frac{u(x + \Delta x)}{v(x + \Delta x)} - \frac{u(x)}{v(x)}}{\Delta x} \\&lt;br /&gt;
+\end{align}$$&lt;/p&gt;
+
+&lt;p&gt;Let $\Delta u = u(x + \Delta x) - u(x)$ and $\Delta v = v(x + \Delta x) - v(x)$, then we simplify the numerator:&lt;/p&gt;
+
+&lt;p&gt;$$\begin{align}
+\frac{u(x + \Delta x)}{v(x + \Delta x)} - \frac{u(x)}{v(x)} &amp;amp;= \frac{u + \Delta u}{v + \Delta v} - \frac{u}{v} \\&lt;br /&gt;
+&amp;amp;= \frac{(u + \Delta u)v - u(v + \Delta v)}{(v + \Delta v)v} \\&lt;br /&gt;
+&amp;amp;= \frac{uv + (\Delta u)v - uv + u\Delta v}{(v + \Delta v)v} \\&lt;br /&gt;
+&amp;amp;= \frac{(\Delta u)v - u(\Delta v)}{(v + \Delta v)v}
+\end{align}$$&lt;/p&gt;
+
+&lt;p&gt;Now that we have simplified the numerator, we can use it to simplify the difference quotient:&lt;/p&gt;
+
+&lt;p&gt;$$\begin{align}
+\frac{\frac{u(x + \Delta x)}{v(x+\Delta x)} - \frac{u(x)}{v(x)}}{\Delta x} &amp;amp;= \frac{\frac{(\Delta u)v - u(\Delta v)}{(v + \Delta v)v}}{\Delta x} \\&lt;br /&gt;
+&amp;amp;= \frac{1}{\Delta x} \frac{(\Delta u)v - u(\Delta v)}{(v + \Delta v)v} \\&lt;br /&gt;
+&amp;amp;= \frac{\left( \frac{\Delta u}{\Delta x} \right) v - u \left( \frac{\Delta v}{\Delta x} \right)}{(v + \Delta v)v}
+\end{align}$$&lt;/p&gt;
+
+&lt;p&gt;since $v$ is differentiable (and therefore continuous), then $\lim_{x \rightarrow 0} v(x + \Delta x) = v(x)$, and we have that:&lt;/p&gt;
+
+&lt;p&gt;$$
+\lim_{\Delta x \rightarrow 0}  \frac{\left( \frac{\Delta u}{\Delta x} \right) v - u \left( \frac{\Delta v}{\Delta x} \right)}{(v + \Delta v)v} = \frac{v \frac{du}{dx} - u \frac{dv}{dx}}{v^2}
+$$&lt;/p&gt;
+
+&lt;h2 id=&#34;chain-rule&#34;&gt;Chain rule&lt;/h2&gt;
+
+&lt;p&gt;The chain rule tells us how to find the derivative of a composition of functions like $(f \circ g)(x) = f(g(x))$. To find the derivative of $f$ with respect to $x$, we use the chain rule:
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    &lt;p&gt;$$ \frac{df}{dx} = \frac{df}{dz}\frac{dz}{dx}$$&lt;/p&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;where we have set $z = g(x)$.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Investigations of degradation and encapsulation of plastic scintillator</title>
       <link>https://dibgerge.github.io/publication/2019-nimpr/</link>
       <pubDate>Tue, 05 Feb 2019 19:34:55 -0500</pubDate>
@@ -37,84 +656,6 @@
     </item>
     
     <item>
-      <title>Differentiation</title>
-      <link>https://dibgerge.github.io/tutorials/math101/unit1/</link>
-      <pubDate>Sun, 09 Sep 2018 00:00:00 -0700</pubDate>
-      
-      <guid>https://dibgerge.github.io/tutorials/math101/unit1/</guid>
-      <description>
-
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;Consider a function (f(x)) represented by the curve in Figure 1. The derivative of $f(x)$ at a point $x=x_0$, denoted by $f&amp;rsquo;(x_0)$, is the slope of the tangent line to the graph of $f(x)$ at the point $(x_0, f(x_0))$. A tangent line is the &lt;em&gt;limit&lt;/em&gt; of the secant lines joining points $P=(x_0, f(x_0))$ and $Q$ on the graph of $f(x)$ as $Q$ approaches $P​$.&lt;/p&gt;
-
-
-
-
-&lt;div class=&#34;gallery caption-position-center caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
-	  
-  
-&lt;link rel=&#34;stylesheet&#34; href=&#34;https://dibgerge.github.io/css/hugo-easy-gallery.css&#34; /&gt;
-&lt;div class=&#34;box&#34; style=&#34;max-width:300px&#34;&gt;
-  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://dibgerge.github.io/Figures/session-001-differentiation.png&#39;);&#34;&gt;
-      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;Figures/session-001-differentiation.png&#34; alt=&#34;A graph with secant and tangent lines (left).&#34;/&gt;
-    &lt;/div&gt;
-    &lt;a href=&#34;session-001-differentiation.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
-      &lt;figcaption&gt;
-          &lt;p&gt;A graph with secant and tangent lines (left).&lt;/p&gt;
-      &lt;/figcaption&gt;
-  &lt;/figure&gt;
-&lt;/div&gt;
-
-  
-
-&lt;div class=&#34;box&#34; style=&#34;max-width:300px&#34;&gt;
-  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
-    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://dibgerge.github.io/../Figures/session-001-secant.png&#39;);&#34;&gt;
-      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;../Figures/session-001-secant.png&#34; alt=&#34;Geometric definition of the derivative&#34;/&gt;
-    &lt;/div&gt;
-    &lt;a href=&#34;session-001-secant.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
-      &lt;figcaption&gt;
-          &lt;p&gt;Geometric definition of the derivative&lt;/p&gt;
-      &lt;/figcaption&gt;
-  &lt;/figure&gt;
-&lt;/div&gt;
-
-
-&lt;/div&gt;
-
-
-&lt;p&gt;The slope of secant $PQ$ is rise divided by run, or the ratio $\frac{\Delta f}{\Delta x}$ as shown in Figure 2. As $Q$ gets closer to $P$, the distance $\Delta x$ goes to zero. Then, the derivate which is equivalent to the slope of tangent, can be expressed mathematically as:&lt;/p&gt;
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    &lt;p&gt;$$\begin{align}
-m &amp;amp;= f&amp;rsquo;(x_0) \\&lt;br /&gt;
-&amp;amp;= \lim_{Q \rightarrow P} \frac{\Delta f}{\Delta x} \nonumber \\&lt;br /&gt;
-&amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{\Delta f}{\Delta x} \\&lt;br /&gt;
-&amp;amp;= \lim_{\Delta x \rightarrow 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}
-\end{align}$$&lt;/p&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-&lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Example Page</title>
-      <link>https://dibgerge.github.io/tutorials/math101/unit2/</link>
-      <pubDate>Sun, 09 Sep 2018 00:00:00 -0700</pubDate>
-      
-      <guid>https://dibgerge.github.io/tutorials/math101/unit2/</guid>
-      <description>&lt;p&gt;The applications of calculus&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Example Page</title>
       <link>https://dibgerge.github.io/tutorials/math102/example/</link>
       <pubDate>Sun, 09 Sep 2018 00:00:00 -0700</pubDate>
@@ -131,6 +672,16 @@ m &amp;amp;= f&amp;rsquo;(x_0) \\&lt;br /&gt;
 &lt;h2 id=&#34;tip-2&#34;&gt;Tip 2&lt;/h2&gt;
 
 &lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example Page</title>
+      <link>https://dibgerge.github.io/tutorials/mit1801/unit2/</link>
+      <pubDate>Sun, 09 Sep 2018 00:00:00 -0700</pubDate>
+      
+      <guid>https://dibgerge.github.io/tutorials/mit1801/unit2/</guid>
+      <description>&lt;p&gt;The applications of calculus&lt;/p&gt;
 </description>
     </item>
     
@@ -204,24 +755,6 @@ m &amp;amp;= f&amp;rsquo;(x_0) \\&lt;br /&gt;
       <pubDate>Sun, 11 Jun 2017 00:00:00 -0700</pubDate>
       
       <guid>https://dibgerge.github.io/publication/2017-npic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Validation of Ultrasonic Nondestructive Examination (NDE) Computational Models – Phase 1</title>
-      <link>https://dibgerge.github.io/publication/2017-pnnl/</link>
-      <pubDate>Fri, 05 May 2017 00:00:00 -0700</pubDate>
-      
-      <guid>https://dibgerge.github.io/publication/2017-pnnl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Detecting Water in Dry Storage Canisters for Used Fuel</title>
-      <link>https://dibgerge.github.io/publication/2017-ihlrwm/</link>
-      <pubDate>Sun, 09 Apr 2017 00:00:00 -0700</pubDate>
-      
-      <guid>https://dibgerge.github.io/publication/2017-ihlrwm/</guid>
       <description></description>
     </item>
     

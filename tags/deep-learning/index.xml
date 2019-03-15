@@ -6,10 +6,19 @@
     <description>Recent content in deep learning on Ge[o]rges Dib</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://dibgerge.github.io/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Tensorflow, PyTorch, and MxNet</title>
+      <link>https://dibgerge.github.io/post/tf-mxnet-pytorch/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 -0700</pubDate>
+      
+      <guid>https://dibgerge.github.io/post/tf-mxnet-pytorch/</guid>
+      <description>In the past 2 years, I have been exclusively using Tensorflow with Keras for training and testing deep neural networks. I never really thought twice about it, because this is what everyone else seems to be using. I mean, just looking at the popularity of those frameworks in github compared with their closest competitors was enough to make the decision for me. Here are the approximate statistics as of March 2019 for the four most popular frameworks.</description>
+    </item>
     
     <item>
       <title>Neural Interactive Machine Learning</title>

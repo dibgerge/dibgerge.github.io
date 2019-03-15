@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 3.3.0">
+  <meta name="generator" content="Hugo 0.54.0" />
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Gerges Dib">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Derivative of a sum The derivative of the sum of two functions is the sum of the derivatives:  $$ (u &#43; v)^\prime(x) = u^\prime(x) &#43; v^\prime(x) $$
+  Where the function $(u&#43;v)(x)$ is just a shorthand for $u(x) &#43; v(x)$.
+Proof Applying the definition of the derivative to $(u &#43; v)(x)$, we get:
+$$ \begin{align} (u&#43;v)^\prime(x) &amp;= \lim_{\Delta x \rightarrow 0} \frac{(u&#43;v)(x&#43;\Delta x) - (u&#43;v)(x)}{\Delta x} \\">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://dibgerge.github.io/tutorials/mit1801/unit1-2-rules/">
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#ba68c8">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" crossorigin="anonymous">
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  <link rel="stylesheet" href="/styles.css">
+  
+    
+    
+    
+    
+      
+    
+    
+    
+    <link rel="stylesheet" href="/css/academic.5e498bfe8c2a72c10760d5531ff3ec33.css">
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-104457229-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+  <link rel="alternate" href="https://dibgerge.github.io/index.xml" type="application/rss+xml" title="Ge[o]rges Dib">
+  <link rel="feed" href="https://dibgerge.github.io/index.xml" type="application/rss+xml" title="Ge[o]rges Dib">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://dibgerge.github.io/tutorials/mit1801/unit1-2-rules/">
+
+  
+  
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Ge[o]rges Dib">
+  <meta property="og:url" content="https://dibgerge.github.io/tutorials/mit1801/unit1-2-rules/">
+  <meta property="og:title" content="Differentiation Rules | Ge[o]rges Dib">
+  <meta property="og:description" content="Derivative of a sum The derivative of the sum of two functions is the sum of the derivatives:  $$ (u &#43; v)^\prime(x) = u^\prime(x) &#43; v^\prime(x) $$
+  Where the function $(u&#43;v)(x)$ is just a shorthand for $u(x) &#43; v(x)$.
+Proof Applying the definition of the derivative to $(u &#43; v)(x)$, we get:
+$$ \begin{align} (u&#43;v)^\prime(x) &amp;= \lim_{\Delta x \rightarrow 0} \frac{(u&#43;v)(x&#43;\Delta x) - (u&#43;v)(x)}{\Delta x} \\"><meta property="og:image" content="https://dibgerge.github.io/img/icon-192.png">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-02-15T00:00:00-08:00">
+  
+  <meta property="article:modified_time" content="2019-02-15T00:00:00-08:00">
+  
+
+  
+
+  
+
+    
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+<style>
+.pswp {
+  position: fixed;
+  z-index: 2500;
+}
+
+</style>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+  
+  <div class="pswp__container">
+    <div class="pswp__item"></div>
+    <div class="pswp__item"></div>
+    <div class="pswp__item"></div>
+  </div>
+  
+  <div class="pswp__ui pswp__ui--hidden">
+  <div class="pswp__top-bar">
+    
+    <div class="pswp__counter"></div>
+    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+    <button class="pswp__button pswp__button--share" title="Share"></button>
+    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+    
+    
+    <div class="pswp__preloader">
+      <div class="pswp__preloader__icn">
+        <div class="pswp__preloader__cut">
+          <div class="pswp__preloader__donut"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+    <div class="pswp__share-tooltip"></div>
+  </div>
+  <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+  </button>
+  <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+  </button>
+  <div class="pswp__caption">
+    <div class="pswp__caption__center"></div>
+  </div>
+  </div>
+  </div>
+</div>
+
+
+  <title>Differentiation Rules | Ge[o]rges Dib</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Ge[o]rges Dib</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav ml-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/post/">
+            
+            <span>Blog</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" id="search-query" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorials/mit1801/">MIT 18.01: Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorials/mit1801/unit1-1-definition/">1. Differentiation</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/tutorials/mit1801/unit1-1-definition/">Definition</a>
+      </li>
+      
+      <li class="active">
+        <a href="/tutorials/mit1801/unit1-2-rules/">Rules</a>
+      </li>
+      
+      <li >
+        <a href="/tutorials/mit1801/unit2/">Implicit differentiation</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+      <p class="docs-toc-title">On this page</p>
+      
+
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#derivative-of-a-sum">Derivative of a sum</a>
+<ul>
+<li><a href="#proof">Proof</a></li>
+</ul></li>
+<li><a href="#derivative-of-sin-x">Derivative of $\sin x$</a>
+<ul>
+<li><a href="#proof-1">Proof</a></li>
+</ul></li>
+<li><a href="#derivative-of-cos-x">Derivative of $\cos x$</a>
+<ul>
+<li><a href="#proof-2">Proof</a></li>
+</ul></li>
+<li><a href="#product-rule">Product rule</a>
+<ul>
+<li><a href="#proof-3">Proof</a></li>
+</ul></li>
+<li><a href="#quotient-rule">Quotient rule</a>
+<ul>
+<li><a href="#proof-4">Proof</a></li>
+</ul></li>
+<li><a href="#chain-rule">Chain rule</a></li>
+</ul></li>
+</ul>
+</nav>
+
+      <ul class="nav toc-top">
+        <li><a href="#">Back to top</a></li>
+      </ul>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article" itemscope itemtype="http://schema.org/Article">
+
+        <div class="docs-article-container">
+          <h1 itemprop="name">Differentiation Rules</h1>
+
+          <div class="article-style" itemprop="articleBody">
+            
+
+<h2 id="derivative-of-a-sum">Derivative of a sum</h2>
+
+<p>The derivative of the sum of two functions is the sum of the derivatives:
+<div class="alert alert-note">
+  <div>
+    <p>$$ (u + v)^\prime(x) = u^\prime(x) + v^\prime(x) $$</p>
+
+  </div>
+</div>
+</p>
+
+<p>Where the function $(u+v)(x)$ is just a shorthand for $u(x) + v(x)$.</p>
+
+<h3 id="proof">Proof</h3>
+
+<p>Applying the definition of the derivative to $(u + v)(x)$, we get:</p>
+
+<p>$$
+\begin{align}
+(u+v)^\prime(x) &amp;= \lim_{\Delta x \rightarrow 0} \frac{(u+v)(x+\Delta x) - (u+v)(x)}{\Delta x} \\<br />
+&amp;= \lim_{\Delta x \rightarrow 0} \frac{u(x+\Delta x) + v(x + \Delta x) - u(x) - v(x)}{\Delta x} \\<br />
+&amp;= \lim_{\Delta x \rightarrow 0} \frac{u(x + \Delta x) - u(x)}{\Delta x} + \lim_{\Delta x \rightarrow 0} \frac{v(x + \Delta x) - v(x)}{\Delta x} \\<br />
+&amp;= u^\prime(x) + v^\prime(x)
+\end{align}
+$$</p>
+
+<h2 id="derivative-of-sin-x">Derivative of $\sin x$</h2>
+
+<div class="alert alert-note">
+  <div>
+    <p>$$ \sin^\prime x = \cos x $$</p>
+
+  </div>
+</div>
+
+
+<h3 id="proof-1">Proof</h3>
+
+<p>Begin with the definition of the derivative:</p>
+
+<p>$$ \frac{d}{dx} \sin x = \lim_{\Delta x \rightarrow 0} \frac{\sin (x + \Delta x) - \sin x}{\Delta x} $$</p>
+
+<p>Then, using the trigonometric identity:</p>
+
+<p>$$\sin(a + b) = \sin a \cos b + \sin b \cos a$$</p>
+
+<p>We untangle the $x$ from the $\Delta x$ as follows:</p>
+
+<p>$$\begin{align}
+\frac{d}{dx} \sin x &amp;= \lim_{\Delta x \rightarrow 0} \frac{\sin x \cos \Delta x + \sin \Delta x \cos x - \sin x}{\Delta x}\\<br />
+&amp;= \lim_{\Delta x \rightarrow 0} \left[ \frac{\sin x \cos\Delta x - \sin x}{\Delta x} + \frac{\cos x \sin \Delta x}{\Delta x}\right] \\<br />
+&amp;= \lim_{\Delta x \rightarrow 0} \left[ \frac{\sin x \left( \cos \Delta x - 1\right)}{\Delta x} + \frac{\cos x \sin \Delta x}{\Delta x} \right] \\<br />
+&amp;= \lim_{\Delta x \rightarrow 0} \sin x \left( \frac{\cos \Delta x - 1}{\Delta x} \right) + \lim_{\Delta x \rightarrow 0} \cos x \left( \frac{\sin \Delta x}{\Delta x} \right)
+\end{align}
+$$</p>
+
+<p>Now, we have the limits:</p>
+
+<p>$$\begin{align}
+&amp; \lim_{\Delta x \rightarrow 0} \frac{\cos \Delta x - 1}{\Delta x} &amp;= 0 \\<br />
+&amp; \lim_{\Delta x \rightarrow 0} \frac{\sin\Delta x}{\Delta x} &amp;= 1
+\end{align}$$</p>
+
+<p>Where a geometric proof of the limits can be found <a href="https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/1.-differentiation/part-a-definition-and-basic-rules/session-8-limits-of-sine-and-cosine/MIT18_01SCF10_Ses8a.pdf" target="_blank">here for $\frac{\sin x}{x}$</a> and <a href="https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/1.-differentiation/part-a-definition-and-basic-rules/session-8-limits-of-sine-and-cosine/MIT18_01SCF10_Ses8b.pdf" target="_blank">here for $\frac{1 - \cos x}{x}$</a>.</p>
+
+<p>and thus the derivative becomes:</p>
+
+<p>$$
+\frac{d}{dx}\sin x =  \sin x \cdot 0 + \cos x \cdot 1 = \cos x
+$$</p>
+
+<p>The above proof is based on the algebraic formula for the derivative. Another way to proof the derivative on $\sin x$ is geometrically, using the unit circle. <a href="https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/1.-differentiation/part-a-definition-and-basic-rules/session-8-limits-of-sine-and-cosine/MIT18_01SCF10_Ses8d.pdf" target="_blank">This document provides a geometric proof</a> for the derivative of $\sin x$.</p>
+
+<h2 id="derivative-of-cos-x">Derivative of $\cos x$</h2>
+
+<div class="alert alert-note">
+  <div>
+    <p>$$ \cos^\prime x = -\sin x $$</p>
+
+  </div>
+</div>
+
+
+<h3 id="proof-2">Proof</h3>
+
+<p>The proof is very similar to that of the derivative of $\sin x$. Starting from the definition of the derivative:</p>
+
+<p>$$\frac{d}{dx} \cos x = \lim_{\Delta x \rightarrow 0} \frac{\cos(x + \Delta x) - \cos(x)}{\Delta x}$$</p>
+
+<p>Using the trigonometric identity:</p>
+
+<p>$$ \cos(a+b) = \cos a \cos b - \sin a \sin b$$</p>
+
+<p>we simplify the derivative equation:</p>
+
+<p>$$\begin{align}
+\frac{d}{dx} \cos x &amp;= \lim_{\Delta x \rightarrow 0} \frac{\cos x \cos \Delta x - \sin x \sin \Delta x - \cos x}{\Delta x} \\<br />
+&amp;= \lim_{\Delta x \rightarrow 0} \left[ \frac{\cos x \cos \Delta x - \cos x}{\Delta x} + \frac{-\sin x \sin\Delta x}{\Delta x}\right] \\<br />
+&amp;= \lim_{\Delta x \rightarrow 0} \left[ \cos x \left( \frac{\cos \Delta x - 1}{\Delta x} \right) - \sin x \frac{\sin \Delta x}{\Delta x} \right] \\<br />
+&amp;= \cos x \cdot 0 - \sin x \cdot 1 \\<br />
+&amp;= -\sin x
+\end{align}$$</p>
+
+<p>where in fourth equation, we have used the limits properties mentioned in the proof for $\sin x $ derivative.</p>
+
+<h2 id="product-rule">Product rule</h2>
+
+<p>The product rule tells us how to compute the derivative of the product of two functions:</p>
+
+<div class="alert alert-note">
+  <div>
+    <p>$$ (uv)^\prime = u^\prime v + uv^\prime $$</p>
+
+  </div>
+</div>
+
+
+<h3 id="proof-3">Proof</h3>
+
+<p>Using the formula for the derivative:</p>
+
+<p>$$\begin{align}
+(uv)^\prime &amp;= \lim_{\Delta x \rightarrow 0} \frac{(uv)(x + \Delta x) - (uv)(x)}{\Delta x} \\<br />
+&amp;= \lim_{\Delta x \rightarrow 0} \frac{u(x + \Delta x)v(x + \Delta x) - u(x)v(x)}{\Delta x} \\<br />
+\end{align}$$</p>
+
+<p>Then, we add and subtract the term $u(x+\Delta x)v(x)$ to the derivative equation:
+<font size="2">
+$$\begin{align}
+(uv)^\prime &amp;= \lim_{\Delta x \rightarrow 0} \frac{u(x + \Delta x)v(x + \Delta x) - u(x)v(x) + u(x + \Delta x)v(x) - u(x + \Delta x)v(x)}{\Delta x} \\<br />
+&amp;= \lim_{\Delta x \rightarrow 0} \left[ \frac{u(x+\Delta x) - u(x)}{\Delta x} v(x) + u(x + \Delta x) \frac{v(x + \Delta x) - v(x)}{\Delta x} \right] \\<br />
+&amp;= u^\prime v + u v^\prime
+\end{align}$$
+</font></p>
+
+<p>Note that we have used the fact that $\lim_{\Delta x \rightarrow 0} u(x + \Delta x) = u(x)$, since $u$ is differentiable and therefore continuous.</p>
+
+<h2 id="quotient-rule">Quotient rule</h2>
+
+<p>The formula for differentiating quotients (or fractions) is:</p>
+
+<div class="alert alert-note">
+  <div>
+    <p>$$\left( \frac{u}{v} \right)^\prime = \frac{u^\prime v - uv^\prime}{v^2}$$</p>
+
+  </div>
+</div>
+
+
+<h3 id="proof-4">Proof</h3>
+
+<p>Again, starting from the main formula for a derivative, we have:</p>
+
+<p>$$\begin{align}
+\left( \frac{u}{v} \right)^\prime &amp;= \lim_{\Delta x \rightarrow 0} \frac{\frac{u(x + \Delta x)}{v(x + \Delta x)} - \frac{u(x)}{v(x)}}{\Delta x} \\<br />
+\end{align}$$</p>
+
+<p>Let $\Delta u = u(x + \Delta x) - u(x)$ and $\Delta v = v(x + \Delta x) - v(x)$, then we simplify the numerator:</p>
+
+<p>$$\begin{align}
+\frac{u(x + \Delta x)}{v(x + \Delta x)} - \frac{u(x)}{v(x)} &amp;= \frac{u + \Delta u}{v + \Delta v} - \frac{u}{v} \\<br />
+&amp;= \frac{(u + \Delta u)v - u(v + \Delta v)}{(v + \Delta v)v} \\<br />
+&amp;= \frac{uv + (\Delta u)v - uv + u\Delta v}{(v + \Delta v)v} \\<br />
+&amp;= \frac{(\Delta u)v - u(\Delta v)}{(v + \Delta v)v}
+\end{align}$$</p>
+
+<p>Now that we have simplified the numerator, we can use it to simplify the difference quotient:</p>
+
+<p>$$\begin{align}
+\frac{\frac{u(x + \Delta x)}{v(x+\Delta x)} - \frac{u(x)}{v(x)}}{\Delta x} &amp;= \frac{\frac{(\Delta u)v - u(\Delta v)}{(v + \Delta v)v}}{\Delta x} \\<br />
+&amp;= \frac{1}{\Delta x} \frac{(\Delta u)v - u(\Delta v)}{(v + \Delta v)v} \\<br />
+&amp;= \frac{\left( \frac{\Delta u}{\Delta x} \right) v - u \left( \frac{\Delta v}{\Delta x} \right)}{(v + \Delta v)v}
+\end{align}$$</p>
+
+<p>since $v$ is differentiable (and therefore continuous), then $\lim_{x \rightarrow 0} v(x + \Delta x) = v(x)$, and we have that:</p>
+
+<p>$$
+\lim_{\Delta x \rightarrow 0}  \frac{\left( \frac{\Delta u}{\Delta x} \right) v - u \left( \frac{\Delta v}{\Delta x} \right)}{(v + \Delta v)v} = \frac{v \frac{du}{dx} - u \frac{dv}{dx}}{v^2}
+$$</p>
+
+<h2 id="chain-rule">Chain rule</h2>
+
+<p>The chain rule tells us how to find the derivative of a composition of functions like $(f \circ g)(x) = f(g(x))$. To find the derivative of $f$ with respect to $x$, we use the chain rule:
+<div class="alert alert-note">
+  <div>
+    <p>$$ \frac{df}{dx} = \frac{df}{dz}\frac{dz}{dx}$$</p>
+
+  </div>
+</div>
+</p>
+
+<p>where we have set $z = g(x)$.</p>
+
+          </div>
+
+          
+
+        </div>
+
+        <div class="body-footer">
+          Last updated on Feb 15, 2019
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+    
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha256-VsEqElsCHSGmnmHXGQzvoWjWwoznFSZc6hs7ARLRacQ=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    <script id="dsq-count-scr" src="//dibgerge.disqus.com/count.js" async></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.07fbebbbf71b021c8836e1d7ecffa489.js"></script>
+
+  </body>
+</html>
+
+

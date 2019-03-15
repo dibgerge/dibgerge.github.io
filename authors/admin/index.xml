@@ -6,20 +6,18 @@
     <description>Recent content in Admin on Ge[o]rges Dib</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://dibgerge.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Academic: the website designer for Hugo</title>
-      <link>https://dibgerge.github.io/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      <title>Tensorflow, PyTorch, and MxNet</title>
+      <link>https://dibgerge.github.io/post/tf-mxnet-pytorch/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 -0700</pubDate>
       
-      <guid>https://dibgerge.github.io/post/getting-started/</guid>
-      <description>Academic makes it easy to create a beautiful website for free using Markdown. Customize anything on your site with widgets, themes, and language packs.
-Follow our easy step by step guide to learn how to build your own free website with Academic. Check out the personal demo or the business demo of what you&amp;rsquo;ll get in less than 10 minutes.
- View the documentation Ask a question Request a feature or report a bug Updating?</description>
+      <guid>https://dibgerge.github.io/post/tf-mxnet-pytorch/</guid>
+      <description>In the past 2 years, I have been exclusively using Tensorflow with Keras for training and testing deep neural networks. I never really thought twice about it, because this is what everyone else seems to be using. I mean, just looking at the popularity of those frameworks in github compared with their closest competitors was enough to make the decision for me. Here are the approximate statistics as of March 2019 for the four most popular frameworks.</description>
     </item>
     
   </channel>

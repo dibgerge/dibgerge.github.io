@@ -4,6 +4,30 @@
     
     <url>
     
+      <loc>https://dibgerge.github.io/post/tf-mxnet-pytorch/</loc>
+      <lastmod>2019-03-11T00:00:00-07:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dibgerge.github.io/tutorials/mit1801/unit1-1-definition/</loc>
+      <lastmod>2019-02-15T00:00:00-08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dibgerge.github.io/tutorials/mit1801/unit1-2-rules/</loc>
+      <lastmod>2019-02-15T00:00:00-08:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://dibgerge.github.io/tutorials/</loc>
       <lastmod>2019-02-09T00:00:00-08:00</lastmod>
     </url>
@@ -36,22 +60,6 @@
     
     <url>
     
-      <loc>https://dibgerge.github.io/tutorials/math101/unit1/</loc>
-      <lastmod>2018-09-09T00:00:00-07:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://dibgerge.github.io/tutorials/math101/unit2/</loc>
-      <lastmod>2018-09-09T00:00:00-07:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>https://dibgerge.github.io/tutorials/math102/example/</loc>
       <lastmod>2018-09-09T00:00:00-07:00</lastmod>
     </url>
@@ -60,7 +68,15 @@
     
     <url>
     
-      <loc>https://dibgerge.github.io/tutorials/math101/</loc>
+      <loc>https://dibgerge.github.io/tutorials/mit1801/unit2/</loc>
+      <lastmod>2018-09-09T00:00:00-07:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dibgerge.github.io/tutorials/mit1801/</loc>
       <lastmod>2018-09-09T00:00:00-07:00</lastmod>
     </url>
     
@@ -433,6 +449,15 @@
     
       <loc>https://dibgerge.github.io/authors/aaron-diaz/</loc>
       <lastmod>2017-07-20T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://dibgerge.github.io/authors/admin/</loc>
+      <lastmod>2019-03-11T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -1267,7 +1292,7 @@
     <url>
     
       <loc>https://dibgerge.github.io/tags/deep-learning/</loc>
-      <lastmod>2018-09-01T00:00:00-07:00</lastmod>
+      <lastmod>2019-03-11T00:00:00-07:00</lastmod>
       <priority>0</priority>
     </url>
     
