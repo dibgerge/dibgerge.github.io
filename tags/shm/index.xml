@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SHM on Ge[o]rges Dib</title>
+    <title>SHM | Ge[o]rges Dib</title>
     <link>https://dibgerge.github.io/tags/shm/</link>
-    <description>Recent content in SHM on Ge[o]rges Dib</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 17 Nov 2017 00:00:00 -0800</lastBuildDate>
-    
-	<atom:link href="https://dibgerge.github.io/tags/shm/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://dibgerge.github.io/tags/shm/index.xml" rel="self" type="application/rss+xml" />
+    <description>SHM</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 17 Nov 2017 00:00:00 -0800</lastBuildDate>
+    <image>
+      <url>https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png</url>
+      <title>SHM</title>
+      <link>https://dibgerge.github.io/tags/shm/</link>
+    </image>
     
     <item>
       <title>Ensembles of novelty detection classifiers for structural health monitoring using guided waves</title>
       <link>https://dibgerge.github.io/publication/2017-sms/</link>
       <pubDate>Fri, 17 Nov 2017 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017-sms/</guid>
       <description></description>
     </item>
@@ -24,16 +24,17 @@
       <title>Machine Learning and Statistical Signal Processing for Guided Wave Structural Health Monitoring</title>
       <link>https://dibgerge.github.io/project/gwshm/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/project/gwshm/</guid>
-      <description>Sparse ultrasonic guided waves sensor networks would increase safety and reduce maintenance costs of current civil and industrial structures by providing continuous information about structural health. Common damage modalities that are of concern include fatigue cracks and corrosion in metals, and delaminations and impact damage in composite materials. Ultrasonic guided wave testing is used in various industries due to its superior ability to rapidly inspect large areas in thin structures. Guided waves travel long distances and interrogate the entire thickness of a structure.</description>
+      <description>&lt;p&gt;Sparse ultrasonic guided waves sensor networks would increase safety and reduce maintenance costs of current civil and industrial structures by providing continuous information about structural health. Common damage modalities that are of concern include fatigue cracks and corrosion in metals, and delaminations and impact damage in composite materials. Ultrasonic guided wave testing is used in various industries due to its superior ability to rapidly inspect large areas in thin structures. Guided waves travel long distances and interrogate the entire thickness of a structure. These properties make guided waves of interest in structural health monitoring (SHM) since a small number of transducers is required to monitor a large structure.&lt;/p&gt;
+&lt;p&gt;Due to the complexity of guided wave signals, detection strategies in guided wave SHM often are based on detecting changes in the signals based on reference signals collected when the structure is in its pristine state. Damage detection is challenging because there are multitude of other factors that affect the signal such as sensor aging, temperature changes, humidity, and/or varying loading conditions.&lt;/p&gt;
+&lt;p&gt;In this project, we developed machine learning and statistical signal processing techniques for building reliable and efficient methods for damage classification in structures under varying environmental and operating conditions. In addition, we developed statistical methods for quantifying the probability of detection due to sensor aging and variations in environmental and operating condition.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Design and performance of optimal detectors for guided wave structural health monitoring</title>
       <link>https://dibgerge.github.io/publication/2016-shm/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2016-shm/</guid>
       <description></description>
     </item>
@@ -42,7 +43,6 @@
       <title>Guided Wave Structural Health Monitoring for Impact Damage Detection and Characterization</title>
       <link>https://dibgerge.github.io/publication/2015-asc/</link>
       <pubDate>Thu, 01 Oct 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015-asc/</guid>
       <description></description>
     </item>
@@ -51,7 +51,6 @@
       <title>Feasibility of PZT ceramics for impact damage detection in composite structures</title>
       <link>https://dibgerge.github.io/publication/2014d-qnde/</link>
       <pubDate>Sun, 20 Jul 2014 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014d-qnde/</guid>
       <description></description>
     </item>
@@ -60,7 +59,6 @@
       <title>Multitechnique monitoring of fatigue damage in adhesively bonded composite lap-joints</title>
       <link>https://dibgerge.github.io/publication/2014b-qnde/</link>
       <pubDate>Sun, 20 Jul 2014 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014b-qnde/</guid>
       <description></description>
     </item>
@@ -69,7 +67,6 @@
       <title>Advanced Signal Processing Algorithms in Structural Integrity Monitoring</title>
       <link>https://dibgerge.github.io/publication/2014-icons/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014-icons/</guid>
       <description></description>
     </item>
@@ -78,7 +75,6 @@
       <title>Novel Mode Decomposition Algorithms for Lamb Wave Signal Analysis in Online Monitoring of Structures</title>
       <link>https://dibgerge.github.io/publication/2013-ejam/</link>
       <pubDate>Thu, 14 Mar 2013 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2013-ejam/</guid>
       <description></description>
     </item>
@@ -87,11 +83,61 @@
       <title>Wireless Senor Networks for Structural Health Monitoring</title>
       <link>https://dibgerge.github.io/project/wsn/</link>
       <pubDate>Tue, 27 Apr 2010 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/project/wsn/</guid>
-      <description>Schematic of sensor network with centralized architecture.
-   
-The use of wireless sensor networks in structural health monitoring can significantly increase safety and reduce manufacturing and maintenance costs. In this project, we integrate guided wave sensors with wireless sensor modules for continuous monitoring of civil structures. The wireless sensors eliminate the need for cables, reducing overall structure weight (especially important in aerospace industry) and single points of failure.</description>
+      <description>&lt;div style=&#34;text-align: center;&#34;&gt;
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://dibgerge.github.io/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;div class=&#34;box fancy-figure caption-position-bottom caption-effect-fade&#34; style=&#34;max-width:400px&#34;&gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;featured.jpg&#34; alt=&#34;Schematic of sensor network with centralized architecture.&#34;/&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;featured.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Schematic of sensor network with centralized architecture.&lt;/p&gt;
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;p&gt;The use of wireless sensor networks in structural health monitoring can significantly increase safety and reduce manufacturing and maintenance costs. In this project, we integrate guided wave sensors with wireless sensor modules for continuous monitoring of civil structures. The wireless sensors eliminate the need for cables, reducing overall structure weight (especially important in aerospace industry) and single points of failure. We designed sensor interface boards for the Iris wireless nodes allowing transmitting and receiving guided waves using piezoelectric sensors. A distributed control algorithm is also implemented for controlling a wireless sensor network from a base station.
+
+
+
+&lt;div class=&#34;gallery caption-position-center caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+	  
+  
+
+&lt;div class=&#34;box&#34; style=&#34;max-width:300px&#34;&gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://dibgerge.github.io/project/wsn/wsn_board.png&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;project/wsn/wsn_board.png&#34; alt=&#34;Sensor interface circuit board for guided wave reception.&#34;/&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;wsn_board.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Sensor interface circuit board for guided wave reception.&lt;/p&gt;
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+  
+
+&lt;div class=&#34;box&#34; style=&#34;max-width:300px&#34;&gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://dibgerge.github.io/project/wsn/wsn_demo.jpg&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;project/wsn/wsn_demo.jpg&#34; alt=&#34;Two sensor nodes configured for in transmit-receive mode.&#34;/&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;wsn_demo.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Two sensor nodes configured for in transmit-receive mode.&lt;/p&gt;
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/p&gt;
+</description>
     </item>
     
   </channel>

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ryan Lattrel on Ge[o]rges Dib</title>
+    <title>Ryan Lattrel | Ge[o]rges Dib</title>
     <link>https://dibgerge.github.io/authors/ryan-lattrel/</link>
-    <description>Recent content in Ryan Lattrel on Ge[o]rges Dib</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 01 Oct 2013 00:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://dibgerge.github.io/authors/ryan-lattrel/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://dibgerge.github.io/authors/ryan-lattrel/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ryan Lattrel</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Oct 2013 00:00:00 -0700</lastBuildDate>
+    <image>
+      <url>https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png</url>
+      <title>Ryan Lattrel</title>
+      <link>https://dibgerge.github.io/authors/ryan-lattrel/</link>
+    </image>
     
     <item>
       <title>A Wireless Sensor Node for Structural Health Monitoring using Guided Wave Testing</title>
       <link>https://dibgerge.github.io/publication/2013-me/</link>
       <pubDate>Tue, 01 Oct 2013 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2013-me/</guid>
       <description></description>
     </item>

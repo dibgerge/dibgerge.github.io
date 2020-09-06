@@ -1,85 +1,177 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Ge[o]rges Dib</title>
+    <title>Projects | Ge[o]rges Dib</title>
     <link>https://dibgerge.github.io/project/</link>
-    <description>Recent content in Projects on Ge[o]rges Dib</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 01 Sep 2018 00:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://dibgerge.github.io/project/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://dibgerge.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Sep 2018 00:00:00 -0700</lastBuildDate>
+    <image>
+      <url>https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png</url>
+      <title>Projects</title>
+      <link>https://dibgerge.github.io/project/</link>
+    </image>
     
     <item>
       <title>Neural Interactive Machine Learning</title>
       <link>https://dibgerge.github.io/project/niml/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/project/niml/</guid>
-      <description>Machine intelligence advances have elevated the potential of computer-based video analytics but machines alone still fall short of human visual recognition capabilities. Humans, however, cannot address the high volumes of data in need of analysis. Despite exponential growth in machine analytics, opportunities for improvement remain (reducing training sets, improving cross-platform compatibility, adapting to changing environments, etc.). This project aims at achieving higher performance thresholds by integrating the strengths of human and machine reasoning.</description>
+      <description>&lt;p&gt;Machine intelligence advances have elevated the potential of computer-based video analytics but machines alone still fall short of human visual recognition capabilities. Humans, however, cannot address the high volumes of data in need of analysis. Despite exponential growth in machine analytics, opportunities for improvement remain (reducing training sets, improving cross-platform compatibility, adapting to changing environments, etc.). This project aims at achieving higher performance thresholds by integrating the strengths of human and machine reasoning.&lt;/p&gt;
+&lt;p&gt;We are currently building brain-computer interfaces and machine learning approaches to quantify neurological data reflecting fast visual recognition collected with an electroencephalogram (EEG) headset worn by a human participant viewing video data. The quality of psychological engagement are being investigated and the quality of EEG signatures are being evaluated based on reproducibility and accuracy.&lt;/p&gt;
+&lt;p&gt;The NIML approach is envisaged to significantly enhance data processing with application to HIL processes that could benefit big data problems such as data labeling for medicine, social media, among others.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Validation of Ultrasound NDE Simulation Models</title>
       <link>https://dibgerge.github.io/project/ut-modeling/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/project/ut-modeling/</guid>
-      <description>Non-destructive evaluation and testing (NDE) is essential for ensuring the safety of operational nuclear power plants around the world. Ultrasonic testing is an NDE technique which is largely utilized for inspecting pipelines in the nuclear industry due to its ability to detect flaws hidden within the inner diameter of pipelines.
-Computer modeling and simulation is becoming an essential tool for transducer design and insight into ultrasonic nondestructive evaluation. For computational models to be of use in practical situations, it is important to develop techniques for inferring the reliability of inspections using simulated results.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Nondestructive_testing&#34;&gt;Non-destructive evaluation and testing (NDE)&lt;/a&gt; is essential for ensuring the safety of operational nuclear power plants around the world. Ultrasonic testing is an NDE technique which is largely utilized for inspecting pipelines in the nuclear industry due to its ability to detect flaws hidden within the inner diameter of pipelines.&lt;/p&gt;
+&lt;p&gt;Computer modeling and simulation is becoming an essential tool for transducer design and insight into ultrasonic nondestructive evaluation. For computational models to be of use in practical situations, it is important to develop techniques for inferring the reliability of inspections using simulated results. This includes information about the detectability of different defect types within different material varying in complexity and grain structure. To address this problem, we need to develop techniques to quantify confidence in simulations, and methods to incorporate experimental and structural noise into model outputs.&lt;/p&gt;
+&lt;p&gt;In this project, we are building a large database of ultrasound inspection empirical data using different types of probes, materials, and defects. We are using this empirical data to: (1) Develop techniques for validating ultrasound inspection simulations; (2) Uncertainty quantification due to uncertain or unknown simulation input parameters; and (3) Develop noise models which can be fused with simulation data for analyzing inspection reliability using simulated data.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Machine Learning and Statistical Signal Processing for Guided Wave Structural Health Monitoring</title>
       <link>https://dibgerge.github.io/project/gwshm/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/project/gwshm/</guid>
-      <description>Sparse ultrasonic guided waves sensor networks would increase safety and reduce maintenance costs of current civil and industrial structures by providing continuous information about structural health. Common damage modalities that are of concern include fatigue cracks and corrosion in metals, and delaminations and impact damage in composite materials. Ultrasonic guided wave testing is used in various industries due to its superior ability to rapidly inspect large areas in thin structures. Guided waves travel long distances and interrogate the entire thickness of a structure.</description>
+      <description>&lt;p&gt;Sparse ultrasonic guided waves sensor networks would increase safety and reduce maintenance costs of current civil and industrial structures by providing continuous information about structural health. Common damage modalities that are of concern include fatigue cracks and corrosion in metals, and delaminations and impact damage in composite materials. Ultrasonic guided wave testing is used in various industries due to its superior ability to rapidly inspect large areas in thin structures. Guided waves travel long distances and interrogate the entire thickness of a structure. These properties make guided waves of interest in structural health monitoring (SHM) since a small number of transducers is required to monitor a large structure.&lt;/p&gt;
+&lt;p&gt;Due to the complexity of guided wave signals, detection strategies in guided wave SHM often are based on detecting changes in the signals based on reference signals collected when the structure is in its pristine state. Damage detection is challenging because there are multitude of other factors that affect the signal such as sensor aging, temperature changes, humidity, and/or varying loading conditions.&lt;/p&gt;
+&lt;p&gt;In this project, we developed machine learning and statistical signal processing techniques for building reliable and efficient methods for damage classification in structures under varying environmental and operating conditions. In addition, we developed statistical methods for quantifying the probability of detection due to sensor aging and variations in environmental and operating condition.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Ultrasound Sensors and Methods for Nuclear Power Plant Environments</title>
       <link>https://dibgerge.github.io/project/ut-sensors/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/project/ut-sensors/</guid>
-      <description>Schematic of nuclear power plant components which require monitoring using NDE techniques.
-   
-This is a topic co project focuses on demonstration of ultrasound sensing technology and techniques for various applications related to nuclear power plant life cycle, next generation advanced reactors, and radiation monitoring at border portals. The focus of this research has been on:
- Assessment of conventional ultrasound and non-linear ultrasound non-destructive evaluation techniques capable of detecting impending damage before crack formation.</description>
+      <description>&lt;center&gt;
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://dibgerge.github.io/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;div class=&#34;box fancy-figure caption-position-bottom caption-effect-fade&#34; style=&#34;max-width:400px&#34;&gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;featured.png&#34; alt=&#34;Schematic of nuclear power plant components which require monitoring using NDE techniques.&#34;/&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;featured.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Schematic of nuclear power plant components which require monitoring using NDE techniques.&lt;/p&gt;
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/center&gt;
+&lt;p&gt;This is a topic co project focuses on demonstration of ultrasound sensing technology and techniques for various applications related to nuclear power plant life cycle, next generation advanced reactors, and radiation monitoring at border portals. The focus of this research has been on:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Assessment of  conventional ultrasound and non-linear ultrasound non-destructive evaluation techniques capable of detecting impending damage before crack formation. This project focuses on creep and fatigue damage modalities in nuclear power plants.&lt;/li&gt;
+&lt;li&gt;Development of high temperature ultrasound sensor probes, capable of withstanding temperatures up to 550 C for extended period of time. Also, the sensors are designed to be capable of reliable damage detection in sodium coolants.&lt;/li&gt;
+&lt;li&gt;Assessment of ultrasound inspection reliability under challenging environments, and sensor calibration and methods for compensating sensor aging.&lt;/li&gt;
+&lt;li&gt;Water detection in spent fuel dry cask storage canisters.&lt;/li&gt;
+&lt;li&gt;Fog detection in PVT scintillators used at border portals for radiation detection. Fog build up in those plastic detectors reduce their sensitivity. We assessed ultrasound techniques for predicting fogging levels in the detectors.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
     <item>
       <title>Giant Magnetoresistance Sensors for Aircraft Inspection</title>
       <link>https://dibgerge.github.io/project/gmr/</link>
       <pubDate>Tue, 01 Jul 2014 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/project/gmr/</guid>
-      <description>Nondestructive inspection of multi-layered airframe geometries is a significant challenge largely due to complexity of test geometry and deep lying defects. Structural geometry of interest includes different configurations of aircraft skins, stringers, doublers, wing-splice with fasteners and deep lying cracks and corrosion. Inspection of these complex geometries requires dealing with a large number of variables which affect damage detection performance (material, size, thickness, edges, air gaps, etc.), experimental sensor system (frequency, waveform shape, harmonics, sampling intervals, circuit design etc.</description>
+      <description>&lt;p&gt;Nondestructive inspection of multi-layered airframe geometries is a significant challenge largely due to complexity of test geometry and deep lying defects. Structural geometry of interest includes different configurations of aircraft skins, stringers, doublers, wing-splice with fasteners and deep lying cracks and corrosion. Inspection of these complex geometries requires dealing with a large number of variables which affect damage detection performance (material, size, thickness, edges, air gaps, etc.), experimental sensor system (frequency, waveform shape, harmonics, sampling intervals, circuit design etc.), and defect variables (length, width, volume, shape, distribution, orientation, etc.). Combination of these classes of variables encountered in any inspection makes the interpretation of the signals very challenging.&lt;/p&gt;
+&lt;p&gt;The purpose of this project was to design, fabricate and test a novel transducer and inspection technique for detecting cracks near fastener sites in aircrafts with high efficiency and sensitivity. The transducer uses Giant Megnetoresistance (GMR) sensor arrays for increasing sensitivity and reducing required aircraft scan times. Also, a rotating coil excitation is used, which allows the probe to be uniformly sensitive to cracks oriented in arbitrary direction. This is a significant advancement over the previous state-of-the-art, where probes were only sensitive to cracks oriented parallel to the direction of coil current flow. A finite element model (FEM) was also developed for simulating the designed probes. FEM simulations were then used for optimizing the probe design, including GMR sensor placement, excitation coil parameters, and signal processing methods.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Eddy Current Inspection Autoanalysis of Steam Generator Tubes in Nuclear Power Plants</title>
       <link>https://dibgerge.github.io/project/autoanalysis/</link>
       <pubDate>Fri, 01 Jun 2012 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/project/autoanalysis/</guid>
-      <description>Processing pipeline for autoanalysis software.
-   
-Steam generators (SG) are heat exchanger units used in nuclear power plants. Each SG unit typically contains 10000 - 20000 tubes which are exposed to harsh environmental conditions such as high temperatures, high pressures, high fluid flow rates and material interactions resulting in various types of tube degradations - mechanical wear, stress corrosion cracking (SCC), pitting, volumetric degradation, inter granular attack (IGA), loose parts and denting.</description>
+      <description>&lt;center&gt;
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://dibgerge.github.io/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;div class=&#34;box fancy-figure caption-position-bottom caption-effect-fade&#34; style=&#34;max-width:400px&#34;&gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;featured.png&#34; alt=&#34;Processing pipeline for autoanalysis software.&#34;/&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;featured.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Processing pipeline for autoanalysis software.&lt;/p&gt;
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/center&gt;
+&lt;p&gt;Steam generators (SG) are heat exchanger units used in nuclear power plants. Each SG unit typically contains 10000 - 20000 tubes which are exposed to harsh environmental conditions such as high temperatures, high pressures, high fluid flow rates and material interactions resulting in various types of tube degradations - mechanical wear, stress corrosion cracking (SCC), pitting, volumetric degradation, inter granular attack (IGA), loose parts and denting. Electromagnetic methods at low frequencies such as eddy current (EC) have been widely used for inspecting SG tubes. Generally, trained experts will analyze the acquired data looking for any damage indication. However, due to the large volume of data, manual inspection is highly susceptible for a person to miss an indication of damage in the data. The goal of this project is to automate damage detection and classification for eddy current inspection of steam generator tubes in nuclear power plants.&lt;/p&gt;
+&lt;p&gt;The automated signal analysis system pipeline involves 1) pre-processing and region of interest (ROI) detection, 2) feature extraction and 3) classification. We used physics based feature extraction and machine learning techniques to automate and enhance the current state-of-the-art performance of manual signal analysis. We tested the pipelines using data from a performance demonstration database consisting of on-site inspection data obtained from multiple nuclear power plants in the USA.&lt;/p&gt;
+</description>
     </item>
     
     <item>
       <title>Wireless Senor Networks for Structural Health Monitoring</title>
       <link>https://dibgerge.github.io/project/wsn/</link>
       <pubDate>Tue, 27 Apr 2010 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/project/wsn/</guid>
-      <description>Schematic of sensor network with centralized architecture.
-   
-The use of wireless sensor networks in structural health monitoring can significantly increase safety and reduce manufacturing and maintenance costs. In this project, we integrate guided wave sensors with wireless sensor modules for continuous monitoring of civil structures. The wireless sensors eliminate the need for cables, reducing overall structure weight (especially important in aerospace industry) and single points of failure.</description>
+      <description>&lt;div style=&#34;text-align: center;&#34;&gt;
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://dibgerge.github.io/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;div class=&#34;box fancy-figure caption-position-bottom caption-effect-fade&#34; style=&#34;max-width:400px&#34;&gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;featured.jpg&#34; alt=&#34;Schematic of sensor network with centralized architecture.&#34;/&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;featured.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Schematic of sensor network with centralized architecture.&lt;/p&gt;
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;p&gt;The use of wireless sensor networks in structural health monitoring can significantly increase safety and reduce manufacturing and maintenance costs. In this project, we integrate guided wave sensors with wireless sensor modules for continuous monitoring of civil structures. The wireless sensors eliminate the need for cables, reducing overall structure weight (especially important in aerospace industry) and single points of failure. We designed sensor interface boards for the Iris wireless nodes allowing transmitting and receiving guided waves using piezoelectric sensors. A distributed control algorithm is also implemented for controlling a wireless sensor network from a base station.
+
+
+
+&lt;div class=&#34;gallery caption-position-center caption-effect-fade hover-effect-zoom hover-transition&#34; itemscope itemtype=&#34;http://schema.org/ImageGallery&#34;&gt;
+	  
+  
+
+&lt;div class=&#34;box&#34; style=&#34;max-width:300px&#34;&gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://dibgerge.github.io/project/wsn/wsn_board.png&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;project/wsn/wsn_board.png&#34; alt=&#34;Sensor interface circuit board for guided wave reception.&#34;/&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;wsn_board.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Sensor interface circuit board for guided wave reception.&lt;/p&gt;
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+  
+
+&lt;div class=&#34;box&#34; style=&#34;max-width:300px&#34;&gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34; style=&#34;background-image: url(&#39;https://dibgerge.github.io/project/wsn/wsn_demo.jpg&#39;);&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;project/wsn/wsn_demo.jpg&#34; alt=&#34;Two sensor nodes configured for in transmit-receive mode.&#34;/&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;wsn_demo.jpg&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Two sensor nodes configured for in transmit-receive mode.&lt;/p&gt;
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+
+&lt;/div&gt;
+&lt;/p&gt;
+</description>
     </item>
     
   </channel>

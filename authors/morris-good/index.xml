@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Morris Good on Ge[o]rges Dib</title>
+    <title>Morris Good | Ge[o]rges Dib</title>
     <link>https://dibgerge.github.io/authors/morris-good/</link>
-    <description>Recent content in Morris Good on Ge[o]rges Dib</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 01 Sep 2017 00:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://dibgerge.github.io/authors/morris-good/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://dibgerge.github.io/authors/morris-good/index.xml" rel="self" type="application/rss+xml" />
+    <description>Morris Good</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Sep 2017 00:00:00 -0700</lastBuildDate>
+    <image>
+      <url>https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png</url>
+      <title>Morris Good</title>
+      <link>https://dibgerge.github.io/authors/morris-good/</link>
+    </image>
     
     <item>
       <title>Challenges and Solutions in SHM for Nuclear Power Environments</title>
       <link>https://dibgerge.github.io/publication/2017-iwshm/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017-iwshm/</guid>
       <description></description>
     </item>

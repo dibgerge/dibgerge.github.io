@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ge[o]rges Dib</title>
+    <link>https://dibgerge.github.io/tutorial/</link>
+      <atom:link href="https://dibgerge.github.io/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ge[o]rges Dib</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png</url>
+      <title>Ge[o]rges Dib</title>
+      <link>https://dibgerge.github.io/tutorial/</link>
+    </image>
+    
+  </channel>
+</rss>

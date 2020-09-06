@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Oleksii Karpenko on Ge[o]rges Dib</title>
+    <title>Oleksii Karpenko | Ge[o]rges Dib</title>
     <link>https://dibgerge.github.io/authors/oleksii-karpenko/</link>
-    <description>Recent content in Oleksii Karpenko on Ge[o]rges Dib</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 17 Nov 2017 00:00:00 -0800</lastBuildDate>
-    
-	<atom:link href="https://dibgerge.github.io/authors/oleksii-karpenko/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://dibgerge.github.io/authors/oleksii-karpenko/index.xml" rel="self" type="application/rss+xml" />
+    <description>Oleksii Karpenko</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 17 Nov 2017 00:00:00 -0800</lastBuildDate>
+    <image>
+      <url>https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png</url>
+      <title>Oleksii Karpenko</title>
+      <link>https://dibgerge.github.io/authors/oleksii-karpenko/</link>
+    </image>
     
     <item>
       <title>Ensembles of novelty detection classifiers for structural health monitoring using guided waves</title>
       <link>https://dibgerge.github.io/publication/2017-sms/</link>
       <pubDate>Fri, 17 Nov 2017 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017-sms/</guid>
       <description></description>
     </item>
@@ -24,7 +24,6 @@
       <title>Guided Wave Structural Health Monitoring for Impact Damage Detection and Characterization</title>
       <link>https://dibgerge.github.io/publication/2015-asc/</link>
       <pubDate>Thu, 01 Oct 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015-asc/</guid>
       <description></description>
     </item>
@@ -33,7 +32,6 @@
       <title>Feasibility of PZT ceramics for impact damage detection in composite structures</title>
       <link>https://dibgerge.github.io/publication/2014d-qnde/</link>
       <pubDate>Sun, 20 Jul 2014 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014d-qnde/</guid>
       <description></description>
     </item>
@@ -42,7 +40,6 @@
       <title>Image processing algorithms for automated analysis of GMR data from inspection of multilayer structures</title>
       <link>https://dibgerge.github.io/publication/2014c-qnde/</link>
       <pubDate>Sun, 20 Jul 2014 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014c-qnde/</guid>
       <description></description>
     </item>
@@ -51,7 +48,6 @@
       <title>Multitechnique monitoring of fatigue damage in adhesively bonded composite lap-joints</title>
       <link>https://dibgerge.github.io/publication/2014b-qnde/</link>
       <pubDate>Sun, 20 Jul 2014 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014b-qnde/</guid>
       <description></description>
     </item>
@@ -60,7 +56,6 @@
       <title>Advanced Signal Processing Algorithms in Structural Integrity Monitoring</title>
       <link>https://dibgerge.github.io/publication/2014-icons/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014-icons/</guid>
       <description></description>
     </item>
@@ -69,7 +64,6 @@
       <title>Novel Mode Decomposition Algorithms for Lamb Wave Signal Analysis in Online Monitoring of Structures</title>
       <link>https://dibgerge.github.io/publication/2013-ejam/</link>
       <pubDate>Thu, 14 Mar 2013 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2013-ejam/</guid>
       <description></description>
     </item>

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2 on Ge[o]rges Dib</title>
+    <title>2 | Ge[o]rges Dib</title>
     <link>https://dibgerge.github.io/publication_types/2/</link>
-    <description>Recent content in 2 on Ge[o]rges Dib</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 05 Feb 2019 19:34:55 -0500</lastBuildDate>
-    
-	<atom:link href="https://dibgerge.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://dibgerge.github.io/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 05 Feb 2019 19:34:55 -0500</lastBuildDate>
+    <image>
+      <url>https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png</url>
+      <title>2</title>
+      <link>https://dibgerge.github.io/publication_types/2/</link>
+    </image>
     
     <item>
       <title>Investigations of degradation and encapsulation of plastic scintillator</title>
       <link>https://dibgerge.github.io/publication/2019-nimpr/</link>
       <pubDate>Tue, 05 Feb 2019 19:34:55 -0500</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2019-nimpr/</guid>
       <description></description>
     </item>
@@ -24,7 +24,6 @@
       <title>In-situ fatigue monitoring procedure using nonlinear ultrasonic surface waves considering the nonlinear effects in the measurement system</title>
       <link>https://dibgerge.github.io/publication/2019-net/</link>
       <pubDate>Mon, 14 Jan 2019 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2019-net/</guid>
       <description></description>
     </item>
@@ -33,7 +32,6 @@
       <title>Ensembles of novelty detection classifiers for structural health monitoring using guided waves</title>
       <link>https://dibgerge.github.io/publication/2017-sms/</link>
       <pubDate>Fri, 17 Nov 2017 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017-sms/</guid>
       <description></description>
     </item>
@@ -42,7 +40,6 @@
       <title>Design and performance of optimal detectors for guided wave structural health monitoring</title>
       <link>https://dibgerge.github.io/publication/2016-shm/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2016-shm/</guid>
       <description></description>
     </item>
@@ -51,7 +48,6 @@
       <title>Rotating field EC-GMR sensor for crack detection at fastener site in layered structures</title>
       <link>https://dibgerge.github.io/publication/2015-ieee-sensors/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015-ieee-sensors/</guid>
       <description></description>
     </item>
@@ -60,7 +56,6 @@
       <title>Advanced Signal Processing Algorithms in Structural Integrity Monitoring</title>
       <link>https://dibgerge.github.io/publication/2014-icons/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014-icons/</guid>
       <description></description>
     </item>
@@ -69,7 +64,6 @@
       <title>A Wireless Sensor Node for Structural Health Monitoring using Guided Wave Testing</title>
       <link>https://dibgerge.github.io/publication/2013-me/</link>
       <pubDate>Tue, 01 Oct 2013 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2013-me/</guid>
       <description></description>
     </item>
@@ -78,7 +72,6 @@
       <title>Novel Mode Decomposition Algorithms for Lamb Wave Signal Analysis in Online Monitoring of Structures</title>
       <link>https://dibgerge.github.io/publication/2013-ejam/</link>
       <pubDate>Thu, 14 Mar 2013 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2013-ejam/</guid>
       <description></description>
     </item>
@@ -87,7 +80,6 @@
       <title>Sensor-tilt invariance analysis for eddy current signals</title>
       <link>https://dibgerge.github.io/publication/2012-ndte/</link>
       <pubDate>Thu, 01 Nov 2012 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2012-ndte/</guid>
       <description></description>
     </item>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Introduction to Linear Algebra | Ge[o]rges Dib</title>
+    <link>https://dibgerge.github.io/tutorial/math-linear-algebra/</link>
+      <atom:link href="https://dibgerge.github.io/tutorial/math-linear-algebra/index.xml" rel="self" type="application/rss+xml" />
+    <description>Introduction to Linear Algebra</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 09 Sep 2018 00:00:00 -0700</lastBuildDate>
+    <image>
+      <url>https://dibgerge.github.io/tutorial/math-linear-algebra/featured.jpg</url>
+      <title>Introduction to Linear Algebra</title>
+      <link>https://dibgerge.github.io/tutorial/math-linear-algebra/</link>
+    </image>
+    
+    <item>
+      <title>Elimination</title>
+      <link>https://dibgerge.github.io/tutorial/math-linear-algebra/part-01-elimination/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 -0700</pubDate>
+      <guid>https://dibgerge.github.io/tutorial/math-linear-algebra/part-01-elimination/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The geometry of linear equations</title>
+      <link>https://dibgerge.github.io/tutorial/math-linear-algebra/part-01-intro/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 -0700</pubDate>
+      <guid>https://dibgerge.github.io/tutorial/math-linear-algebra/part-01-intro/</guid>
+      <description>&lt;p&gt;The fundamental problem of linear algebra is to solve $n$ linear equations in $n$ unknowns, for example:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{align}
+&amp;amp; 2x - y &amp;amp;= 0 \\\&lt;br&gt;
+&amp;amp; \text{&amp;ndash;}x + 2y &amp;amp;= 3
+\end{align}
+$$&lt;/p&gt;
+&lt;p&gt;In linear algebra, we view this problem in three ways.&lt;/p&gt;
+&lt;h2 id=&#34;row-picture&#34;&gt;Row picture&lt;/h2&gt;
+&lt;p&gt;Plot the points that satisfy each equation. In the above example, each equation represents a line in a 2-D space. The intersection of the two plots represent the solution to this system of equations. Figure 1 shows the plot for the two equations above, and they intersect at one point ($x=1$, $y=2$), which is the system&#39;s solution.&lt;/p&gt;
+&lt;center&gt;
+
+&lt;link rel=&#34;stylesheet&#34; href=&#34;https://dibgerge.github.io/css/hugo-easy-gallery.css&#34; /&gt;
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://dibgerge.github.io/tutorials/math-linear-algebra/Figures/part-01-row-picture.png&#34; alt=&#34;Figure 1: The lines $2x -y = 0$ and $-x&amp;#43;2y=3$ intersect at the point (1, 2).&#34;/&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;https://dibgerge.github.io/tutorials/math-linear-algebra/Figures/part-01-row-picture.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Figure 1: The lines $2x -y = 0$ and $-x&amp;#43;2y=3$ intersect at the point (1, 2).&lt;/p&gt;
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/center&gt;
+&lt;h2 id=&#34;column-picture&#34;&gt;Column picture&lt;/h2&gt;
+&lt;p&gt;We rewrite the system of linear equations as a single equation by turning the coefficients in the columns of the system into vectors:
+$$
+x \begin{bmatrix} 2 \\\ \text{&amp;ndash;}1 \end{bmatrix} + y \begin{bmatrix} \text{&amp;ndash;}1 \\\ 2 \end{bmatrix} = \begin{bmatrix} 0 \\\ 3 \end{bmatrix}
+$$
+where we view the right  hand side as a linear combinations of the coefficients on the left hand side. Geometrically, we want to find numbers $x$ and $y$ so that $x$ so that the combinations of the two columns vectors equals $\begin{bmatrix} 0 \\\ 3 \end{bmatrix}$. Figure 2 shows that for $x=1$ and $y=2$, we get the correct combination to give us the right hand side.&lt;/p&gt;
+&lt;center&gt;
+  
+
+&lt;div class=&#34;box&#34; &gt;
+  &lt;figure  itemprop=&#34;associatedMedia&#34; itemscope itemtype=&#34;http://schema.org/ImageObject&#34;&gt;
+    &lt;div class=&#34;img&#34;&gt;
+      &lt;img itemprop=&#34;thumbnail&#34; src=&#34;https://dibgerge.github.io/tutorials/math-linear-algebra/Figures/part-01-column-picture.png&#34; alt=&#34;Figure 2: A linear combination of the column vectors equals the vector $\mathbf{b}$. &#34;/&gt;
+    &lt;/div&gt;
+    &lt;a href=&#34;https://dibgerge.github.io/tutorials/math-linear-algebra/Figures/part-01-column-picture.png&#34; itemprop=&#34;contentUrl&#34;&gt;&lt;/a&gt;
+      &lt;figcaption&gt;
+          &lt;p&gt;Figure 2: A linear combination of the column vectors equals the vector $\mathbf{b}$. &lt;/p&gt;
+      &lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;/center&gt;
+&lt;h2 id=&#34;matrix-picture&#34;&gt;Matrix picture&lt;/h2&gt;
+&lt;p&gt;We write the system of equations as a single equation by using matrices and vectors. The above equation is:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{bmatrix}
+2 &amp;amp; \text{&amp;ndash;}1 \\\&lt;br&gt;
+\text{&amp;ndash;} 1 &amp;amp; 2
+\end{bmatrix}
+\begin{bmatrix}
+x \\\ y
+\end{bmatrix}=
+\begin{bmatrix}
+0 \\\ 3
+\end{bmatrix}
+$$&lt;/p&gt;
+&lt;p&gt;The matrix $A = \begin{bmatrix}2 &amp;amp; \text{&amp;ndash;}1 \\\ \text{&amp;ndash;} 1 &amp;amp; 2\end{bmatrix}$ is called the &lt;em&gt;coefficient matrix&lt;/em&gt;. The vector $\mathbf{x} = \begin{bmatrix} x \\\ y \end{bmatrix}$ is the vector of unknowns. The values on the right hand side of the equations form the vector $\mathbf{b}$:
+$$
+A \mathbf{x} = \mathbf{b}
+$$&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

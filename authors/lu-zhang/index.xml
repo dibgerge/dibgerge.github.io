@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Lu Zhang on Ge[o]rges Dib</title>
+    <title>Lu Zhang | Ge[o]rges Dib</title>
     <link>https://dibgerge.github.io/authors/lu-zhang/</link>
-    <description>Recent content in Lu Zhang on Ge[o]rges Dib</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 05 Sep 2012 00:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://dibgerge.github.io/authors/lu-zhang/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://dibgerge.github.io/authors/lu-zhang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Lu Zhang</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 05 Sep 2012 00:00:00 -0700</lastBuildDate>
+    <image>
+      <url>https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png</url>
+      <title>Lu Zhang</title>
+      <link>https://dibgerge.github.io/authors/lu-zhang/</link>
+    </image>
     
     <item>
       <title>Pre-processing methods for eddy current data analysis using Hilbert-Huang Transform</title>
       <link>https://dibgerge.github.io/publication/2011-isaem/</link>
       <pubDate>Wed, 05 Sep 2012 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2011-isaem/</guid>
       <description></description>
     </item>
@@ -24,7 +24,6 @@
       <title>Nonlinear, non-stationary image processing technique for eddy current NDE</title>
       <link>https://dibgerge.github.io/publication/2011b-qnde/</link>
       <pubDate>Fri, 22 Jul 2011 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2011b-qnde/</guid>
       <description></description>
     </item>

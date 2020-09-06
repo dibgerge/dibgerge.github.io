@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Satish S Udpa on Ge[o]rges Dib</title>
+    <title>Satish S Udpa | Ge[o]rges Dib</title>
     <link>https://dibgerge.github.io/authors/satish-s-udpa/</link>
-    <description>Recent content in Satish S Udpa on Ge[o]rges Dib</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2015 00:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://dibgerge.github.io/authors/satish-s-udpa/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://dibgerge.github.io/authors/satish-s-udpa/index.xml" rel="self" type="application/rss+xml" />
+    <description>Satish S Udpa</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Oct 2015 00:00:00 -0700</lastBuildDate>
+    <image>
+      <url>https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png</url>
+      <title>Satish S Udpa</title>
+      <link>https://dibgerge.github.io/authors/satish-s-udpa/</link>
+    </image>
     
     <item>
       <title>Guided Wave Structural Health Monitoring for Impact Damage Detection and Characterization</title>
       <link>https://dibgerge.github.io/publication/2015-asc/</link>
       <pubDate>Thu, 01 Oct 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015-asc/</guid>
       <description></description>
     </item>
@@ -24,7 +24,6 @@
       <title>Rotating field EC-GMR sensor for crack detection at fastener site in layered structures</title>
       <link>https://dibgerge.github.io/publication/2015-ieee-sensors/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015-ieee-sensors/</guid>
       <description></description>
     </item>
@@ -33,7 +32,6 @@
       <title>EC-GMR array with rotating current excitation for multilayered riveted structures inspection</title>
       <link>https://dibgerge.github.io/publication/2014-qnde/</link>
       <pubDate>Sun, 20 Jul 2014 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014-qnde/</guid>
       <description></description>
     </item>
@@ -42,7 +40,6 @@
       <title>Feasibility of PZT ceramics for impact damage detection in composite structures</title>
       <link>https://dibgerge.github.io/publication/2014d-qnde/</link>
       <pubDate>Sun, 20 Jul 2014 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014d-qnde/</guid>
       <description></description>
     </item>
@@ -51,7 +48,6 @@
       <title>Novel Mode Decomposition Algorithms for Lamb Wave Signal Analysis in Online Monitoring of Structures</title>
       <link>https://dibgerge.github.io/publication/2013-ejam/</link>
       <pubDate>Thu, 14 Mar 2013 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2013-ejam/</guid>
       <description></description>
     </item>
@@ -60,7 +56,6 @@
       <title>Wireless NDE sensor system for continuous monitoring</title>
       <link>https://dibgerge.github.io/publication/2010-qnde/</link>
       <pubDate>Thu, 22 Jul 2010 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2010-qnde/</guid>
       <description></description>
     </item>

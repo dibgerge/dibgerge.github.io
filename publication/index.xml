@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications on Ge[o]rges Dib</title>
+    <title>Publications | Ge[o]rges Dib</title>
     <link>https://dibgerge.github.io/publication/</link>
-    <description>Recent content in Publications on Ge[o]rges Dib</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 -0800</lastBuildDate>
-    
-	<atom:link href="https://dibgerge.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://dibgerge.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 05 Feb 2019 19:34:55 -0500</lastBuildDate>
+    <image>
+      <url>https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png</url>
+      <title>Publications</title>
+      <link>https://dibgerge.github.io/publication/</link>
+    </image>
     
     <item>
       <title>Investigations of degradation and encapsulation of plastic scintillator</title>
       <link>https://dibgerge.github.io/publication/2019-nimpr/</link>
       <pubDate>Tue, 05 Feb 2019 19:34:55 -0500</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2019-nimpr/</guid>
       <description></description>
     </item>
@@ -24,7 +24,6 @@
       <title>In-situ fatigue monitoring procedure using nonlinear ultrasonic surface waves considering the nonlinear effects in the measurement system</title>
       <link>https://dibgerge.github.io/publication/2019-net/</link>
       <pubDate>Mon, 14 Jan 2019 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2019-net/</guid>
       <description></description>
     </item>
@@ -33,7 +32,6 @@
       <title>Ultrasound Modeling and Simulation: Status Update</title>
       <link>https://dibgerge.github.io/publication/2018-pnnl/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2018-pnnl/</guid>
       <description></description>
     </item>
@@ -42,7 +40,6 @@
       <title>Ensembles of novelty detection classifiers for structural health monitoring using guided waves</title>
       <link>https://dibgerge.github.io/publication/2017-sms/</link>
       <pubDate>Fri, 17 Nov 2017 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017-sms/</guid>
       <description></description>
     </item>
@@ -51,7 +48,6 @@
       <title>Challenges and Solutions in SHM for Nuclear Power Environments</title>
       <link>https://dibgerge.github.io/publication/2017-iwshm/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017-iwshm/</guid>
       <description></description>
     </item>
@@ -60,7 +56,6 @@
       <title>On the usage of ultrasound computational models for decision making under ambiguity</title>
       <link>https://dibgerge.github.io/publication/2017-qnde/</link>
       <pubDate>Thu, 20 Jul 2017 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017-qnde/</guid>
       <description></description>
     </item>
@@ -69,7 +64,6 @@
       <title>Preliminary design of high temperature ultrasonic transducers for liquid sodium environments</title>
       <link>https://dibgerge.github.io/publication/2017b-qnde/</link>
       <pubDate>Thu, 20 Jul 2017 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017b-qnde/</guid>
       <description></description>
     </item>
@@ -78,7 +72,6 @@
       <title>Integration and Assessment of Component Health Prognostics in Supervisory Control Systems</title>
       <link>https://dibgerge.github.io/publication/2017-npic/</link>
       <pubDate>Sun, 11 Jun 2017 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017-npic/</guid>
       <description></description>
     </item>
@@ -87,7 +80,6 @@
       <title>Validation of Ultrasonic Nondestructive Examination (NDE) Computational Models – Phase 1</title>
       <link>https://dibgerge.github.io/publication/2017-pnnl/</link>
       <pubDate>Fri, 05 May 2017 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017-pnnl/</guid>
       <description></description>
     </item>
@@ -96,7 +88,6 @@
       <title>Detecting Water in Dry Storage Canisters for Used Fuel</title>
       <link>https://dibgerge.github.io/publication/2017-ihlrwm/</link>
       <pubDate>Sun, 09 Apr 2017 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017-ihlrwm/</guid>
       <description></description>
     </item>
@@ -105,7 +96,6 @@
       <title>PVT Degradation Studies: Acoustic Diagnostics</title>
       <link>https://dibgerge.github.io/publication/2017-osti/</link>
       <pubDate>Sat, 01 Apr 2017 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017-osti/</guid>
       <description></description>
     </item>
@@ -114,7 +104,6 @@
       <title>Summary Describing Integration of ERM Methodology into Supervisory Control Framework with Software Package Documentation</title>
       <link>https://dibgerge.github.io/publication/2016-osti/</link>
       <pubDate>Tue, 20 Sep 2016 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2016-osti/</guid>
       <description></description>
     </item>
@@ -123,7 +112,6 @@
       <title>Experimental Design for Evaluating Selected Nondestructive Measurement Technologies</title>
       <link>https://dibgerge.github.io/publication/2016b-osti/</link>
       <pubDate>Sat, 16 Jul 2016 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2016b-osti/</guid>
       <description></description>
     </item>
@@ -132,7 +120,6 @@
       <title>Non-destructive Measurements for Diagnostics of Advanced Reactor Passive Components</title>
       <link>https://dibgerge.github.io/publication/2016-icapp/</link>
       <pubDate>Sun, 17 Apr 2016 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2016-icapp/</guid>
       <description></description>
     </item>
@@ -141,7 +128,6 @@
       <title>Design and performance of optimal detectors for guided wave structural health monitoring</title>
       <link>https://dibgerge.github.io/publication/2016-shm/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2016-shm/</guid>
       <description></description>
     </item>
@@ -150,7 +136,6 @@
       <title>Guided Wave Structural Health Monitoring for Impact Damage Detection and Characterization</title>
       <link>https://dibgerge.github.io/publication/2015-asc/</link>
       <pubDate>Thu, 01 Oct 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015-asc/</guid>
       <description></description>
     </item>
@@ -159,7 +144,6 @@
       <title>State of the Art Assessment of NDE Techniques for Aging Cable Management in Nuclear Power Plants FY2015</title>
       <link>https://dibgerge.github.io/publication/2015-osti/</link>
       <pubDate>Tue, 08 Sep 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015-osti/</guid>
       <description></description>
     </item>
@@ -168,7 +152,6 @@
       <title>Assessment of NDE for key indicators of aging cables in nuclear power plants – Interim status</title>
       <link>https://dibgerge.github.io/publication/2015b-qnde/</link>
       <pubDate>Mon, 20 Jul 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015b-qnde/</guid>
       <description></description>
     </item>
@@ -177,7 +160,6 @@
       <title>Experimental validation of ultrasonic NDE simulation software</title>
       <link>https://dibgerge.github.io/publication/2015-qnde/</link>
       <pubDate>Mon, 20 Jul 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015-qnde/</guid>
       <description></description>
     </item>
@@ -186,7 +168,6 @@
       <title>Progress towards prognostic health management of passive components in advanced reactors: Model selection and evaluation</title>
       <link>https://dibgerge.github.io/publication/2015-phm/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015-phm/</guid>
       <description></description>
     </item>
@@ -195,7 +176,6 @@
       <title>Component-Level Prognostics Health Management Framework for Passive Components</title>
       <link>https://dibgerge.github.io/publication/2015b-osti/</link>
       <pubDate>Fri, 19 Jun 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015b-osti/</guid>
       <description></description>
     </item>
@@ -204,7 +184,6 @@
       <title>Rotating field EC-GMR sensor for crack detection at fastener site in layered structures</title>
       <link>https://dibgerge.github.io/publication/2015-ieee-sensors/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015-ieee-sensors/</guid>
       <description></description>
     </item>
@@ -213,7 +192,6 @@
       <title>EC-GMR array with rotating current excitation for multilayered riveted structures inspection</title>
       <link>https://dibgerge.github.io/publication/2014-qnde/</link>
       <pubDate>Sun, 20 Jul 2014 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014-qnde/</guid>
       <description></description>
     </item>
@@ -222,7 +200,6 @@
       <title>Feasibility of PZT ceramics for impact damage detection in composite structures</title>
       <link>https://dibgerge.github.io/publication/2014d-qnde/</link>
       <pubDate>Sun, 20 Jul 2014 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014d-qnde/</guid>
       <description></description>
     </item>
@@ -231,7 +208,6 @@
       <title>Image processing algorithms for automated analysis of GMR data from inspection of multilayer structures</title>
       <link>https://dibgerge.github.io/publication/2014c-qnde/</link>
       <pubDate>Sun, 20 Jul 2014 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014c-qnde/</guid>
       <description></description>
     </item>
@@ -240,7 +216,6 @@
       <title>Multitechnique monitoring of fatigue damage in adhesively bonded composite lap-joints</title>
       <link>https://dibgerge.github.io/publication/2014b-qnde/</link>
       <pubDate>Sun, 20 Jul 2014 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014b-qnde/</guid>
       <description></description>
     </item>
@@ -249,7 +224,6 @@
       <title>Advanced Signal Processing Algorithms in Structural Integrity Monitoring</title>
       <link>https://dibgerge.github.io/publication/2014-icons/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014-icons/</guid>
       <description></description>
     </item>
@@ -258,7 +232,6 @@
       <title>A Wireless Sensor Node for Structural Health Monitoring using Guided Wave Testing</title>
       <link>https://dibgerge.github.io/publication/2013-me/</link>
       <pubDate>Tue, 01 Oct 2013 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2013-me/</guid>
       <description></description>
     </item>
@@ -267,7 +240,6 @@
       <title>Novel Mode Decomposition Algorithms for Lamb Wave Signal Analysis in Online Monitoring of Structures</title>
       <link>https://dibgerge.github.io/publication/2013-ejam/</link>
       <pubDate>Thu, 14 Mar 2013 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2013-ejam/</guid>
       <description></description>
     </item>
@@ -276,7 +248,6 @@
       <title>Sensor-tilt invariance analysis for eddy current signals</title>
       <link>https://dibgerge.github.io/publication/2012-ndte/</link>
       <pubDate>Thu, 01 Nov 2012 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2012-ndte/</guid>
       <description></description>
     </item>
@@ -285,7 +256,6 @@
       <title>Pre-processing methods for eddy current data analysis using Hilbert-Huang Transform</title>
       <link>https://dibgerge.github.io/publication/2011-isaem/</link>
       <pubDate>Wed, 05 Sep 2012 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2011-isaem/</guid>
       <description></description>
     </item>
@@ -294,7 +264,6 @@
       <title>High performance wireless sensors system for structural health monitoring</title>
       <link>https://dibgerge.github.io/publication/2011-qnde/</link>
       <pubDate>Fri, 22 Jul 2011 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2011-qnde/</guid>
       <description></description>
     </item>
@@ -303,7 +272,6 @@
       <title>Nonlinear, non-stationary image processing technique for eddy current NDE</title>
       <link>https://dibgerge.github.io/publication/2011b-qnde/</link>
       <pubDate>Fri, 22 Jul 2011 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2011b-qnde/</guid>
       <description></description>
     </item>
@@ -312,7 +280,6 @@
       <title>Wireless NDE sensor system for continuous monitoring</title>
       <link>https://dibgerge.github.io/publication/2010-qnde/</link>
       <pubDate>Thu, 22 Jul 2010 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2010-qnde/</guid>
       <description></description>
     </item>

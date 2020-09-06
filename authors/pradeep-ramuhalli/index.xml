@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pradeep Ramuhalli on Ge[o]rges Dib</title>
+    <title>Pradeep Ramuhalli | Ge[o]rges Dib</title>
     <link>https://dibgerge.github.io/authors/pradeep-ramuhalli/</link>
-    <description>Recent content in Pradeep Ramuhalli on Ge[o]rges Dib</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 14 Jan 2019 00:00:00 -0800</lastBuildDate>
-    
-	<atom:link href="https://dibgerge.github.io/authors/pradeep-ramuhalli/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://dibgerge.github.io/authors/pradeep-ramuhalli/index.xml" rel="self" type="application/rss+xml" />
+    <description>Pradeep Ramuhalli</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 14 Jan 2019 00:00:00 -0800</lastBuildDate>
+    <image>
+      <url>https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png</url>
+      <title>Pradeep Ramuhalli</title>
+      <link>https://dibgerge.github.io/authors/pradeep-ramuhalli/</link>
+    </image>
     
     <item>
       <title>In-situ fatigue monitoring procedure using nonlinear ultrasonic surface waves considering the nonlinear effects in the measurement system</title>
       <link>https://dibgerge.github.io/publication/2019-net/</link>
       <pubDate>Mon, 14 Jan 2019 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2019-net/</guid>
       <description></description>
     </item>
@@ -24,7 +24,6 @@
       <title>Ultrasound Modeling and Simulation: Status Update</title>
       <link>https://dibgerge.github.io/publication/2018-pnnl/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2018-pnnl/</guid>
       <description></description>
     </item>
@@ -33,7 +32,6 @@
       <title>Challenges and Solutions in SHM for Nuclear Power Environments</title>
       <link>https://dibgerge.github.io/publication/2017-iwshm/</link>
       <pubDate>Fri, 01 Sep 2017 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017-iwshm/</guid>
       <description></description>
     </item>
@@ -42,7 +40,6 @@
       <title>Preliminary design of high temperature ultrasonic transducers for liquid sodium environments</title>
       <link>https://dibgerge.github.io/publication/2017b-qnde/</link>
       <pubDate>Thu, 20 Jul 2017 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017b-qnde/</guid>
       <description></description>
     </item>
@@ -51,7 +48,6 @@
       <title>Integration and Assessment of Component Health Prognostics in Supervisory Control Systems</title>
       <link>https://dibgerge.github.io/publication/2017-npic/</link>
       <pubDate>Sun, 11 Jun 2017 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017-npic/</guid>
       <description></description>
     </item>
@@ -60,7 +56,6 @@
       <title>Summary Describing Integration of ERM Methodology into Supervisory Control Framework with Software Package Documentation</title>
       <link>https://dibgerge.github.io/publication/2016-osti/</link>
       <pubDate>Tue, 20 Sep 2016 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2016-osti/</guid>
       <description></description>
     </item>
@@ -69,7 +64,6 @@
       <title>Experimental Design for Evaluating Selected Nondestructive Measurement Technologies</title>
       <link>https://dibgerge.github.io/publication/2016b-osti/</link>
       <pubDate>Sat, 16 Jul 2016 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2016b-osti/</guid>
       <description></description>
     </item>
@@ -78,7 +72,6 @@
       <title>Assessment of NDE for key indicators of aging cables in nuclear power plants – Interim status</title>
       <link>https://dibgerge.github.io/publication/2015b-qnde/</link>
       <pubDate>Mon, 20 Jul 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015b-qnde/</guid>
       <description></description>
     </item>
@@ -87,7 +80,6 @@
       <title>Progress towards prognostic health management of passive components in advanced reactors: Model selection and evaluation</title>
       <link>https://dibgerge.github.io/publication/2015-phm/</link>
       <pubDate>Mon, 22 Jun 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015-phm/</guid>
       <description></description>
     </item>
@@ -96,7 +88,6 @@
       <title>Component-Level Prognostics Health Management Framework for Passive Components</title>
       <link>https://dibgerge.github.io/publication/2015b-osti/</link>
       <pubDate>Fri, 19 Jun 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015b-osti/</guid>
       <description></description>
     </item>
@@ -105,7 +96,6 @@
       <title>Wireless NDE sensor system for continuous monitoring</title>
       <link>https://dibgerge.github.io/publication/2010-qnde/</link>
       <pubDate>Thu, 22 Jul 2010 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2010-qnde/</guid>
       <description></description>
     </item>

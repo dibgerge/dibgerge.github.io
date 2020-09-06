@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Gerges Dib">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="The general framework we have in sorting is that we are given a sequence of $n$ numbers, and we want to construct an algorithm which orders those numbers from smallest to largest.
+Input: A sequence of $n$ numbers $\langle a_1, a_2, \cdots, a_n \rangle$ Output: A permutation (or reordering) $\langle a_1&rsquo;, a_2&rsquo;, \cdots, a_n&rsquo; \rangle$ of the inputs such that $a_1&rsquo; \le a_2&rsquo; \le \cdots \le a_n&#39;$.
+In general, the items we would like to sort do not have to be numbers, as they can also be objects, which some sense of ordering for them, as we will see later.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://dibgerge.github.io/tutorial/algorithms/1_sorting/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#ba68c8">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104457229-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-104457229-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://dibgerge.github.io/tutorial/algorithms/1_sorting/">
+
+  
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Ge[o]rges Dib">
+  <meta property="og:url" content="https://dibgerge.github.io/tutorial/algorithms/1_sorting/">
+  <meta property="og:title" content="Sorting | Ge[o]rges Dib">
+  <meta property="og:description" content="The general framework we have in sorting is that we are given a sequence of $n$ numbers, and we want to construct an algorithm which orders those numbers from smallest to largest.
+Input: A sequence of $n$ numbers $\langle a_1, a_2, \cdots, a_n \rangle$ Output: A permutation (or reordering) $\langle a_1&rsquo;, a_2&rsquo;, \cdots, a_n&rsquo; \rangle$ of the inputs such that $a_1&rsquo; \le a_2&rsquo; \le \cdots \le a_n&#39;$.
+In general, the items we would like to sort do not have to be numbers, as they can also be objects, which some sense of ordering for them, as we will see later."><meta property="og:image" content="https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png">
+  <meta property="twitter:image" content="https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-01-12T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-01-12T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Sorting | Ge[o]rges Dib</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>#Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>#Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/post/"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/algorithms/">Overview</a>
+
+  </div>
+  
+  <div class="docs-toc-item active">
+    <a class="docs-toc-link" href="/tutorial/algorithms/1_sorting/">Sorting</a>
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/tutorial/algorithms/2_hashing/">Hashing</a>
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#insertion-sort">Insertion sort</a>
+      <ul>
+        <li><a href="#algorithm">Algorithm</a></li>
+      </ul>
+    </li>
+    <li><a href="#selection-sort">Selection Sort</a></li>
+    <li><a href="#merge-sort">Merge Sort</a></li>
+    <li><a href="#bubble-sort">Bubble sort</a></li>
+    <li><a href="#heap-sort">Heap sort</a></li>
+    <li><a href="#quick-sort">Quick sort</a></li>
+    <li><a href="#count-sort">Count sort</a></li>
+    <li><a href="#radix-sort">Radix sort</a></li>
+    <li><a href="#sorting-in-python">Sorting in python</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Sorting</h1>
+
+          <div class="article-style">
+            <p>The general framework we have in sorting is that we are given a sequence of $n$ numbers, and we want to construct an algorithm which orders those numbers from smallest to largest.</p>
+<p><strong>Input</strong>: A sequence of $n$ numbers $\langle a_1, a_2, \cdots, a_n \rangle$ <br>
+<strong>Output</strong>: A permutation (or reordering)   $\langle a_1&rsquo;, a_2&rsquo;, \cdots, a_n&rsquo; \rangle$ of the inputs such that $a_1&rsquo; \le a_2&rsquo; \le \cdots \le a_n'$.</p>
+<p>In general, the items we would like to sort do not have to be numbers, as they can also be objects, which some sense of ordering for them, as we will see later.</p>
+<p>In the following we describe some of the most common sorting algorithms.</p>
+<h2 id="insertion-sort">Insertion sort</h2>
+<p>This is an efficient algorithm for sorting a small number of elements. Works the way many people would sort a hand of playing cards! Every time the dealer hands you a card, you insert this card in the correct position within your current hand. To do this, you compare it with each of the cards already in hard, from left to right.</p>
+<h3 id="algorithm">Algorithm</h3>
+<pre><code class="language-python">def insertion_sort(a):
+    for j in range(1, len(a)):
+        key = a[j]
+        i = j - 1
+        while i &gt;= 0 and a[i] &gt; key:
+            a[i+1] = a[i]
+            i = i - 1
+        a[i + 1] = key
+</code></pre>
+<p>Best case scenario is when array is sorted, we have linear time $O(n)$. Worst case scenario when array sorted in reverse order, we have $O(n^2)$.</p>
+<p>Another flavors of insertion sort is using a recursive procedure where we recursively sort <code>A[1..n-1]</code> and then insert <code>A[n]</code> into the sorted array <code>A[1..n-1]</code>.<br>
+Another faster way is to implement binary search within the while loop, which has $O(\lg n)$ time instead of linear search time for insertion position.</p>
+<h2 id="selection-sort">Selection Sort</h2>
+<pre><code class="language-python">def selection_sort(a):
+    for i in range(len(a)-1):
+        min_idx = i
+        for j in range(i+1, len(a)):
+            if a[j] &lt; a[min_idx]:
+                min_idx = j
+
+        if min_idx != i:
+            a[i], a[min_idx] = a[min_idx], a[i]
+</code></pre>
+<p>Finds the smallest element in 2 and replace with <code>a[0]</code>, second smallest and replace with <code>a[1]</code>, etc&hellip;</p>
+<p>Best and worst running times are the same and they are $O(n^2)$.</p>
+<h2 id="merge-sort">Merge Sort</h2>
+<p>Divide an $n$-element sequence into two subsequences of sizes $n/2$ each. Recursively sort the two subsequences and merge them after sorting.</p>
+<pre><code class="language-python">
+def merge(A, p, q, r):
+    &quot;&quot;&quot;
+    Merges the two sorted sub-arrays A[p:q] and A[q+1:r] such that the
+    final subarray a[q:r] is in sorted order.
+
+    Parameters
+    ----------
+    A : list
+        A list of numbers of size `n`.
+
+    p : int
+        The begin index of the left array.
+
+    q : int
+        The begin index of the right array, and 1 + end index of left array.
+
+    r : int
+        End index of right array + 1.
+
+    Return
+    ------
+    : None
+        This function sorts array `A` in-place.
+    &quot;&quot;&quot;
+    L, R = A[p:q], A[q:r]
+    i, j = 0, 0
+
+    for k in range(p, r):
+        try:
+            if L[i] &lt;= R[j]:
+                A[k] = L[i]
+                i += 1
+            else:
+                A[k] = R[j]
+                j += 1
+        except IndexError:
+            if i &gt;= len(L):
+                A[k] = R[j]
+                j += 1
+            elif j &gt;= len(R):
+                A[k] = L[i]
+                i += 1
+
+
+def merge_sort(a, p=0, r=None):
+    if r is None:
+        r = len(a)
+
+    if r - p &gt; 1:
+        q = (p + r)//2
+        merge_sort(a, p, q)
+        merge_sort(a, q, r)
+        merge(a, p, q, r)
+
+</code></pre>
+<p>Merge sort has a running time of $O(n\lg n)$.</p>
+<h2 id="bubble-sort">Bubble sort</h2>
+<h2 id="heap-sort">Heap sort</h2>
+<p>We first need to define what is a heap.</p>
+<h2 id="quick-sort">Quick sort</h2>
+<h2 id="count-sort">Count sort</h2>
+<h2 id="radix-sort">Radix sort</h2>
+<h2 id="sorting-in-python">Sorting in python</h2>
+<p>In python, there is the built in algorithm <code>sorted()</code>.  So what algorithm does this function use?</p>
+<h2 id="references">References</h2>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/tutorial/algorithms/2_hashing/" rel="next">Hashing</a>
+  </div>
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jan 12, 2020</p>
+
+          
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/tutorial/algorithms/1_sorting.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://dibgerge.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

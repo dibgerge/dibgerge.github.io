@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nuclear on Ge[o]rges Dib</title>
+    <title>nuclear | Ge[o]rges Dib</title>
     <link>https://dibgerge.github.io/tags/nuclear/</link>
-    <description>Recent content in nuclear on Ge[o]rges Dib</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 05 Feb 2019 19:34:55 -0500</lastBuildDate>
-    
-	<atom:link href="https://dibgerge.github.io/tags/nuclear/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://dibgerge.github.io/tags/nuclear/index.xml" rel="self" type="application/rss+xml" />
+    <description>nuclear</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 05 Feb 2019 19:34:55 -0500</lastBuildDate>
+    <image>
+      <url>https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png</url>
+      <title>nuclear</title>
+      <link>https://dibgerge.github.io/tags/nuclear/</link>
+    </image>
     
     <item>
       <title>Investigations of degradation and encapsulation of plastic scintillator</title>
       <link>https://dibgerge.github.io/publication/2019-nimpr/</link>
       <pubDate>Tue, 05 Feb 2019 19:34:55 -0500</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2019-nimpr/</guid>
       <description></description>
     </item>
@@ -24,8 +24,23 @@
       <title>Ultrasound Modeling and Simulation: Status Update</title>
       <link>https://dibgerge.github.io/publication/2018-pnnl/</link>
       <pubDate>Sat, 01 Dec 2018 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2018-pnnl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Challenges and Solutions in SHM for Nuclear Power Environments</title>
+      <link>https://dibgerge.github.io/publication/2017-iwshm/</link>
+      <pubDate>Fri, 01 Sep 2017 00:00:00 -0700</pubDate>
+      <guid>https://dibgerge.github.io/publication/2017-iwshm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Integration and Assessment of Component Health Prognostics in Supervisory Control Systems</title>
+      <link>https://dibgerge.github.io/publication/2017-npic/</link>
+      <pubDate>Sun, 11 Jun 2017 00:00:00 -0700</pubDate>
+      <guid>https://dibgerge.github.io/publication/2017-npic/</guid>
       <description></description>
     </item>
     
@@ -33,8 +48,15 @@
       <title>Validation of Ultrasonic Nondestructive Examination (NDE) Computational Models – Phase 1</title>
       <link>https://dibgerge.github.io/publication/2017-pnnl/</link>
       <pubDate>Fri, 05 May 2017 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017-pnnl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Detecting Water in Dry Storage Canisters for Used Fuel</title>
+      <link>https://dibgerge.github.io/publication/2017-ihlrwm/</link>
+      <pubDate>Sun, 09 Apr 2017 00:00:00 -0700</pubDate>
+      <guid>https://dibgerge.github.io/publication/2017-ihlrwm/</guid>
       <description></description>
     </item>
     
@@ -42,8 +64,15 @@
       <title>PVT Degradation Studies: Acoustic Diagnostics</title>
       <link>https://dibgerge.github.io/publication/2017-osti/</link>
       <pubDate>Sat, 01 Apr 2017 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2017-osti/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Summary Describing Integration of ERM Methodology into Supervisory Control Framework with Software Package Documentation</title>
+      <link>https://dibgerge.github.io/publication/2016-osti/</link>
+      <pubDate>Tue, 20 Sep 2016 00:00:00 -0700</pubDate>
+      <guid>https://dibgerge.github.io/publication/2016-osti/</guid>
       <description></description>
     </item>
     
@@ -51,7 +80,6 @@
       <title>Experimental Design for Evaluating Selected Nondestructive Measurement Technologies</title>
       <link>https://dibgerge.github.io/publication/2016b-osti/</link>
       <pubDate>Sat, 16 Jul 2016 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2016b-osti/</guid>
       <description></description>
     </item>
@@ -60,7 +88,6 @@
       <title>State of the Art Assessment of NDE Techniques for Aging Cable Management in Nuclear Power Plants FY2015</title>
       <link>https://dibgerge.github.io/publication/2015-osti/</link>
       <pubDate>Tue, 08 Sep 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015-osti/</guid>
       <description></description>
     </item>
@@ -69,7 +96,6 @@
       <title>Assessment of NDE for key indicators of aging cables in nuclear power plants – Interim status</title>
       <link>https://dibgerge.github.io/publication/2015b-qnde/</link>
       <pubDate>Mon, 20 Jul 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015b-qnde/</guid>
       <description></description>
     </item>
@@ -78,7 +104,6 @@
       <title>Experimental validation of ultrasonic NDE simulation software</title>
       <link>https://dibgerge.github.io/publication/2015-qnde/</link>
       <pubDate>Mon, 20 Jul 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015-qnde/</guid>
       <description></description>
     </item>
@@ -87,7 +112,6 @@
       <title>Component-Level Prognostics Health Management Framework for Passive Components</title>
       <link>https://dibgerge.github.io/publication/2015b-osti/</link>
       <pubDate>Fri, 19 Jun 2015 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015b-osti/</guid>
       <description></description>
     </item>

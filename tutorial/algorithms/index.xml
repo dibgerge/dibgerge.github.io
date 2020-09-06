@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithms | Ge[o]rges Dib</title>
+    <link>https://dibgerge.github.io/tutorial/algorithms/</link>
+      <atom:link href="https://dibgerge.github.io/tutorial/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <description>Algorithms</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 12 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png</url>
+      <title>Algorithms</title>
+      <link>https://dibgerge.github.io/tutorial/algorithms/</link>
+    </image>
+    
+    <item>
+      <title>Hashing</title>
+      <link>https://dibgerge.github.io/tutorial/algorithms/2_hashing/</link>
+      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://dibgerge.github.io/tutorial/algorithms/2_hashing/</guid>
+      <description>&lt;h2 id=&#34;basics&#34;&gt;Basics&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sorting</title>
+      <link>https://dibgerge.github.io/tutorial/algorithms/1_sorting/</link>
+      <pubDate>Sun, 12 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://dibgerge.github.io/tutorial/algorithms/1_sorting/</guid>
+      <description>&lt;p&gt;The general framework we have in sorting is that we are given a sequence of $n$ numbers, and we want to construct an algorithm which orders those numbers from smallest to largest.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Input&lt;/strong&gt;: A sequence of $n$ numbers $\langle a_1, a_2, \cdots, a_n \rangle$ &lt;br&gt;
+&lt;strong&gt;Output&lt;/strong&gt;: A permutation (or reordering)   $\langle a_1&amp;rsquo;, a_2&amp;rsquo;, \cdots, a_n&amp;rsquo; \rangle$ of the inputs such that $a_1&amp;rsquo; \le a_2&amp;rsquo; \le \cdots \le a_n&#39;$.&lt;/p&gt;
+&lt;p&gt;In general, the items we would like to sort do not have to be numbers, as they can also be objects, which some sense of ordering for them, as we will see later.&lt;/p&gt;
+&lt;p&gt;In the following we describe some of the most common sorting algorithms.&lt;/p&gt;
+&lt;h2 id=&#34;insertion-sort&#34;&gt;Insertion sort&lt;/h2&gt;
+&lt;p&gt;This is an efficient algorithm for sorting a small number of elements. Works the way many people would sort a hand of playing cards! Every time the dealer hands you a card, you insert this card in the correct position within your current hand. To do this, you compare it with each of the cards already in hard, from left to right.&lt;/p&gt;
+&lt;h3 id=&#34;algorithm&#34;&gt;Algorithm&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def insertion_sort(a):
+    for j in range(1, len(a)):
+        key = a[j]
+        i = j - 1
+        while i &amp;gt;= 0 and a[i] &amp;gt; key:
+            a[i+1] = a[i]
+            i = i - 1
+        a[i + 1] = key
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Best case scenario is when array is sorted, we have linear time $O(n)$. Worst case scenario when array sorted in reverse order, we have $O(n^2)$.&lt;/p&gt;
+&lt;p&gt;Another flavors of insertion sort is using a recursive procedure where we recursively sort &lt;code&gt;A[1..n-1]&lt;/code&gt; and then insert &lt;code&gt;A[n]&lt;/code&gt; into the sorted array &lt;code&gt;A[1..n-1]&lt;/code&gt;.&lt;br&gt;
+Another faster way is to implement binary search within the while loop, which has $O(\lg n)$ time instead of linear search time for insertion position.&lt;/p&gt;
+&lt;h2 id=&#34;selection-sort&#34;&gt;Selection Sort&lt;/h2&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def selection_sort(a):
+    for i in range(len(a)-1):
+        min_idx = i
+        for j in range(i+1, len(a)):
+            if a[j] &amp;lt; a[min_idx]:
+                min_idx = j
+
+        if min_idx != i:
+            a[i], a[min_idx] = a[min_idx], a[i]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Finds the smallest element in 2 and replace with &lt;code&gt;a[0]&lt;/code&gt;, second smallest and replace with &lt;code&gt;a[1]&lt;/code&gt;, etc&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Best and worst running times are the same and they are $O(n^2)$.&lt;/p&gt;
+&lt;h2 id=&#34;merge-sort&#34;&gt;Merge Sort&lt;/h2&gt;
+&lt;p&gt;Divide an $n$-element sequence into two subsequences of sizes $n/2$ each. Recursively sort the two subsequences and merge them after sorting.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
+def merge(A, p, q, r):
+    &amp;quot;&amp;quot;&amp;quot;
+    Merges the two sorted sub-arrays A[p:q] and A[q+1:r] such that the
+    final subarray a[q:r] is in sorted order.
+
+    Parameters
+    ----------
+    A : list
+        A list of numbers of size `n`.
+
+    p : int
+        The begin index of the left array.
+
+    q : int
+        The begin index of the right array, and 1 + end index of left array.
+
+    r : int
+        End index of right array + 1.
+
+    Return
+    ------
+    : None
+        This function sorts array `A` in-place.
+    &amp;quot;&amp;quot;&amp;quot;
+    L, R = A[p:q], A[q:r]
+    i, j = 0, 0
+
+    for k in range(p, r):
+        try:
+            if L[i] &amp;lt;= R[j]:
+                A[k] = L[i]
+                i += 1
+            else:
+                A[k] = R[j]
+                j += 1
+        except IndexError:
+            if i &amp;gt;= len(L):
+                A[k] = R[j]
+                j += 1
+            elif j &amp;gt;= len(R):
+                A[k] = L[i]
+                i += 1
+
+
+def merge_sort(a, p=0, r=None):
+    if r is None:
+        r = len(a)
+
+    if r - p &amp;gt; 1:
+        q = (p + r)//2
+        merge_sort(a, p, q)
+        merge_sort(a, q, r)
+        merge(a, p, q, r)
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Merge sort has a running time of $O(n\lg n)$.&lt;/p&gt;
+&lt;h2 id=&#34;bubble-sort&#34;&gt;Bubble sort&lt;/h2&gt;
+&lt;h2 id=&#34;heap-sort&#34;&gt;Heap sort&lt;/h2&gt;
+&lt;p&gt;We first need to define what is a heap.&lt;/p&gt;
+&lt;h2 id=&#34;quick-sort&#34;&gt;Quick sort&lt;/h2&gt;
+&lt;h2 id=&#34;count-sort&#34;&gt;Count sort&lt;/h2&gt;
+&lt;h2 id=&#34;radix-sort&#34;&gt;Radix sort&lt;/h2&gt;
+&lt;h2 id=&#34;sorting-in-python&#34;&gt;Sorting in python&lt;/h2&gt;
+&lt;p&gt;In python, there is the built in algorithm &lt;code&gt;sorted()&lt;/code&gt;.  So what algorithm does this function use?&lt;/p&gt;
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

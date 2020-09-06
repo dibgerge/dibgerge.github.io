@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Guang Yang on Ge[o]rges Dib</title>
+    <title>Guang Yang | Ge[o]rges Dib</title>
     <link>https://dibgerge.github.io/authors/guang-yang/</link>
-    <description>Recent content in Guang Yang on Ge[o]rges Dib</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jan 2015 00:00:00 -0800</lastBuildDate>
-    
-	<atom:link href="https://dibgerge.github.io/authors/guang-yang/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://dibgerge.github.io/authors/guang-yang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Guang Yang</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 -0800</lastBuildDate>
+    <image>
+      <url>https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png</url>
+      <title>Guang Yang</title>
+      <link>https://dibgerge.github.io/authors/guang-yang/</link>
+    </image>
     
     <item>
       <title>Rotating field EC-GMR sensor for crack detection at fastener site in layered structures</title>
       <link>https://dibgerge.github.io/publication/2015-ieee-sensors/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 -0800</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2015-ieee-sensors/</guid>
       <description></description>
     </item>
@@ -24,7 +24,6 @@
       <title>EC-GMR array with rotating current excitation for multilayered riveted structures inspection</title>
       <link>https://dibgerge.github.io/publication/2014-qnde/</link>
       <pubDate>Sun, 20 Jul 2014 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2014-qnde/</guid>
       <description></description>
     </item>
@@ -33,7 +32,6 @@
       <title>A Wireless Sensor Node for Structural Health Monitoring using Guided Wave Testing</title>
       <link>https://dibgerge.github.io/publication/2013-me/</link>
       <pubDate>Tue, 01 Oct 2013 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2013-me/</guid>
       <description></description>
     </item>
@@ -42,7 +40,6 @@
       <title>Sensor-tilt invariance analysis for eddy current signals</title>
       <link>https://dibgerge.github.io/publication/2012-ndte/</link>
       <pubDate>Thu, 01 Nov 2012 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2012-ndte/</guid>
       <description></description>
     </item>
@@ -51,7 +48,6 @@
       <title>Pre-processing methods for eddy current data analysis using Hilbert-Huang Transform</title>
       <link>https://dibgerge.github.io/publication/2011-isaem/</link>
       <pubDate>Wed, 05 Sep 2012 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2011-isaem/</guid>
       <description></description>
     </item>
@@ -60,7 +56,6 @@
       <title>Nonlinear, non-stationary image processing technique for eddy current NDE</title>
       <link>https://dibgerge.github.io/publication/2011b-qnde/</link>
       <pubDate>Fri, 22 Jul 2011 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2011b-qnde/</guid>
       <description></description>
     </item>

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>M S Prowant on Ge[o]rges Dib</title>
+    <title>M S Prowant | Ge[o]rges Dib</title>
     <link>https://dibgerge.github.io/authors/m-s-prowant/</link>
-    <description>Recent content in M S Prowant on Ge[o]rges Dib</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 17 Apr 2016 00:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://dibgerge.github.io/authors/m-s-prowant/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="https://dibgerge.github.io/authors/m-s-prowant/index.xml" rel="self" type="application/rss+xml" />
+    <description>M S Prowant</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 17 Apr 2016 00:00:00 -0700</lastBuildDate>
+    <image>
+      <url>https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_512x512_fill_lanczos_center_2.png</url>
+      <title>M S Prowant</title>
+      <link>https://dibgerge.github.io/authors/m-s-prowant/</link>
+    </image>
     
     <item>
       <title>Non-destructive Measurements for Diagnostics of Advanced Reactor Passive Components</title>
       <link>https://dibgerge.github.io/publication/2016-icapp/</link>
       <pubDate>Sun, 17 Apr 2016 00:00:00 -0700</pubDate>
-      
       <guid>https://dibgerge.github.io/publication/2016-icapp/</guid>
       <description></description>
     </item>
