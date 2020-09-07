@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!DOCTYPE html><html lang="en-us" >
 
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
+  
+
+  
   
 
   
@@ -21,7 +23,7 @@
   
   
 
-  <meta name="author" content="Gerges Dib">
+  
 
   
   
@@ -35,6 +37,21 @@
 
   
 
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
 
   
   
@@ -53,8 +70,10 @@
   
   
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -65,8 +84,8 @@
     
       
       
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-light">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-dark" disabled>
       
     
 
@@ -77,6 +96,13 @@
     
 
     
+    
+      
+
+      
+      
+
+      
     
       
 
@@ -187,13 +213,24 @@
 
       
     
+      
+
+      
+      
+
+      
+    
 
   
 
   
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
   
 
   
@@ -216,13 +253,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -232,7 +271,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -247,6 +286,9 @@
 
 
   
+  
+
+  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_32x32_fill_lanczos_center_2.png">
@@ -254,6 +296,8 @@
 
   <link rel="canonical" href="https://dibgerge.github.io/project/ut-sensors/">
 
+  
+  
   
   
   
@@ -289,8 +333,6 @@
 
 
 
-
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -308,17 +350,12 @@
   "datePublished": "2016-04-27T00:00:00-07:00",
   "dateModified": "2016-04-27T00:00:00-07:00",
   
-  "author": {
-    "@type": "Person",
-    "name": "Gerges Dib"
-  },
-  
   "publisher": {
     "@type": "Organization",
     "name": "Ge[o]rges Dib",
     "logo": {
       "@type": "ImageObject",
-      "url": "img/https://dibgerge.github.io/"
+      "url": "https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "Applications of ultrasounds in nuclear power plants including water detection in dry cask storage, defect detection in reactors, and health monitoring of radiation detectors."
@@ -343,7 +380,17 @@
 
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -361,7 +408,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
         
       </div>
 
@@ -378,6 +425,11 @@
 
 
   
+
+
+
+
+
 
 
 
@@ -416,16 +468,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -445,16 +505,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -474,16 +542,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -503,10 +579,18 @@
         
 
         
+
         
         
         
         
+
+        
+          
+            
+            
+          
+          
         
 
         <li class="nav-item">
@@ -525,10 +609,11 @@
     <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
       
       <li class="nav-item">
-        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
       </li>
       
 
+      
       
 
       
@@ -537,6 +622,7 @@
 
   </div>
 </nav>
+
 
 
   <article class="article article-project">
@@ -652,6 +738,7 @@
 
 
 
+
 <div class="article-tags">
   
   <a class="badge badge-light" href="/tags/nde/">NDE</a>
@@ -674,29 +761,46 @@
 
 
   
-
-
-
-
-
-
   
-  
+
+
+
+
+
   
     
-  
-  
-  <div class="media author-card content-widget-hr">
+    
     
       
-      <img class="portrait mr-3" src="/authors/admin/avatar_hue3d0cc1f4f80b5dad2186a4a7c6ec73f_76029_250x250_fill_lanczos_center_2.png" alt="Avatar">
     
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hue3d0cc1f4f80b5dad2186a4a7c6ec73f_76029_270x270_fill_lanczos_center_2.png" alt="">
+      
 
-    <div class="media-body">
-      <h5 class="card-title"><a href="https://dibgerge.github.io/">Gerges Dib</a></h5>
-      <h6 class="card-subtitle">Applied Scientist</h6>
-      <p class="card-text">Develop machine learning solutions</p>
-      <ul class="network-icon" aria-hidden="true">
+      <div class="media-body">
+        <h5 class="card-title"><a href="https://dibgerge.github.io/"></a></h5>
+        <h6 class="card-subtitle">Applied Scientist</h6>
+        <p class="card-text">Develop machine learning solutions</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/cv_gerges.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
   
     
     
@@ -764,53 +868,24 @@
       </a>
     </li>
   
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/files/cv_gerges.pdf" >
-        <i class="ai ai-cv"></i>
-      </a>
-    </li>
-  
 </ul>
 
+      </div>
     </div>
-  </div>
-
-
-
-
-
-
-
-
-
   
-  
-  <div class="article-widget content-widget-hr">
-    <h3>Related</h3>
-    <ul>
-      
-      <li><a href="/publication/2015-qnde/">Experimental validation of ultrasonic NDE simulation software</a></li>
-      
-      <li><a href="/publication/2015-phm/">Progress towards prognostic health management of passive components in advanced reactors: Model selection and evaluation</a></li>
-      
-      <li><a href="/publication/2013-me/">A Wireless Sensor Node for Structural Health Monitoring using Guided Wave Testing</a></li>
-      
-      <li><a href="/project/wsn/">Wireless Senor Networks for Structural Health Monitoring</a></li>
-      
-      <li><a href="/publication/2015-osti/">State of the Art Assessment of NDE Techniques for Aging Cable Management in Nuclear Power Plants FY2015</a></li>
-      
-    </ul>
-  </div>
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -855,9 +930,11 @@
     </h3>
 
     
-    <div class="article-style">
-      Studies have revealed that plastic scintillators such as polyvinyl toluene and polystyrene can undergo environmentally related material …
-    </div>
+    <a href="/publication/2019-nimpr/" class="summary-link">
+      <div class="article-style">
+        Studies have revealed that plastic scintillators such as polyvinyl toluene and polystyrene can undergo environmentally related material …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -868,11 +945,8 @@
       <div>
         
 
-
-
   
-  <span>Richard T.Kouzes</span>, <span>Herman M.Cho</span>, <span>Christian C.Cowles</span>, <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span>Paul E. Keller</span>, <span>John E.Smart</span>, <span>Philip J.Smith</span>, <span>Brian J.Tucker</span>, <span>Patrick L.Feng</span>, <span>Nicholas R. Myllenbeck</span>, <span><a href="/authors/stephen-payne/">Stephen Payne</a></span>
-
+  <span >Richard T.Kouzes</span>, <span >Herman M.Cho</span>, <span >Christian C.Cowles</span>, <span >Gerges Dib</span>, <span >Paul E. Keller</span>, <span >John E.Smart</span>, <span >Philip J.Smith</span>, <span >Brian J.Tucker</span>, <span >Patrick L.Feng</span>, <span >Nicholas R. Myllenbeck</span>, <span >Stephen Payne</span>
       </div>
       
     </div>
@@ -958,9 +1032,11 @@
     </h3>
 
     
-    <div class="article-style">
-      Second harmonic generation using nonlinear ultrasonic waves have been shown to be an early indicator of possible fatigue damage in …
-    </div>
+    <a href="/publication/2019-net/" class="summary-link">
+      <div class="article-style">
+        Second harmonic generation using nonlinear ultrasonic waves have been shown to be an early indicator of possible fatigue damage in …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -971,11 +1047,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/surajit-roy/">Surajit Roy</a></span>, <span><a href="/authors/pradeep-ramuhalli/">Pradeep Ramuhalli</a></span>, <span><a href="/authors/jangbom-chai/">Jangbom Chai</a></span>
-
+  <span >Gerges Dib</span>, <span >Surajit Roy</span>, <span >Pradeep Ramuhalli</span>, <span >Jangbom Chai</span>
       </div>
       
     </div>
@@ -1067,9 +1140,11 @@
     </h3>
 
     
-    <div class="article-style">
-      As the nation’s nuclear fleet looks to life extension, advanced reactor (AdvRx) concepts are being considered as alternatives that may …
-    </div>
+    <a href="/publication/2017-iwshm/" class="summary-link">
+      <div class="article-style">
+        As the nation’s nuclear fleet looks to life extension, advanced reactor (AdvRx) concepts are being considered as alternatives that may …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -1080,11 +1155,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/matthew-prowant/">Matthew Prowant</a></span>, <span><a href="/authors/morris-good/">Morris Good</a></span>, <span><a href="/authors/pradeep-ramuhalli/">Pradeep Ramuhalli</a></span>
-
+  <span >Gerges Dib</span>, <span >Matthew Prowant</span>, <span >Morris Good</span>, <span >Pradeep Ramuhalli</span>
       </div>
       
     </div>
@@ -1176,9 +1248,11 @@
     </h3>
 
     
-    <div class="article-style">
-      Advanced reactor concepts include fast reactors (including sodium-cooled fast reactors), gas-cooled reactors, and molten-salt reactors. …
-    </div>
+    <a href="/publication/2017b-qnde/" class="summary-link">
+      <div class="article-style">
+        Advanced reactor concepts include fast reactors (including sodium-cooled fast reactors), gas-cooled reactors, and molten-salt reactors. …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -1189,11 +1263,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/matthew-s-prowant/">Matthew S Prowant</a></span>, <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/h-qiao/">H Qiao</a></span>, <span><a href="/authors/morris-s-good/">Morris S Good</a></span>, <span><a href="/authors/michael-r-larche/">Michael R Larche</a></span>, <span><a href="/authors/samuel-s-sexton/">Samuel S Sexton</a></span>, <span><a href="/authors/pradeep-ramuhalli/">Pradeep Ramuhalli</a></span>
-
+  <span >Matthew S Prowant</span>, <span >Gerges Dib</span>, <span >H Qiao</span>, <span >Morris S Good</span>, <span >Michael R Larche</span>, <span >Samuel S Sexton</span>, <span >Pradeep Ramuhalli</span>
       </div>
       
     </div>
@@ -1285,9 +1356,11 @@
     </h3>
 
     
-    <div class="article-style">
-      Enhanced risk monitors (ERMs) for active components in advanced reactor concepts use predictive estimates of component failure to …
-    </div>
+    <a href="/publication/2017-npic/" class="summary-link">
+      <div class="article-style">
+        Enhanced risk monitors (ERMs) for active components in advanced reactor concepts use predictive estimates of component failure to …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -1298,11 +1371,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/pradeep-ramuhalli/">Pradeep Ramuhalli</a></span>, <span><a href="/authors/chris-bonebrake/">Chris Bonebrake</a></span>, <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/surajit-roy/">Surajit Roy</a></span>
-
+  <span >Pradeep Ramuhalli</span>, <span >Chris Bonebrake</span>, <span >Gerges Dib</span>, <span >Surajit Roy</span>
       </div>
       
     </div>
@@ -1390,9 +1460,11 @@
     </h3>
 
     
-    <div class="article-style">
-      As the United States transitions to storing used fuel from commercial nuclear reactors in interim dry storage facilities for extended …
-    </div>
+    <a href="/publication/2017-ihlrwm/" class="summary-link">
+      <div class="article-style">
+        As the United States transitions to storing used fuel from commercial nuclear reactors in interim dry storage facilities for extended …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -1403,11 +1475,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/ryan-m-meyer/">Ryan M Meyer</a></span>, <span><a href="/authors/samuel-w-glass-iii/">Samuel W Glass III</a></span>, <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/morris-s-good/">Morris S Good</a></span>, <span><a href="/authors/surajit-roy/">Surajit Roy</a></span>, <span><a href="/authors/j-cuta/">J Cuta</a></span>, <span><a href="/authors/ash-thakker/">Ash Thakker</a></span>
-
+  <span >Ryan M Meyer</span>, <span >Samuel W Glass III</span>, <span >Gerges Dib</span>, <span >Morris S Good</span>, <span >Surajit Roy</span>, <span >J Cuta</span>, <span >Ash Thakker</span>
       </div>
       
     </div>
@@ -1495,9 +1564,11 @@
     </h3>
 
     
-    <div class="article-style">
-      Under certain environmental conditions, polyvinyl toluene (PVT) plastic scintillator has been observed to undergo internal fogging. …
-    </div>
+    <a href="/publication/2017-osti/" class="summary-link">
+      <div class="article-style">
+        Under certain environmental conditions, polyvinyl toluene (PVT) plastic scintillator has been observed to undergo internal fogging. …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -1508,11 +1579,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/brian-j-tucker/">Brian J Tucker</a></span>, <span><a href="/authors/richard-t-kouzes/">Richard T Kouzes</a></span>, <span><a href="/authors/philip-j-smith/">Philip J Smith</a></span>
-
+  <span >Gerges Dib</span>, <span >Brian J Tucker</span>, <span >Richard T Kouzes</span>, <span >Philip J Smith</span>
       </div>
       
     </div>
@@ -1604,9 +1672,11 @@
     </h3>
 
     
-    <div class="article-style">
-      This project involved the development of enhanced risk monitors (ERMs) for active components in Advanced Reactor (AdvRx) designs by …
-    </div>
+    <a href="/publication/2016-osti/" class="summary-link">
+      <div class="article-style">
+        This project involved the development of enhanced risk monitors (ERMs) for active components in Advanced Reactor (AdvRx) designs by …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -1617,11 +1687,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/pradeep-ramuhalli/">Pradeep Ramuhalli</a></span>, <span><a href="/authors/evelyn-h-hirt/">Evelyn H Hirt</a></span>, <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/arun-veeramany/">Arun Veeramany</a></span>, <span><a href="/authors/christopher-bonebrake/">Christopher Bonebrake</a></span>, <span><a href="/authors/surajit-roy/">Surajit Roy</a></span>
-
+  <span >Pradeep Ramuhalli</span>, <span >Evelyn H Hirt</span>, <span >Gerges Dib</span>, <span >Arun Veeramany</span>, <span >Christopher Bonebrake</span>, <span >Surajit Roy</span>
       </div>
       
     </div>
@@ -1713,9 +1780,11 @@
     </h3>
 
     
-    <div class="article-style">
-      The harsh environments in advanced reactors (AdvRx) increase the possibility of degradation of safety-critical passive components, and …
-    </div>
+    <a href="/publication/2016b-osti/" class="summary-link">
+      <div class="article-style">
+        The harsh environments in advanced reactors (AdvRx) increase the possibility of degradation of safety-critical passive components, and …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -1726,11 +1795,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/pradeep-ramuhalli/">Pradeep Ramuhalli</a></span>, <span><a href="/authors/evelyn-h-hirt/">Evelyn H Hirt</a></span>, <span><a href="/authors/stan-g-pitman/">Stan G Pitman</a></span>, <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/surajit-roy/">Surajit Roy</a></span>, <span><a href="/authors/morris-s-good/">Morris S Good</a></span>, <span><a href="/authors/cody-m-walker/">Cody M Walker</a></span>
-
+  <span >Pradeep Ramuhalli</span>, <span >Evelyn H Hirt</span>, <span >Stan G Pitman</span>, <span >Gerges Dib</span>, <span >Surajit Roy</span>, <span >Morris S Good</span>, <span >Cody M Walker</span>
       </div>
       
     </div>
@@ -1822,9 +1888,11 @@
     </h3>
 
     
-    <div class="article-style">
-      Information on advanced reactor (AdvRx) component condition and failure probability is necessary to maintaining adequate safety margins …
-    </div>
+    <a href="/publication/2016-icapp/" class="summary-link">
+      <div class="article-style">
+        Information on advanced reactor (AdvRx) component condition and failure probability is necessary to maintaining adequate safety margins …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -1835,11 +1903,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/m-s-prowant/">M S Prowant</a></span>, <span><a href="/authors/g-dib/">G Dib</a></span>, <span><a href="/authors/s-roy/">S Roy</a></span>, <span><a href="/authors/l-luzi/">L Luzi</a></span>, <span><a href="/authors/p-ramuhalli/">P Ramuhalli</a></span>
-
+  <span >M S Prowant</span>, <span >G Dib</span>, <span >S Roy</span>, <span >L Luzi</span>, <span >P Ramuhalli</span>
       </div>
       
     </div>
@@ -1927,9 +1992,11 @@
     </h3>
 
     
-    <div class="article-style">
-      This milestone report presents an update on the state-of-the-art review and research being conducted to identify key indicators of …
-    </div>
+    <a href="/publication/2015-osti/" class="summary-link">
+      <div class="article-style">
+        This milestone report presents an update on the state-of-the-art review and research being conducted to identify key indicators of …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -1940,11 +2007,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/samuel-w-glass/">Samuel W Glass</a></span>, <span><a href="/authors/leonard-s-fifield/">Leonard S Fifield</a></span>, <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/jonathan-r-tedeschi/">Jonathan R Tedeschi</a></span>, <span><a href="/authors/mark-a-jones/">Mark A Jones</a></span>, <span><a href="/authors/trenton-s-hartman/">Trenton S Hartman</a></span>
-
+  <span >Samuel W Glass</span>, <span >Leonard S Fifield</span>, <span >Gerges Dib</span>, <span >Jonathan R Tedeschi</span>, <span >Mark A Jones</span>, <span >Trenton S Hartman</span>
       </div>
       
     </div>
@@ -2036,9 +2100,11 @@
     </h3>
 
     
-    <div class="article-style">
-      Degradation of the cable jacket, electrical insulation, and other cable components of installed cables within nuclear power plants …
-    </div>
+    <a href="/publication/2015b-qnde/" class="summary-link">
+      <div class="article-style">
+        Degradation of the cable jacket, electrical insulation, and other cable components of installed cables within nuclear power plants …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -2049,11 +2115,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/samuel-w-glass/">Samuel W Glass</a></span>, <span><a href="/authors/pradeep-ramuhalli/">Pradeep Ramuhalli</a></span>, <span><a href="/authors/leo-s-fifield/">Leo S Fifield</a></span>, <span><a href="/authors/matthew-s-prowant/">Matthew S Prowant</a></span>, <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/john-r-tedeschi/">John R Tedeschi</a></span>, <span><a href="/authors/jonathan-d-suter/">Jonathan D Suter</a></span>, <span><a href="/authors/mark-a-jones/">Mark A Jones</a></span>, <span><a href="/authors/morris-s-good/">Morris S Good</a></span>, <span><a href="/authors/al-f-pardini/">Al F Pardini</a></span>, <span><a href="/authors/trenton-s-hartman/">Trenton S Hartman</a></span>
-
+  <span >Samuel W Glass</span>, <span >Pradeep Ramuhalli</span>, <span >Leo S Fifield</span>, <span >Matthew S Prowant</span>, <span >Gerges Dib</span>, <span >John R Tedeschi</span>, <span >Jonathan D Suter</span>, <span >Mark A Jones</span>, <span >Morris S Good</span>, <span >Al F Pardini</span>, <span >Trenton S Hartman</span>
       </div>
       
     </div>
@@ -2145,9 +2208,11 @@
     </h3>
 
     
-    <div class="article-style">
-      This paper presents recent progress towards developing a prognostic health management framework for passive components of advanced …
-    </div>
+    <a href="/publication/2015-phm/" class="summary-link">
+      <div class="article-style">
+        This paper presents recent progress towards developing a prognostic health management framework for passive components of advanced …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -2158,11 +2223,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/surajit-roy/">Surajit Roy</a></span>, <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/pradeep-ramuhalli/">Pradeep Ramuhalli</a></span>, <span><a href="/authors/evelyn-h-hirt/">Evelyn H Hirt</a></span>, <span><a href="/authors/matthew-s-prowant/">Matthew S Prowant</a></span>, <span><a href="/authors/lorenzo-luzi/">Lorenzo Luzi</a></span>, <span><a href="/authors/allan-f-pardini/">Allan F Pardini</a></span>, <span><a href="/authors/stan-g-pitman/">Stan G Pitman</a></span>
-
+  <span >Surajit Roy</span>, <span >Gerges Dib</span>, <span >Pradeep Ramuhalli</span>, <span >Evelyn H Hirt</span>, <span >Matthew S Prowant</span>, <span >Lorenzo Luzi</span>, <span >Allan F Pardini</span>, <span >Stan G Pitman</span>
       </div>
       
     </div>
@@ -2223,7 +2285,7 @@
     
     
     <a href="/publication/2015-phm/" >
-      <img src="/publication/2015-phm/featured_hu43a7d18159ed4ec246154112b5e8a9d5_259973_150x0_resize_lanczos_2.png" alt="">
+      <img src="/publication/2015-phm/featured_hu43a7d18159ed4ec246154112b5e8a9d5_259973_150x0_resize_lanczos_2.png" alt="Progress towards prognostic health management of passive components in advanced reactors: Model selection and evaluation">
     </a>
     
   </div>
@@ -2259,9 +2321,11 @@
     </h3>
 
     
-    <div class="article-style">
-      This report describes research results to date in support of the integration and demonstration of diagnostics technologies for …
-    </div>
+    <a href="/publication/2015b-osti/" class="summary-link">
+      <div class="article-style">
+        This report describes research results to date in support of the integration and demonstration of diagnostics technologies for …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -2272,11 +2336,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/pradeep-ramuhalli/">Pradeep Ramuhalli</a></span>, <span><a href="/authors/surajit-roy/">Surajit Roy</a></span>, <span><a href="/authors/evelyn-h-hirt/">Evelyn H Hirt</a></span>, <span><a href="/authors/matthew-s-prowant/">Matthew S Prowant</a></span>, <span><a href="/authors/stan-g-pitman/">Stan G Pitman</a></span>, <span><a href="/authors/joseph-tucker/">Joseph Tucker</a></span>, <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/allan-f-pardini/">Allan F Pardini</a></span>
-
+  <span >Pradeep Ramuhalli</span>, <span >Surajit Roy</span>, <span >Evelyn H Hirt</span>, <span >Matthew S Prowant</span>, <span >Stan G Pitman</span>, <span >Joseph Tucker</span>, <span >Gerges Dib</span>, <span >Allan F Pardini</span>
       </div>
       
     </div>
@@ -2354,18 +2415,23 @@
     
     
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
 
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.8/mermaid.min.js" integrity="sha256-lyWCDMnMeZiXRi7Zl54sZGKYmgQs4izcT7+tKc+KUBk=" crossorigin="anonymous" title="mermaid"></script>
       
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
         
       
 
@@ -2394,7 +2460,8 @@
         'post': "Posts",
         'project': "Projects",
         'publication' : "Publications",
-        'talk' : "Talks"
+        'talk' : "Talks",
+        'slides' : "Slides"
         };
     </script>
     
@@ -2428,6 +2495,12 @@
 
     
     
+
+    
+    
+
+    
+    
     <script id="dsq-count-scr" src="https://dibgerge.disqus.com/count.js" async></script>
     
 
@@ -2445,7 +2518,7 @@
     
     
     
-    <script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+    <script src="/js/academic.min.3b2b658c61ebd725bd5fc606c89fe44c.js"></script>
 
     
 
@@ -2462,10 +2535,21 @@
 
   <p class="powered-by">
     
+  </p>
 
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
 
     
     <span class="float-right" aria-hidden="true">

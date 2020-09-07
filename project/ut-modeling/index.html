@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!DOCTYPE html><html lang="en-us" >
 
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
+  
+
+  
   
 
   
@@ -21,7 +23,7 @@
   
   
 
-  <meta name="author" content="Gerges Dib">
+  
 
   
   
@@ -35,6 +37,21 @@
 
   
 
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
 
   
   
@@ -53,8 +70,10 @@
   
   
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -65,8 +84,8 @@
     
       
       
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-light">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-dark" disabled>
       
     
 
@@ -77,6 +96,13 @@
     
 
     
+    
+      
+
+      
+      
+
+      
     
       
 
@@ -187,13 +213,24 @@
 
       
     
+      
+
+      
+      
+
+      
+    
 
   
 
   
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
   
 
   
@@ -216,13 +253,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -232,7 +271,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -247,6 +286,9 @@
 
 
   
+  
+
+  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_32x32_fill_lanczos_center_2.png">
@@ -254,6 +296,8 @@
 
   <link rel="canonical" href="https://dibgerge.github.io/project/ut-modeling/">
 
+  
+  
   
   
   
@@ -289,8 +333,6 @@
 
 
 
-
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -308,17 +350,12 @@
   "datePublished": "2018-09-01T00:00:00-07:00",
   "dateModified": "2018-09-01T00:00:00-07:00",
   
-  "author": {
-    "@type": "Person",
-    "name": "Gerges Dib"
-  },
-  
   "publisher": {
     "@type": "Organization",
     "name": "Ge[o]rges Dib",
     "logo": {
       "@type": "ImageObject",
-      "url": "img/https://dibgerge.github.io/"
+      "url": "https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "Supporting regulatory guides for the nuclear power plant industry in relation to using ultrasound computational models for non-destructive inspection."
@@ -343,7 +380,17 @@
 
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -361,7 +408,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
         
       </div>
 
@@ -378,6 +425,11 @@
 
 
   
+
+
+
+
+
 
 
 
@@ -416,16 +468,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -445,16 +505,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -474,16 +542,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -503,10 +579,18 @@
         
 
         
+
         
         
         
         
+
+        
+          
+            
+            
+          
+          
         
 
         <li class="nav-item">
@@ -525,10 +609,11 @@
     <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
       
       <li class="nav-item">
-        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
       </li>
       
 
+      
       
 
       
@@ -537,6 +622,7 @@
 
   </div>
 </nav>
+
 
 
   <article class="article article-project">
@@ -632,13 +718,15 @@
   <div class="article-container">
 
     <div class="article-style">
-      <p><a href="https://en.wikipedia.org/wiki/Nondestructive_testing">Non-destructive evaluation and testing (NDE)</a> is essential for ensuring the safety of operational nuclear power plants around the world. Ultrasonic testing is an NDE technique which is largely utilized for inspecting pipelines in the nuclear industry due to its ability to detect flaws hidden within the inner diameter of pipelines.</p>
+      <p>
+<a href="https://en.wikipedia.org/wiki/Nondestructive_testing" target="_blank" rel="noopener">Non-destructive evaluation and testing (NDE)</a> is essential for ensuring the safety of operational nuclear power plants around the world. Ultrasonic testing is an NDE technique which is largely utilized for inspecting pipelines in the nuclear industry due to its ability to detect flaws hidden within the inner diameter of pipelines.</p>
 <p>Computer modeling and simulation is becoming an essential tool for transducer design and insight into ultrasonic nondestructive evaluation. For computational models to be of use in practical situations, it is important to develop techniques for inferring the reliability of inspections using simulated results. This includes information about the detectability of different defect types within different material varying in complexity and grain structure. To address this problem, we need to develop techniques to quantify confidence in simulations, and methods to incorporate experimental and structural noise into model outputs.</p>
 <p>In this project, we are building a large database of ultrasound inspection empirical data using different types of probes, materials, and defects. We are using this empirical data to: (1) Develop techniques for validating ultrasound inspection simulations; (2) Uncertainty quantification due to uncertain or unknown simulation input parameters; and (3) Develop noise models which can be fused with simulation data for analyzing inspection reliability using simulated data.</p>
 
     </div>
 
     
+
 
 
 
@@ -752,29 +840,46 @@
 
 
   
-
-
-
-
-
-
   
-  
+
+
+
+
+
   
     
-  
-  
-  <div class="media author-card content-widget-hr">
+    
     
       
-      <img class="portrait mr-3" src="/authors/admin/avatar_hue3d0cc1f4f80b5dad2186a4a7c6ec73f_76029_250x250_fill_lanczos_center_2.png" alt="Avatar">
     
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hue3d0cc1f4f80b5dad2186a4a7c6ec73f_76029_270x270_fill_lanczos_center_2.png" alt="">
+      
 
-    <div class="media-body">
-      <h5 class="card-title"><a href="https://dibgerge.github.io/">Gerges Dib</a></h5>
-      <h6 class="card-subtitle">Applied Scientist</h6>
-      <p class="card-text">Develop machine learning solutions</p>
-      <ul class="network-icon" aria-hidden="true">
+      <div class="media-body">
+        <h5 class="card-title"><a href="https://dibgerge.github.io/"></a></h5>
+        <h6 class="card-subtitle">Applied Scientist</h6>
+        <p class="card-text">Develop machine learning solutions</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/cv_gerges.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
   
     
     
@@ -842,53 +947,24 @@
       </a>
     </li>
   
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/files/cv_gerges.pdf" >
-        <i class="ai ai-cv"></i>
-      </a>
-    </li>
-  
 </ul>
 
+      </div>
     </div>
-  </div>
-
-
-
-
-
-
-
-
-
   
-  
-  <div class="article-widget content-widget-hr">
-    <h3>Related</h3>
-    <ul>
-      
-      <li><a href="/publication/2017-iwshm/">Challenges and Solutions in SHM for Nuclear Power Environments</a></li>
-      
-      <li><a href="/publication/2017-qnde/">On the usage of ultrasound computational models for decision making under ambiguity</a></li>
-      
-      <li><a href="/publication/2017b-qnde/">Preliminary design of high temperature ultrasonic transducers for liquid sodium environments</a></li>
-      
-      <li><a href="/publication/2017-pnnl/">Validation of Ultrasonic Nondestructive Examination (NDE) Computational Models – Phase 1</a></li>
-      
-      <li><a href="/publication/2017-ihlrwm/">Detecting Water in Dry Storage Canisters for Used Fuel</a></li>
-      
-    </ul>
-  </div>
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -933,9 +1009,11 @@
     </h3>
 
     
-    <div class="article-style">
-      The Pacific Northwest National Laboratory (PNNL) is conducting confirmatory research for the U.S. Nuclear Regulatory Commission for …
-    </div>
+    <a href="/publication/2018-pnnl/" class="summary-link">
+      <div class="article-style">
+        The Pacific Northwest National Laboratory (PNNL) is conducting confirmatory research for the U.S. Nuclear Regulatory Commission for …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -946,11 +1024,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/michael-r-larche/">Michael R Larche</a></span>, <span><a href="/authors/matthew-s-prowant/">Matthew S Prowant</a></span>, <span><a href="/authors/richard-e-jacob/">Richard E Jacob</a></span>, <span><a href="/authors/pradeep-ramuhalli/">Pradeep Ramuhalli</a></span>, <span><a href="/authors/aaron-a-diaz/">Aaron A Diaz</a></span>
-
+  <span >Gerges Dib</span>, <span >Michael R Larche</span>, <span >Matthew S Prowant</span>, <span >Richard E Jacob</span>, <span >Pradeep Ramuhalli</span>, <span >Aaron A Diaz</span>
       </div>
       
     </div>
@@ -1038,9 +1113,11 @@
     </h3>
 
     
-    <div class="article-style">
-      Computer modeling and simulation is becoming pervasive within the non-destructive evaluation (NDE) industry as a convenient tool for …
-    </div>
+    <a href="/publication/2017-qnde/" class="summary-link">
+      <div class="article-style">
+        Computer modeling and simulation is becoming pervasive within the non-destructive evaluation (NDE) industry as a convenient tool for …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -1051,11 +1128,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/samuel-sexton/">Samuel Sexton</a></span>, <span><a href="/authors/matthew-prowant/">Matthew Prowant</a></span>, <span><a href="/authors/susan-crawford/">Susan Crawford</a></span>, <span><a href="/authors/aaron-diaz/">Aaron Diaz</a></span>
-
+  <span >Gerges Dib</span>, <span >Samuel Sexton</span>, <span >Matthew Prowant</span>, <span >Susan Crawford</span>, <span >Aaron Diaz</span>
       </div>
       
     </div>
@@ -1147,9 +1221,11 @@
     </h3>
 
     
-    <div class="article-style">
-      The Pacific Northwest National Laboratory (PNNL) is conducting confirmatory research for the U.S. Nuclear Regulatory Commission for the …
-    </div>
+    <a href="/publication/2017-pnnl/" class="summary-link">
+      <div class="article-style">
+        The Pacific Northwest National Laboratory (PNNL) is conducting confirmatory research for the U.S. Nuclear Regulatory Commission for the …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -1160,11 +1236,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/susan-l-crawford/">Susan L Crawford</a></span>, <span><a href="/authors/richard-e-jacob/">Richard E Jacob</a></span>, <span><a href="/authors/matthew-s-prowant/">Matthew S Prowant</a></span>, <span><a href="/authors/aaron-a-diaz/">Aaron A Diaz</a></span>
-
+  <span >Gerges Dib</span>, <span >Susan L Crawford</span>, <span >Richard E Jacob</span>, <span >Matthew S Prowant</span>, <span >Aaron A Diaz</span>
       </div>
       
     </div>
@@ -1252,9 +1325,11 @@
     </h3>
 
     
-    <div class="article-style">
-      Computer modeling and simulation is becoming an essential tool for transducer design and insight into ultrasonic nondestructive …
-    </div>
+    <a href="/publication/2015-qnde/" class="summary-link">
+      <div class="article-style">
+        Computer modeling and simulation is becoming an essential tool for transducer design and insight into ultrasonic nondestructive …
+      </div>
+    </a>
     
 
     <div class="stream-meta article-metadata">
@@ -1265,11 +1340,8 @@
       <div>
         
 
-
-
   
-  <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/michael-larche/">Michael Larche</a></span>, <span><a href="/authors/aaron-a-diaz/">Aaron A Diaz</a></span>, <span><a href="/authors/susan-l-crawford/">Susan L Crawford</a></span>, <span><a href="/authors/matthew-s-prowant/">Matthew S Prowant</a></span>, <span><a href="/authors/michael-t-anderson/">Michael T Anderson</a></span>
-
+  <span >Gerges Dib</span>, <span >Michael Larche</span>, <span >Aaron A Diaz</span>, <span >Susan L Crawford</span>, <span >Matthew S Prowant</span>, <span >Michael T Anderson</span>
       </div>
       
     </div>
@@ -1347,18 +1419,23 @@
     
     
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
 
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.8/mermaid.min.js" integrity="sha256-lyWCDMnMeZiXRi7Zl54sZGKYmgQs4izcT7+tKc+KUBk=" crossorigin="anonymous" title="mermaid"></script>
       
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
         
       
 
@@ -1387,7 +1464,8 @@
         'post': "Posts",
         'project': "Projects",
         'publication' : "Publications",
-        'talk' : "Talks"
+        'talk' : "Talks",
+        'slides' : "Slides"
         };
     </script>
     
@@ -1421,6 +1499,12 @@
 
     
     
+
+    
+    
+
+    
+    
     <script id="dsq-count-scr" src="https://dibgerge.disqus.com/count.js" async></script>
     
 
@@ -1438,7 +1522,7 @@
     
     
     
-    <script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+    <script src="/js/academic.min.3b2b658c61ebd725bd5fc606c89fe44c.js"></script>
 
     
 
@@ -1455,10 +1539,21 @@
 
   <p class="powered-by">
     
+  </p>
 
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
 
     
     <span class="float-right" aria-hidden="true">

@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!DOCTYPE html><html lang="en-us" >
 
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
+  
+
+  
   
 
   
@@ -21,7 +23,7 @@
   
   
 
-  <meta name="author" content="Gerges Dib">
+  
 
   
   
@@ -35,6 +37,21 @@
 
   
 
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
 
   
   
@@ -53,8 +70,10 @@
   
   
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -65,8 +84,8 @@
     
       
       
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-light">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-dark" disabled>
       
     
 
@@ -77,6 +96,13 @@
     
 
     
+    
+      
+
+      
+      
+
+      
     
       
 
@@ -187,13 +213,24 @@
 
       
     
+      
+
+      
+      
+
+      
+    
 
   
 
   
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
   
 
   
@@ -216,13 +253,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -232,7 +271,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -247,6 +286,9 @@
 
 
   
+  
+
+  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_32x32_fill_lanczos_center_2.png">
@@ -254,6 +296,8 @@
 
   <link rel="canonical" href="https://dibgerge.github.io/publication/2017b-qnde/">
 
+  
+  
   
   
   
@@ -290,8 +334,6 @@
 
 
 
-
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -315,7 +357,7 @@
     "name": "Ge[o]rges Dib",
     "logo": {
       "@type": "ImageObject",
-      "url": "img/https://dibgerge.github.io/"
+      "url": "https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "Advanced reactor concepts include fast reactors (including sodium-cooled fast reactors), gas-cooled reactors, and molten-salt reactors. Common to these concepts is a higher operating temperature (when compared to light-water-cooled reactors), and the proposed use of new alloys with which there is limited operational experience. Concerns about new degradation mechanisms, such as high-temperature creep and creep fatigue, that are not encountered in the light-water fleet and longer operating cycles between refueling intervals indicate the need for condition monitoring technology. Specific needs in this context include periodic in-service inspection technology for the detection and sizing of cracking, as well as technologies for continuous monitoring of components using in situ probes. This paper will discuss research on the development and evaluation of high temperature (\u003e550°C; \u003e1022°F) ultrasonic probes that can be used for continuous monitoring of components. The focus of this work is on probes that are compatible with a liquid sodium-cooled reactor environment, where the core outlet temperatures can reach 550°C (1022°F). Modeling to assess sensitivity of various sensor configurations and experimental evaluation have pointed to a preferred design and concept of operations for these probes. This paper will describe these studies and ongoing work to fabricate and fully evaluate survivability and sensor performance over extended periods at operational temperatures"
@@ -340,7 +382,17 @@
 
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -358,7 +410,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
         
       </div>
 
@@ -375,6 +427,11 @@
 
 
   
+
+
+
+
+
 
 
 
@@ -413,16 +470,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -442,16 +507,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -471,16 +544,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -500,10 +581,18 @@
         
 
         
+
         
         
         
         
+
+        
+          
+            
+            
+          
+          
         
 
         <li class="nav-item">
@@ -522,10 +611,11 @@
     <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
       
       <li class="nav-item">
-        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
       </li>
       
 
+      
       
 
       
@@ -534,6 +624,7 @@
 
   </div>
 </nav>
+
 
 
   <div class="pub">
@@ -574,11 +665,8 @@
   <div>
     
 
-
-
   
-  <span><a href="/authors/matthew-s-prowant/">Matthew S Prowant</a></span>, <span><a href="/authors/gerges-dib/">Gerges Dib</a></span>, <span><a href="/authors/h-qiao/">H Qiao</a></span>, <span><a href="/authors/morris-s-good/">Morris S Good</a></span>, <span><a href="/authors/michael-r-larche/">Michael R Larche</a></span>, <span><a href="/authors/samuel-s-sexton/">Samuel S Sexton</a></span>, <span><a href="/authors/pradeep-ramuhalli/">Pradeep Ramuhalli</a></span>
-
+  <span >Matthew S Prowant</span>, <span >Gerges Dib</span>, <span >H Qiao</span>, <span >Morris S Good</span>, <span >Michael R Larche</span>, <span >Samuel S Sexton</span>, <span >Pradeep Ramuhalli</span>
   </div>
   
   
@@ -727,6 +815,7 @@
 
 
 
+
 <div class="article-tags">
   
   <a class="badge badge-light" href="/tags/nde/">NDE</a>
@@ -833,61 +922,94 @@
 
 
   
-  
     
-  
-  
-
-
-
-
-
-
-  
-  
-  
-  
-  <div class="media author-card content-widget-hr">
     
 
-    <div class="media-body">
-      <h5 class="card-title"><a href="/authors/matthew-s-prowant/"></a></h5>
-      
-      
-      <ul class="network-icon" aria-hidden="true">
+
+
+
+
   
-</ul>
-
-    </div>
-  </div>
 
 
-
-
+  
+    
+    
 
 
 
 
 
   
+
+
   
-  <div class="article-widget content-widget-hr">
-    <h3>Related</h3>
-    <ul>
-      
-      <li><a href="/publication/2017-qnde/">On the usage of ultrasound computational models for decision making under ambiguity</a></li>
-      
-      <li><a href="/publication/2017-pnnl/">Validation of Ultrasonic Nondestructive Examination (NDE) Computational Models – Phase 1</a></li>
-      
-      <li><a href="/publication/2017-ihlrwm/">Detecting Water in Dry Storage Canisters for Used Fuel</a></li>
-      
-      <li><a href="/publication/2016b-osti/">Experimental Design for Evaluating Selected Nondestructive Measurement Technologies</a></li>
-      
-      <li><a href="/project/ut-sensors/">Ultrasound Sensors and Methods for Nuclear Power Plant Environments</a></li>
-      
-    </ul>
-  </div>
+    
+    
+
+
+
+
+
   
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+    
+    
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -899,18 +1021,23 @@
     
     
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
 
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.8/mermaid.min.js" integrity="sha256-lyWCDMnMeZiXRi7Zl54sZGKYmgQs4izcT7+tKc+KUBk=" crossorigin="anonymous" title="mermaid"></script>
       
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
         
       
 
@@ -939,7 +1066,8 @@
         'post': "Posts",
         'project': "Projects",
         'publication' : "Publications",
-        'talk' : "Talks"
+        'talk' : "Talks",
+        'slides' : "Slides"
         };
     </script>
     
@@ -973,6 +1101,12 @@
 
     
     
+
+    
+    
+
+    
+    
     <script id="dsq-count-scr" src="https://dibgerge.disqus.com/count.js" async></script>
     
 
@@ -990,7 +1124,7 @@
     
     
     
-    <script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+    <script src="/js/academic.min.3b2b658c61ebd725bd5fc606c89fe44c.js"></script>
 
     
 
@@ -1007,10 +1141,21 @@
 
   <p class="powered-by">
     
+  </p>
 
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
 
     
     <span class="float-right" aria-hidden="true">

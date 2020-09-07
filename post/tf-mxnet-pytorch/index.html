@@ -1,13 +1,15 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!DOCTYPE html><html lang="en-us" >
 
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.7.0">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
 
+  
+
+  
   
 
   
@@ -21,7 +23,7 @@
   
   
 
-  <meta name="author" content="Gerges Dib">
+  
 
   
   
@@ -35,6 +37,21 @@
 
   
 
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
 
   
   
@@ -53,8 +70,10 @@
   
   
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
     
@@ -65,8 +84,8 @@
     
       
       
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-light">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-light">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css" crossorigin="anonymous" title="hl-dark" disabled>
       
     
 
@@ -77,6 +96,13 @@
     
 
     
+    
+      
+
+      
+      
+
+      
     
       
 
@@ -187,13 +213,24 @@
 
       
     
+      
+
+      
+      
+
+      
+    
 
   
 
   
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
   
 
   
@@ -216,13 +253,15 @@
       dataLayer.push(arguments);
   }
 
-  function trackOutboundLink(url) {
+  function trackOutboundLink(url, target) {
     gtag('event', 'click', {
          'event_category': 'outbound',
          'event_label': url,
          'transport_type': 'beacon',
          'event_callback': function () {
-           document.location = url;
+           if (target !== '_blank') {
+             document.location = url;
+           }
          }
     });
     console.debug("Outbound link clicked: " + url);
@@ -232,7 +271,7 @@
     if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
       return;
     }
-    trackOutboundLink(event.target);  
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
   }
 
   gtag('js', new Date());
@@ -247,6 +286,9 @@
 
 
   
+  
+
+  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_32x32_fill_lanczos_center_2.png">
@@ -254,6 +296,8 @@
 
   <link rel="canonical" href="https://dibgerge.github.io/post/tf-mxnet-pytorch/">
 
+  
+  
   
   
   
@@ -291,8 +335,6 @@
 
 
 
-
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -310,17 +352,12 @@
   "datePublished": "2019-03-11T00:00:00-07:00",
   "dateModified": "2019-03-11T00:00:00-07:00",
   
-  "author": {
-    "@type": "Person",
-    "name": "Gerges Dib"
-  },
-  
   "publisher": {
     "@type": "Organization",
     "name": "Ge[o]rges Dib",
     "logo": {
       "@type": "ImageObject",
-      "url": "img/https://dibgerge.github.io/"
+      "url": "https://dibgerge.github.io/images/icon_hufb0bba0b24038dd6774d907c032416d0_44829_192x192_fill_lanczos_center_2.png"
     }
   },
   "description": "Comparison of three deep learning frameworks."
@@ -345,7 +382,17 @@
 
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
 
   <aside class="search-results" id="search">
   <div class="container">
@@ -363,7 +410,7 @@
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control">
         
       </div>
 
@@ -380,6 +427,11 @@
 
 
   
+
+
+
+
+
 
 
 
@@ -418,16 +470,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -447,16 +507,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -476,16 +544,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -505,10 +581,18 @@
         
 
         
+
         
         
         
         
+
+        
+          
+            
+            
+          
+          
         
 
         <li class="nav-item">
@@ -527,10 +611,11 @@
     <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
       
       <li class="nav-item">
-        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
       </li>
       
 
+      
       
 
       
@@ -539,6 +624,7 @@
 
   </div>
 </nav>
+
 
 
   <article class="article">
@@ -589,11 +675,8 @@
   <div>
     
 
-
-
   
-  <span><a href="/authors/admin/">Gerges Dib</a></span>
-
+  <span ><a href="/authors/admin/">Admin</a></span>
   </div>
   
   
@@ -664,10 +747,14 @@
 <thead>
 <tr>
 <th></th>
-<th><a href="https://github.com/tensorflow/tensorflow">Tensorflow</a></th>
-<th><a href="https://github.com/keras-team/keras">Keras</a></th>
-<th><a href="https://github.com/pytorch/pytorch">Pytorch</a></th>
-<th><a href="https://github.com/apache/incubator-mxnet">Mxnet</a></th>
+<th>
+<a href="https://github.com/tensorflow/tensorflow" target="_blank" rel="noopener">Tensorflow</a></th>
+<th>
+<a href="https://github.com/keras-team/keras" target="_blank" rel="noopener">Keras</a></th>
+<th>
+<a href="https://github.com/pytorch/pytorch" target="_blank" rel="noopener">Pytorch</a></th>
+<th>
+<a href="https://github.com/apache/incubator-mxnet" target="_blank" rel="noopener">Mxnet</a></th>
 </tr>
 </thead>
 <tbody>
@@ -680,31 +767,42 @@
 </tr>
 </tbody>
 </table>
-<p>Recently, I have been going through the lectures of <a href="fast.ai">Jeremy Howard's Fast.ai</a> excellent class, where they use Pytorch as the backend of the high-level library they built. This was one of the reasons I started questioning what was I missing by limiting myself to Tensorflow. Also, I have seen the extensive vision library of <a href="https://gluon-cv.mxnet.io/index.html">MxNet's GluonCV</a>, and this really made me feel that I might be missing out.</p>
-<p>In addition to all the fear of missing out stuff, I was coding my own implementation of <a href="https://gluon-cv.mxnet.io/index.html">ResNet</a>, and I scoured online the plethora of different implementations of ResNet, some with lots of <i class="fas fa-star">s</i>. I realized that many had implementation details which differed from the original paper, and it was not clear if it is intentional or not. Thus I really though that a test in reproducibility is due and so I did.</p>
-<p>I set out to compare the three frameworks: tensorflow, pytorch, and mxnet. I wanted to use some of the built-in convolutional neural networks with built-in pre-trained weights to directly classify Imagenet's validation dataset images. Throughout this comparison, I was looking for three factors:</p>
+<p>Recently, I have been going through the lectures of 
+<a href="fast.ai">Jeremy Howard&rsquo;s Fast.ai</a> excellent class, where they use Pytorch as the backend of the high-level library they built. This was one of the reasons I started questioning what was I missing by limiting myself to Tensorflow. Also, I have seen the extensive vision library of 
+<a href="https://gluon-cv.mxnet.io/index.html" target="_blank" rel="noopener">MxNet&rsquo;s GluonCV</a>, and this really made me feel that I might be missing out.</p>
+<p>In addition to all the fear of missing out stuff, I was coding my own implementation of 
+<a href="https://gluon-cv.mxnet.io/index.html" target="_blank" rel="noopener">ResNet</a>, and I scoured online the plethora of different implementations of ResNet, some with lots of <i class="fas fa-star">s</i>. I realized that many had implementation details which differed from the original paper, and it was not clear if it is intentional or not. Thus I really though that a test in reproducibility is due and so I did.</p>
+<p>I set out to compare the three frameworks: tensorflow, pytorch, and mxnet. I wanted to use some of the built-in convolutional neural networks with built-in pre-trained weights to directly classify Imagenet&rsquo;s validation dataset images. Throughout this comparison, I was looking for three factors:</p>
 <ol>
 <li>Ease of loading the dataset and reproducing the pre-processing steps required before feeding images to the neural network for classification.</li>
-<li>Computed error rate vs framework's reported error. It would be also nice to compare the results with the original publication, but most report validation error using 10-crops, and here we use only single crop.</li>
+<li>Computed error rate vs framework&rsquo;s reported error. It would be also nice to compare the results with the original publication, but most report validation error using 10-crops, and here we use only single crop.</li>
 <li>Inference speed.</li>
 </ol>
 <h2 id="dataset-and-convolutional-neural-network-architectures">Dataset and Convolutional Neural Network Architectures</h2>
-<p>The datatset I used was Imagenet's validation dataset which constitutes of 50,000 images with different sizes. The easiest way to get your hands on the data is to download it from Kaggle <a href="https://www.kaggle.com/c/imagenet-object-localization-challenge">here</a>.</p>
+<p>The datatset I used was Imagenet&rsquo;s validation dataset which constitutes of 50,000 images with different sizes. The easiest way to get your hands on the data is to download it from Kaggle 
+<a href="https://www.kaggle.com/c/imagenet-object-localization-challenge" target="_blank" rel="noopener">here</a>.</p>
 <p>For the frameworks, I used the following versions:</p>
 <ul>
 <li><strong>Tensorflow 1.13</strong> with Keras as the front-end interface (Note this is different from using Keras with Tensorflow backend since now Tensorflow comes packed with its own Keras version, which is not compatible with other frameworks).</li>
 <li><strong>PyTorch 1.0.1</strong> with PyTorch vision for convolutional neural networks implementations</li>
 <li><strong>MxNet 1.4</strong> with GluonCV for convolutional neural networks implementaitons</li>
 </ul>
-<p>For the convolutional neural network, I considered four different architectures: <a href="https://arxiv.org/abs/1512.03385">ResNet50</a>, <a href="https://arxiv.org/abs/1512.03385">Resnet101</a>, <a href="https://arxiv.org/abs/1704.04861">Mobilenet</a>, and <a href="https://arxiv.org/abs/1608.06993">Densenet121</a>.</p>
+<p>For the convolutional neural network, I considered four different architectures: 
+<a href="https://arxiv.org/abs/1512.03385" target="_blank" rel="noopener">ResNet50</a>, 
+<a href="https://arxiv.org/abs/1512.03385" target="_blank" rel="noopener">Resnet101</a>, 
+<a href="https://arxiv.org/abs/1704.04861" target="_blank" rel="noopener">Mobilenet</a>, and 
+<a href="https://arxiv.org/abs/1608.06993" target="_blank" rel="noopener">Densenet121</a>.</p>
 <p>The top 1 error published on each frameworks&rsquo; website, based on a single center crop evaluation is as follows:</p>
 <table>
 <thead>
 <tr>
 <th></th>
-<th><a href="https://github.com/keras-team/keras-applications">Tensorflow (Keras)</a></th>
-<th><a href="https://pytorch.org/docs/stable/torchvision/models.html">Pytorch</a></th>
-<th><a href="https://gluon-cv.mxnet.io/model_zoo/classification.html">Mxnet (GluonCV)</a></th>
+<th>
+<a href="https://github.com/keras-team/keras-applications" target="_blank" rel="noopener">Tensorflow (Keras)</a></th>
+<th>
+<a href="https://pytorch.org/docs/stable/torchvision/models.html" target="_blank" rel="noopener">Pytorch</a></th>
+<th>
+<a href="https://gluon-cv.mxnet.io/model_zoo/classification.html" target="_blank" rel="noopener">Mxnet (GluonCV)</a></th>
 </tr>
 </thead>
 <tbody>
@@ -734,24 +832,25 @@
 </tr>
 </tbody>
 </table>
-<p>We note here that the error for Resnet101 is reported in Keras Applications, but Resnet101 is not packaged with Tensorflow 1.13, which is used in this experiment, and thus we won't have any results for it. Also, Pytorch does not come packaged with an implementation of Mobilenet.</p>
+<p>We note here that the error for Resnet101 is reported in Keras Applications, but Resnet101 is not packaged with Tensorflow 1.13, which is used in this experiment, and thus we won&rsquo;t have any results for it. Also, Pytorch does not come packaged with an implementation of Mobilenet.</p>
 <p>Also, it is interesting to see that especially for Resnet implementations, it is obvious that the accuracy of Mxnet &gt; PyTorch &gt; Tensorflow.</p>
 <h2 id="experiments">Experiments</h2>
-<p>All the code used here can be found on <a href="https://github.com/dibgerge/blog-tf-mxnet-pytorch">github</a>. The biggest challenge here really is loading and pre-processing the images the right way. The following briefly describes how I did it for each of the three frameworks.</p>
+<p>All the code used here can be found on 
+<a href="https://github.com/dibgerge/blog-tf-mxnet-pytorch" target="_blank" rel="noopener">github</a>. The biggest challenge here really is loading and pre-processing the images the right way. The following briefly describes how I did it for each of the three frameworks.</p>
 <h3 id="tensorflow-pre-processing">Tensorflow pre-processing</h3>
 <p>Uses the <code>Sequence</code> abstract class for loading the data using a a generator. The pre-processing pipeline is as follows:</p>
 <ol>
 <li>Resized the shorter side of the image to 256 pixels (implemented manually).</li>
 <li>Center cropped the image to 224 x 224 pixels (implemented manually).</li>
-<li>Apply the function <code>preprocess_input</code> which applies the appropriate normalization based on how the network is trained. This function is provided with each different architecture built-in Tensorflow's Keras frontend.</li>
+<li>Apply the function <code>preprocess_input</code> which applies the appropriate normalization based on how the network is trained. This function is provided with each different architecture built-in Tensorflow&rsquo;s Keras frontend.</li>
 </ol>
 <h3 id="pytorch-pre-processing">Pytorch pre-processing</h3>
-<p>Used the <code>Dataset</code> and <code>Dataloader</code> interfaces to feed the data to the neural network. The standard pipeline for pre-processing images for all architectures is documented and is a composition of four transforms using Pytorch's <code>transforms</code> API:</p>
+<p>Used the <code>Dataset</code> and <code>Dataloader</code> interfaces to feed the data to the neural network. The standard pipeline for pre-processing images for all architectures is documented and is a composition of four transforms using Pytorch&rsquo;s <code>transforms</code> API:</p>
 <ol>
 <li>Resize image to 256 pixels (using <code>transforms.Resize</code>)</li>
 <li>Center image to 224 pixels (using <code>transforms.CenterCrop</code>)</li>
 <li>Convert images to pytorch tensor (using <code>transforms.ToTensor</code>)</li>
-<li>Normalize image by mean subtraction and standard deviation scaling (using <code>transforms.Normalize</code>). The normalization values are given in the Pytorch's documentation.</li>
+<li>Normalize image by mean subtraction and standard deviation scaling (using <code>transforms.Normalize</code>). The normalization values are given in the Pytorch&rsquo;s documentation.</li>
 </ol>
 <h3 id="mxnet-pre-processing">Mxnet pre-processing</h3>
 <p>Used the <code>Dataset</code> and <code>Dataloader</code> interfaces to feed the data to the neural network. Mxnet comes packaged with a preset function which applies the required pipeline for models pre-trained on imagenet, using the <code>gluoncv.data.transforms.presets.imagenet.transform_eval</code> function.</p>
@@ -831,7 +930,8 @@
 </tr>
 </tbody>
 </table>
-<p>First, those results are somehow unfair to tensorflow. This is because I used threading with 4 workers for pre-processing images in Tensorflow, while 4 workers with multiprocessing was used for MxNet and Pytorch. But, this is rather Tensorflow/keras fault due to a <a href="https://github.com/keras-team/keras/issues/10855">bug</a> not allowing me to use multiprocessing. Also, for Mxnet and Pytorch I measured the average time it took to classify 10 images (the batch size used). I did not do this in Tensorflow, because there is no easy way to measure per-batch times.</p>
+<p>First, those results are somehow unfair to tensorflow. This is because I used threading with 4 workers for pre-processing images in Tensorflow, while 4 workers with multiprocessing was used for MxNet and Pytorch. But, this is rather Tensorflow/keras fault due to a 
+<a href="https://github.com/keras-team/keras/issues/10855" target="_blank" rel="noopener">bug</a> not allowing me to use multiprocessing. Also, for Mxnet and Pytorch I measured the average time it took to classify 10 images (the batch size used). I did not do this in Tensorflow, because there is no easy way to measure per-batch times.</p>
 <table>
 <thead>
 <tr>
@@ -877,7 +977,7 @@ Thus, the importance of handling data appropriately if speed matters.</p>
 <p><strong>Availability of pre-trained networks</strong>: trophy goes to <em>Mxnet</em>. The extensive vision library of architectures/preset image processing is very impressive. Jury still out on other domains (RL, NLP). Tensorflow is a second, and Pytorch did not have much architecture packaged with it.</p>
 </li>
 <li>
-<p><strong>Reproducibility</strong>: Again, trophy to <em>Mxnet</em>, with PyTorch a close second. I could not reproduce Tensorflow's results, and it is not clear how to do it using the documentation.</p>
+<p><strong>Reproducibility</strong>: Again, trophy to <em>Mxnet</em>, with PyTorch a close second. I could not reproduce Tensorflow&rsquo;s results, and it is not clear how to do it using the documentation.</p>
 </li>
 <li>
 <p><strong>Data preparation</strong>: a tie with <em>Mxnet and Pytorch</em>. Both frameworks use very similar <code>Dataset</code> and <code>Dataloader</code> interfaces. I was able to get going using this interface very fast. Keras also has a very similar interface using <code>Sequence</code> class, but the absence of something similar to <code>Dataloader</code> results in having to return batches rather than simply one image at a time. Also Tensorflow has a <code>Dataset</code> interface which I used before but somehow made me feel I am programming in C all over again.</p>
@@ -892,6 +992,7 @@ Thus, the importance of handling data appropriately if speed matters.</p>
     </div>
 
     
+
 
 
 
@@ -1001,33 +1102,47 @@ Thus, the importance of handling data appropriately if speed matters.</p>
 
 
   
+    
+    
+
+
+
+
+
   
     
-  
-  
-
-
-
-
-
-
-  
-  
-  
     
-  
-  
-  <div class="media author-card content-widget-hr">
     
       
-      <img class="portrait mr-3" src="/authors/admin/avatar_hue3d0cc1f4f80b5dad2186a4a7c6ec73f_76029_250x250_fill_lanczos_center_2.png" alt="Avatar">
     
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hue3d0cc1f4f80b5dad2186a4a7c6ec73f_76029_270x270_fill_lanczos_center_2.png" alt="">
+      
 
-    <div class="media-body">
-      <h5 class="card-title"><a href="https://dibgerge.github.io/">Gerges Dib</a></h5>
-      <h6 class="card-subtitle">Applied Scientist</h6>
-      <p class="card-text">Develop machine learning solutions</p>
-      <ul class="network-icon" aria-hidden="true">
+      <div class="media-body">
+        <h5 class="card-title"><a href="https://dibgerge.github.io/"></a></h5>
+        <h6 class="card-subtitle">Applied Scientist</h6>
+        <p class="card-text">Develop machine learning solutions</p>
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/cv_gerges.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
   
     
     
@@ -1095,25 +1210,15 @@ Thus, the importance of handling data appropriately if speed matters.</p>
       </a>
     </li>
   
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/files/cv_gerges.pdf" >
-        <i class="ai ai-cv"></i>
-      </a>
-    </li>
-  
 </ul>
 
+      </div>
     </div>
-  </div>
+  
+
+
+  
+
 
 
 
@@ -1151,17 +1256,7 @@ Thus, the importance of handling data appropriately if speed matters.</p>
 
 
 
-  
-  
-  <div class="article-widget content-widget-hr">
-    <h3>Related</h3>
-    <ul>
-      
-      <li><a href="/project/niml/">Neural Interactive Machine Learning</a></li>
-      
-    </ul>
-  </div>
-  
+
 
 
 
@@ -1173,18 +1268,23 @@ Thus, the importance of handling data appropriately if speed matters.</p>
     
     
     
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
 
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.8/mermaid.min.js" integrity="sha256-lyWCDMnMeZiXRi7Zl54sZGKYmgQs4izcT7+tKc+KUBk=" crossorigin="anonymous" title="mermaid"></script>
       
 
       
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/python.min.js"></script>
         
       
 
@@ -1213,7 +1313,8 @@ Thus, the importance of handling data appropriately if speed matters.</p>
         'post': "Posts",
         'project': "Projects",
         'publication' : "Publications",
-        'talk' : "Talks"
+        'talk' : "Talks",
+        'slides' : "Slides"
         };
     </script>
     
@@ -1247,6 +1348,12 @@ Thus, the importance of handling data appropriately if speed matters.</p>
 
     
     
+
+    
+    
+
+    
+    
     <script id="dsq-count-scr" src="https://dibgerge.disqus.com/count.js" async></script>
     
 
@@ -1264,7 +1371,7 @@ Thus, the importance of handling data appropriately if speed matters.</p>
     
     
     
-    <script src="/js/academic.min.a0d331bcd05dbe8b31e244f796710f08.js"></script>
+    <script src="/js/academic.min.3b2b658c61ebd725bd5fc606c89fe44c.js"></script>
 
     
 
@@ -1281,10 +1388,21 @@ Thus, the importance of handling data appropriately if speed matters.</p>
 
   <p class="powered-by">
     
+  </p>
 
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://wowchemy.com" target="_blank" rel="noopener">Wowchemy Website Builder</a>
+    
 
     
     <span class="float-right" aria-hidden="true">
